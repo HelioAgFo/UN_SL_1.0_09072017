@@ -1,0 +1,365 @@
+
+
+' Begin Customization Screen: 0401000  Version: 6 Sequence: 300   Description: "A New All Users Customization" System Administrator: FALSE Secure: 55
+Begin VB.Form Form1
+'' Version         =   6
+   height          =   605
+   left            =   455
+   top             =   79
+   width           =   811
+   windowstate     =   0
+End
+Begin GroupBox Panel3D1
+'' Version         =   6
+   height          =   305
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   222
+   width           =   792
+End
+Begin SAFTools.SAFButton xbImprimir
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Imprimir"
+   height          =   21
+   left            =   658
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   900
+   top             =   537.000000
+   visible         =   TRUE
+   width           =   100
+End
+Begin Button cmdLandedCost
+'' Version         =   6
+   height          =   21
+   left            =   559
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   537.000000
+   width           =   80
+End
+Begin Button cinvcinfo
+'' Version         =   6
+   height          =   21
+   left            =   311
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   537
+   width           =   79
+End
+Begin SAFTools.SAFLabel Label3
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No Proyecto:"
+   height          =   17
+   left            =   8.000000
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   tabindex        =   903
+   top             =   88
+   visible         =   TRUE
+   width           =   70
+End
+Begin GroupBox Frame3d2
+'' Version         =   6
+   height          =   121
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   99
+   width           =   793
+End
+Begin Label lrcptdate
+'' Version         =   6
+   height          =   13
+   left            =   8
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   top             =   40
+   width           =   92
+End
+Begin Label lrcpttype
+'' Version         =   6
+   height          =   13
+   left            =   8
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   top             =   64
+   width           =   83
+End
+Begin Label lrcptnbr
+'' Version         =   6
+   height          =   13
+   left            =   8
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   top             =   16
+   width           =   76
+End
+Begin DSLMaskedText xuser1
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser1"
+   enabled         =   TRUE
+   fieldname       =   ""bporeceipt.user1";696;0"
+   heading         =   ""
+   height          =   21.000000
+   left            =   94
+   level           =   "1"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   pv              =   "ProyectosCRM_all"
+   tabindex        =   904
+   top             =   87
+   visible         =   TRUE
+   width           =   100.000000
+End
+Begin DSLCombo crcpttype
+'' Version         =   6
+   height          =   21
+   left            =   96
+'' parent          =   "Frame3d2"
+'' parentform      =   "Form1"
+   top             =   64
+   width           =   77
+End
+
+' Begin Macro Text
+
+Source: 1
+' VBComponent: ThisScreen, ComponentType: 100 **********************************************************
+Option Explicit
+
+Private Sub cbatchandling_Chk(ChkStrg As String, retval As Integer)
+'    Dim sSQL As String
+'    Dim sRcptNbr As String
+'    sRcptNbr = sivMyApp.Controls("crcptnbrh").value
+'    If Trim(sRcptNbr) <> "" Then
+'        sSQL = "EXEC xsp_AttachmentForReceipt " + SParm(sRcptNbr)
+'        serr_AttachmentForReceipt = SqlFetch1(csr_AttachmentForReceipt, sSQL, bAttachmentForReceipt, LenB(bAttachmentForReceipt))
+''        If serr_AttachmentForReceipt = 0 Then
+''            If (ChkStrg = "R" Or ChkStrg = "B") And bAttachmentForReceipt.CountRcpt < 2 Then
+''                MessBox "Error, falta adjuntar la factura en PDF o XML para continuar", MB_ICONEXCLAMATION, "Error PDF y XML"
+''                retval = ErrNoMess
+''            End If
+''        Else
+''            If ChkStrg = "R" Or ChkStrg = "B" Then
+''                MessBox "Error, es requerido adjuntar documentos, favor de validar", MB_ICONEXCLAMATION, "Error PDF y XML"
+''                retval = ErrNoMess
+''            End If
+''        End If
+'
+'    End If
+End Sub
+
+Private Sub Form1_Display()
+
+End Sub
+
+
+Private Sub Form1_Load()
+    ' Apartamos memoria
+    Call VBA_SetAddr("Batch", bBatch, nBatch, LenB(bBatch))
+    Call VBA_SetAddr("Batch_batnbr", bBatch_batnbr, nBatch_batnbr, LenB(bBatch_batnbr))
+    
+    Call VBA_SetAddr("AttachmentForReceipt", bAttachmentForReceipt, nAttachmentForReceipt, LenB(bAttachmentForReceipt))
+    Call SqlCursor(csr_AttachmentForReceipt, NOLEVEL)
+    
+    ' Cargamos los cursores
+    Call SqlCursorEx(Csr_Batch, NOLEVEL + SqlUpdate, "Csr_Batch", "Batch", "Batch")
+    Call SqlCursorEx(Csr_Batch_batnbr, NOLEVEL, "Csr_Batch_batnbr", "Batch_batnbr", "Batch_batnbr")
+End Sub
+
+
+
+
+Private Sub Update1_OnFinish(ByVal Level As Integer, ByVal Updated As Integer, retval As Integer)
+    If Level = LEVEL0 Then
+       Dim BatNbr As String * 10
+       Dim InvcNbr As String * 15
+       Dim BatcHandling As String * 1
+       Dim CreateVOAD As Integer
+       Dim RcptType As String * 1
+       Dim sqlst$
+    
+       If Updated = False Then ' Verificamos que se actualice
+    
+          BatcHandling = GetObjectValue("cbatchandling")
+          InvcNbr = GetObjectValue("cinvcnbr")
+          CreateVOAD = GetObjectValue("cCreateVOAD")
+          RcptType = GetObjectValue("crcpttype")
+    
+          If Trim$(BatcHandling) = "R" Then ' Si el manejo del lote es liberar ahora
+             If CreateVOAD = 1 Then ' Si va a crear un doc x pagar
+                If Trim$(RcptType) = "R" Then ' Si es una recepcion
+                   serr_Batch_batnbr = SqlFetch1(Csr_Batch_batnbr, "Fe_BatchApdoc_Invcnbr" + SParm(InvcNbr), bBatch_batnbr, LenB(bBatch_batnbr))
+                   If serr_Batch_batnbr = 0 Then
+                      BatNbr = Trim$(bBatch_batnbr.BatNbr)
+                      If Trim$(BatNbr) <> "" Then ' Si obtenemos el numero de lote en apdoc
+                         sqlst = "Fe_UpdateBatchStatus" + SParm(BatNbr)
+                         Call sql(Csr_Batch, sqlst)
+                      End If ' End del if Batnbr <> ""
+                   End If ' Fin del serr_Apdoc
+                End If ' End if de la recepcion
+             End If ' Fin del crear documento por pagar
+          End If ' Fin del cbatchandling = "R" Liberar Ahora
+       End If ' If del updated
+    End If ' Si el nivel es level0
+End Sub
+
+Private Sub Update1_OnUpdate(ByVal Level As Integer, ByVal InsertFlg As Integer, retval As Integer)
+   If Level = LEVEL0 Then
+      If InsertFlg = True Then
+         Dim InvcNbr$
+         InvcNbr = GetObjectValue("cinvcnbr")
+         If Trim$(InvcNbr) = "" Then ' Verificamos que se haya capturado un numero de factura
+            Call MessBox("!! Debe capturar un número de factura !!", MB_ICONEXCLAMATION, "Recepciones")
+            retval = ErrNoMess
+         End If ' fin del trim$
+      End If
+   End If ' End del Nivel
+End Sub
+
+Private Sub xbImprimir_Click()
+    Dim RcptNbr$, ParmStr$
+    Dim PRMSEP$
+    PRMSEP = Chr(9)
+    RcptNbr = Trim(GetObjectValue("crcptnbrh"))
+    ParmStr = "ROI.EXE " + PRMSEP + "04650/RUN" + PRMSEP + "{Poreceipt.rcptnbr} =" + SParm(RcptNbr) + "/WHERE" + PRMSEP + "/PSCRN"
+    serr1 = Launch(ParmStr, True, True, 0)
+
+End Sub
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: BatchDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "BatchDH"
+Option Explicit
+ 
+Type Batch
+    Acct                            As String * 10
+    AutoRev                         As Integer
+    AutoRevCopy                     As Integer
+    BalanceType                     As String * 1
+    BankAcct                        As String * 10
+    BankSub                         As String * 24
+    BaseCuryID                      As String * 4
+    BatNbr                          As String * 10
+    BatType                         As String * 1
+    clearamt                        As Double
+    Cleared                         As Integer
+    CpnyID                          As String * 10
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    CrTot                           As Double
+    CtrlTot                         As Double
+    CuryCrTot                       As Double
+    CuryCtrlTot                     As Double
+    CuryDepositAmt                  As Double
+    CuryDrTot                       As Double
+    CuryEffDate                     As Sdate
+    CuryId                          As String * 4
+    CuryMultDiv                     As String * 1
+    CuryRate                        As Double
+    CuryRateType                    As String * 6
+    Cycle                           As Integer
+    DateClr                         As Sdate
+    DateEnt                         As Sdate
+    DepositAmt                      As Double
+    Descr                           As String * 30
+    DrTot                           As Double
+    EditScrnNbr                     As String * 5
+    GLPostOpt                       As String * 1
+    JrnlType                        As String * 3
+    LedgerID                        As String * 10
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    Module                          As String * 2
+    NbrCycle                        As Integer
+    NoteID                          As Long
+    OrigBatNbr                      As String * 10
+    OrigCpnyID                      As String * 10
+    OrigScrnNbr                     As String * 5
+    PerEnt                          As String * 6
+    PerPost                         As String * 6
+    Rlsed                           As Integer
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    Status                          As String * 1
+    Sub                             As String * 24
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+End Type
+ 
+Public bBatch As Batch, nBatch As Batch
+Global Csr_Batch, serr_ApDoc%
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: Module1, ComponentType: 1 **********************************************************
+Attribute VB_Name = "Module1"
+Option Explicit
+ 
+
+Type Batch_Batnbr
+      BatNbr As String * 10
+End Type
+
+Global bBatch_batnbr As Batch_Batnbr, nBatch_batnbr As Batch_Batnbr
+Global Csr_Batch_batnbr%, serr_Batch_batnbr%
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: Module2, ComponentType: 1 **********************************************************
+Attribute VB_Name = "Module2"
+Option Explicit
+Type AttachmentForReceipt
+    RcptNbr As String * 10
+    CountRcpt As Long
+End Type
+
+Public bAttachmentForReceipt As AttachmentForReceipt, nAttachmentForReceipt As AttachmentForReceipt
+Public csr_AttachmentForReceipt As Integer, serr_AttachmentForReceipt As Integer
+
+
+
+' End VBComponent **********************************************************
+
+
+
+' Reference: Name=VBA, Guid={000204EF-0000-0000-C000-000000000046}, Major=4, Minor=2
+' Reference: Name=SWIMAPI, Guid={F4B33A61-96B4-11CF-B04B-0020AFDCBD63}, Major=1, Minor=1
+' Reference: Name=stdole, Guid={00020430-0000-0000-C000-000000000046}, Major=2, Minor=0
+' Reference: Name=SWIMAPIEx, Guid={C97F43B1-4A73-11D3-BF6C-006008C7915A}, Major=1, Minor=1
+' Reference: Name=SolVBWrappedControlsLib, Guid={A88846F2-6638-11D3-8154-00104B2E8513}, Major=1, Minor=0
+
+' End Macro Text
+
+' End Customization

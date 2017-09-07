@@ -1,0 +1,2948 @@
+
+
+' Begin Customization Screen: 0826000  Version: 6 Sequence: 300   Description: "A New All Users Customization" System Administrator: FALSE Secure: 55
+Begin VB.Form Form1
+'' Version         =   6
+   height          =   681
+   left            =   285
+   top             =   17
+   width           =   879
+   windowstate     =   0
+End
+Begin TabControl SSTab1
+'' Version         =   6
+   backcolor       =   -2147483626
+   height          =   536
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   39
+   top             =   80
+   width           =   853
+End
+Begin Button cmdAddReceivers
+'' Version         =   6
+   height          =   23
+   left            =   507
+'' parent          =   "pnlGrid"
+'' parentform      =   "Form1"
+   tabindex        =   293
+   top             =   505
+   width           =   141
+End
+Begin Button Button_History
+'' Version         =   6
+   height          =   21
+   left            =   180
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   41
+   top             =   620
+   width           =   127
+End
+Begin Button Button_Act
+'' Version         =   6
+   height          =   21
+   left            =   310
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   42
+   top             =   620
+   width           =   127
+End
+Begin Button Button_Shipping
+'' Version         =   6
+   height          =   21
+   left            =   440
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   43
+   top             =   620
+   width           =   127
+End
+Begin Label dcustid
+'' Version         =   6
+   fontbold        =   TRUE
+   fontsize        =   12.000000
+   forecolor       =   16711680
+   height          =   22
+   left            =   5
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   55
+   width           =   415
+End
+Begin SAF.SAFMaskedText xcRFC
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   TRUE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.rfc";5274;0"
+   heading         =   "xcRFC"
+   height          =   21
+   left            =   327
+   level           =   "---"
+   mask            =   "UUUWWWWWWWWWW"
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   10
+   top             =   20
+   visible         =   TRUE
+   width           =   131
+End
+Begin SAFCombo cFileType
+'' Version         =   6
+   tabindex        =   271
+End
+Begin Label lFaxReceiverName
+'' Version         =   6
+   tabindex        =   271
+End
+Begin SAFMaskedText cFaxReceiverName
+'' Version         =   6
+   tabindex        =   272
+End
+Begin Label lblFaxPrefix
+'' Version         =   6
+   tabindex        =   273
+End
+Begin SAFMaskedText cFaxPrefix
+'' Version         =   6
+   tabindex        =   274
+End
+Begin SAFCheck cUseAreaCode
+'' Version         =   6
+   tabindex        =   275
+End
+Begin Label cSenderFaxNbr
+'' Version         =   6
+   tabindex        =   276
+End
+Begin SAFMaskedText cReceiverFaxNbr
+'' Version         =   6
+   tabindex        =   277
+End
+Begin Label lFaxeSenderName
+'' Version         =   6
+   tabindex        =   278
+End
+Begin SAFMaskedText cFaxSenderName
+'' Version         =   6
+   tabindex        =   279
+End
+Begin Label lSenderFaxNumber
+'' Version         =   6
+   tabindex        =   280
+End
+Begin SAFMaskedText cSenderFaxNumber
+'' Version         =   6
+   tabindex        =   281
+End
+Begin SAFCheck SafCheck2
+'' Version         =   6
+   tabindex        =   282
+End
+Begin Label lFaxResponse
+'' Version         =   6
+   tabindex        =   283
+End
+Begin SAFCheck cUrgent
+'' Version         =   6
+   tabindex        =   284
+End
+Begin SAFCheck cForReview
+'' Version         =   6
+   tabindex        =   285
+End
+Begin SAFCheck cFaxComment
+'' Version         =   6
+   tabindex        =   286
+End
+Begin SAFCheck cFaxReply
+'' Version         =   6
+   tabindex        =   287
+End
+Begin SAFCheck cFaxRecycle
+'' Version         =   6
+   tabindex        =   288
+End
+Begin Label lSubjectText
+'' Version         =   6
+   tabindex        =   289
+End
+Begin SAFMaskedText cSubjetText
+'' Version         =   6
+   tabindex        =   290
+End
+Begin Label lBodyTex
+'' Version         =   6
+   tabindex        =   291
+End
+Begin SAFMaskedText cBodyText
+'' Version         =   6
+   tabindex        =   292
+End
+Begin SAFGrid Spread_EDD
+'' Version         =   6
+   tabindex        =   279
+End
+Begin SAF.SAFMaskedText xcRazonSocial
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.razonsocial";4742;0"
+   heading         =   "xcRazonSocial"
+   height          =   21
+   left            =   15.000000
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   11
+   top             =   30
+   visible         =   TRUE
+   width           =   487
+End
+Begin SAF.SAFMaskedText xcApellidoPaterno
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.apellidopaterno";240;0"
+   heading         =   "xcApellidoPaterno"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   12
+   top             =   74.000000
+   visible         =   TRUE
+   width           =   231
+End
+Begin SAF.SAFMaskedText xcApellidoMaterno
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.apellidomaterno";120;0"
+   heading         =   "xcApellidoMaterno"
+   height          =   21
+   left            =   257.000000
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   13
+   top             =   74.000000
+   visible         =   TRUE
+   width           =   243
+End
+Begin SAF.SAFMaskedText xcNombre
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.nombre";3370;0"
+   heading         =   "xcNombre"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   14
+   top             =   118
+   visible         =   TRUE
+   width           =   484
+End
+Begin SAF.SAFMaskedText xcCodigoPostal
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.codigopostal";1412;0"
+   heading         =   "xcCodigoPostal"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "99999"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   15
+   top             =   162
+   visible         =   TRUE
+   width           =   67
+End
+Begin SAF.SAFMaskedText xcCalle
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.calle";870;0"
+   heading         =   "xcCalle"
+   height          =   21
+   left            =   91
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   16
+   top             =   162
+   visible         =   TRUE
+   width           =   405
+End
+Begin SAF.SAFMaskedText xcNoExterior
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.noexterior";3556;0"
+   heading         =   "xcNoExterior"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   17
+   top             =   206.000000
+   visible         =   TRUE
+   width           =   77
+End
+Begin SAF.SAFMaskedText xcNoInterior
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.nointerior";4066;0"
+   heading         =   "xcNoInterior"
+   height          =   21
+   left            =   102
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   18
+   top             =   206
+   visible         =   TRUE
+   width           =   110
+End
+Begin SAF.SAFMaskedText xcColonia
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.colonia";1492;0"
+   heading         =   "xcColonia"
+   height          =   21
+   left            =   222
+   level           =   "---"
+   mask            =   "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   19
+   top             =   206
+   visible         =   TRUE
+   width           =   281
+End
+Begin SAF.SAFMaskedText xcEmail
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.email";2184;0"
+   heading         =   "xcEmail"
+   height          =   21
+   left            =   196
+   level           =   "---"
+   mask            =   "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   24
+   top             =   294.000000
+   visible         =   TRUE
+   width           =   306
+End
+Begin GroupBox frame1
+'' Version         =   6
+   backcolor       =   16744576
+   fontbold        =   FALSE
+   fontsize        =   8.750000
+   forecolor       =   -2147483646
+   height          =   413
+   left            =   0
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   88
+   top             =   51
+   width           =   509
+End
+Begin GroupBox frame5
+'' Version         =   6
+   caption         =   "&Envio"
+   height          =   379
+   left            =   513
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   84
+   top             =   51
+   width           =   317
+End
+Begin SAFMaskedText cBillname
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   89
+   tabstop         =   FALSE
+   top             =   16
+   visible         =   FALSE
+   width           =   14.000000
+End
+Begin SAFMaskedText cBillattn
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   90
+   tabstop         =   FALSE
+   top             =   40
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillsalut
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   91
+   tabstop         =   FALSE
+   top             =   64
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBilladdr1
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   92
+   tabstop         =   FALSE
+   top             =   88
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBilladdr2
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   93
+   tabstop         =   FALSE
+   top             =   112
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillcity
+'' Version         =   6
+   height          =   21
+   left            =   490
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   94
+   tabstop         =   FALSE
+   top             =   136
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillstate
+'' Version         =   6
+   left            =   490.000000
+   tabindex        =   95
+   tabstop         =   FALSE
+   visible         =   FALSE
+   width           =   14.000000
+End
+Begin SAFMaskedText cBillzip
+'' Version         =   6
+   height          =   21
+   left            =   490.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   96
+   tabstop         =   FALSE
+   top             =   184
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillcountry
+'' Version         =   6
+   height          =   21
+   left            =   490
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   97
+   tabstop         =   FALSE
+   top             =   208
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillphone
+'' Version         =   6
+   height          =   21
+   left            =   490
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   98
+   tabstop         =   FALSE
+   top             =   232
+   visible         =   FALSE
+   width           =   14
+End
+Begin SAFMaskedText cBillfax
+'' Version         =   6
+   height          =   21
+   left            =   490
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   99
+   tabstop         =   FALSE
+   top             =   256
+   visible         =   FALSE
+   width           =   14
+End
+Begin Label lemailaddr
+'' Version         =   6
+   height          =   13
+   left            =   1
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   111
+   top             =   278
+   visible         =   FALSE
+   width           =   85
+End
+Begin Label lfax
+'' Version         =   6
+   fontbold        =   FALSE
+   fontsize        =   8.750000
+   height          =   14
+   left            =   196
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   110
+   top             =   322
+   width           =   58
+End
+Begin Label lphone
+'' Version         =   6
+   fontbold        =   FALSE
+   fontsize        =   8.750000
+   height          =   13
+   left            =   15.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   109
+   top             =   322.000000
+   width           =   73
+End
+Begin Label lcountry
+'' Version         =   6
+   height          =   13
+   left            =   2
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   108
+   top             =   211
+   width           =   30
+End
+Begin Label lzip
+'' Version         =   6
+   height          =   13
+   left            =   2.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   107
+   top             =   187.000000
+   width           =   76
+End
+Begin Label State
+'' Version         =   6
+   height          =   13
+   left            =   2
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   106
+   top             =   163.000000
+   width           =   44
+End
+Begin Label lcity
+'' Version         =   6
+   height          =   13
+   left            =   2.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   105
+   top             =   137.000000
+   width           =   44
+End
+Begin Label laddr2
+'' Version         =   6
+   height          =   13
+   left            =   2.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   104
+   top             =   113.000000
+   width           =   63
+End
+Begin Label laddr1
+'' Version         =   6
+   height          =   13
+   left            =   1
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   103
+   top             =   89.000000
+   width           =   63
+End
+Begin Label lsalut
+'' Version         =   6
+   height          =   13
+   left            =   2.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   102
+   top             =   65.000000
+   width           =   43
+End
+Begin Label lattn
+'' Version         =   6
+   height          =   13
+   left            =   2.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   101
+   top             =   41.000000
+   width           =   55
+End
+Begin Label lname01
+'' Version         =   6
+   height          =   13
+   left            =   2
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   100
+   top             =   17
+   width           =   48
+End
+Begin SAFMaskedText cdfltshiptoid
+'' Version         =   6
+   height          =   21
+   left            =   86.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   38
+   top             =   236
+   width           =   77
+End
+Begin Label ldfltshiptoid
+'' Version         =   6
+   caption         =   "Envio Omisi.:"
+   height          =   13
+   left            =   2
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   187
+   top             =   235.000000
+   width           =   69
+End
+Begin Label lterms
+'' Version         =   6
+   height          =   13
+   left            =   627
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   49
+   top             =   31
+   width           =   70
+End
+Begin SAFMaskedText cterms
+'' Version         =   6
+   height          =   21
+   left            =   697
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   8
+   top             =   31
+   width           =   33
+End
+Begin Label dterms
+'' Version         =   6
+   fontbold        =   TRUE
+   fontsize        =   10.000000
+   height          =   20
+   left            =   627
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   50
+   top             =   55
+   width           =   216
+End
+Begin SAFMaskedText cclassid
+'' Version         =   6
+   height          =   21
+   left            =   480
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   31
+   width           =   77
+End
+Begin SAFMaskedText ccustid
+'' Version         =   6
+   height          =   21
+   left            =   88
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   31
+   width           =   127
+End
+Begin SAF.SAFCombo xcTipoPago
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.tipo";5304;0"
+   heading         =   "xcTipoPago"
+   height          =   21
+   left            =   2
+   level           =   "---"
+   list            =   "F;Persona Fisica,M;Persona Moral,E;Extranjero"
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   9
+   top             =   20
+   visible         =   TRUE
+   width           =   138
+End
+Begin Label ltaxid1
+'' Version         =   6
+   height          =   13
+   left            =   199
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   123
+   top             =   4
+   width           =   87
+End
+Begin SAFMaskedText ctaxid1
+'' Version         =   6
+   height          =   21
+   left            =   199
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   116
+   top             =   20
+   width           =   104
+End
+Begin SAFCombo cstatus
+'' Version         =   6
+   height          =   21
+   left            =   480
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   55
+   width           =   112
+End
+Begin SAFTools.SAFLabel xlRFC
+'' Created         =   True
+'' Version         =   6
+   caption         =   "RFC:"
+   height          =   16
+   left            =   327.000000
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   920
+   top             =   4.000000
+   visible         =   TRUE
+   width           =   40
+End
+Begin SAFTools.SAFLabel xlRazonSocial
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Raz√≥n Social / Nombre Completo:"
+   height          =   12
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   921
+   top             =   16
+   visible         =   TRUE
+   width           =   244
+End
+Begin SAFTools.SAFLabel xlApellidoPaterno
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Apellido Paterno:"
+   height          =   16
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   922
+   top             =   58
+   visible         =   TRUE
+   width           =   136
+End
+Begin SAFTools.SAFLabel xlApellidoMaterno
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Apellido Materno:"
+   height          =   16.000000
+   left            =   257
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   923
+   top             =   58
+   visible         =   TRUE
+   width           =   136
+End
+Begin SAFTools.SAFLabel xlNombre
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Nombre:"
+   height          =   16
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   924
+   top             =   102
+   visible         =   TRUE
+   width           =   64
+End
+Begin SAFTools.SAFLabel xlCodigoPostal
+'' Created         =   True
+'' Version         =   6
+   caption         =   "CP:"
+   height          =   16
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   925
+   top             =   146
+   visible         =   TRUE
+   width           =   53
+End
+Begin SAFTools.SAFLabel xlCalle
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Calle:"
+   height          =   16
+   left            =   91
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   926
+   top             =   146
+   visible         =   TRUE
+   width           =   56
+End
+Begin SAFTools.SAFLabel xlNoExterior
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No. Exterior:"
+   height          =   16
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   926
+   top             =   190
+   visible         =   TRUE
+   width           =   73
+End
+Begin SAFTools.SAFLabel xlNoInterior
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No. Interior:"
+   height          =   16
+   left            =   102
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   926
+   top             =   190
+   visible         =   TRUE
+   width           =   96
+End
+Begin SAFTools.SAFLabel xlColonia
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Colonia:"
+   height          =   16
+   left            =   222
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   927
+   top             =   190
+   visible         =   TRUE
+   width           =   72
+End
+Begin SAFTools.SAFLabel xlEmail
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Email:"
+   height          =   16
+   left            =   196.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   928
+   top             =   278.000000
+   visible         =   TRUE
+   width           =   56
+End
+Begin SAFTools.SAFLabel xlTipo
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Tipo Persona:"
+   height          =   17
+   left            =   2.000000
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   930
+   top             =   4
+   visible         =   TRUE
+   width           =   111
+End
+Begin SAF.SAFMaskedText xcPais
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.pais";4722;0"
+   heading         =   "xcPais"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "UUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   pv              =   ""country_all","
+   tabindex        =   20
+   top             =   250
+   visible         =   TRUE
+   width           =   40
+End
+Begin SAF.SAFMaskedText xcEstado
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.estadoid";2754;0"
+   heading         =   "xcEstado"
+   height          =   21
+   left            =   162
+   level           =   "---"
+   mask            =   "UUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   pv              =   ""state_all", "
+   tabindex        =   21
+   top             =   250
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAF.SAFMaskedText xcMunicipio
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.municipioid";3350;0"
+   heading         =   "xcMunicipio"
+   height          =   21
+   left            =   342
+   level           =   "---"
+   mask            =   "UUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   pv              =   ""xsp_xFEMunicipios_All", "bxfesoaddress.estadoid"; 0; 0; 0; 0, "
+   tabindex        =   22
+   top             =   250
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAF.SAFMaskedText xcCiudad
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.ciudadid";1380;0"
+   heading         =   "xcCiudad"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "UUU"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   pv              =   ""
+   tabindex        =   23
+   top             =   294
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFTools.SAFLabel xlPais
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Pais:"
+   height          =   16
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   932
+   top             =   234
+   visible         =   TRUE
+   width           =   48
+End
+Begin SAFTools.SAFLabel xlEstado
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Estado:"
+   height          =   16
+   left            =   163
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   933
+   top             =   234
+   visible         =   TRUE
+   width           =   64
+End
+Begin SAFTools.SAFLabel xlMunicipio
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Municipio:"
+   height          =   16
+   left            =   342
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   934
+   top             =   234
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFTools.SAFLabel xlCiudad
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Ciudad:"
+   height          =   16.000000
+   left            =   15.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   935
+   top             =   278.000000
+   visible         =   TRUE
+   width           =   64
+End
+Begin SAFMaskedText cfax
+'' Version         =   6
+   height          =   21
+   left            =   196.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   26
+   top             =   338
+   width           =   161
+End
+Begin SAFMaskedText cphone
+'' Version         =   6
+   height          =   21
+   left            =   15
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   25
+   top             =   338
+   width           =   161
+End
+Begin Button Button_Copy
+'' Version         =   6
+   tabindex        =   87
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFMaskedText cattn
+'' Version         =   6
+   height          =   21
+   left            =   86
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   30
+   top             =   37
+   width           =   224
+End
+Begin Label dcustidaddr
+'' Version         =   6
+   height          =   21
+   left            =   73
+'' parent          =   "_SSTab1_TabPage0"
+'' parentform      =   "Form1"
+   tabindex        =   85
+   top             =   14
+   width           =   224
+End
+Begin SAFMaskedText csalut
+'' Version         =   6
+   height          =   21
+   left            =   86
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   31
+   top             =   64
+   width           =   224
+End
+Begin SAFMaskedText caddr1
+'' Version         =   6
+   height          =   21
+   left            =   86
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   32
+   top             =   88
+   width           =   224
+End
+Begin SAFMaskedText caddr2
+'' Version         =   6
+   height          =   21
+   left            =   86
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   33
+   top             =   112
+   width           =   224
+End
+Begin SAFMaskedText ccity
+'' Version         =   6
+   height          =   21
+   left            =   86.000000
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   34
+   top             =   136
+   width           =   224
+End
+Begin SAFMaskedText cstate
+'' Version         =   6
+   height          =   21
+   left            =   86
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   35
+   top             =   160
+   width           =   47
+End
+Begin SAFMaskedText czip
+'' Version         =   6
+   left            =   86.000000
+   tabindex        =   36
+End
+Begin SAFMaskedText ccountry
+'' Version         =   6
+   left            =   86.000000
+   tabindex        =   37
+End
+Begin SAFMaskedText cemailaddr
+'' Version         =   6
+   height          =   21
+   left            =   8
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   86
+   tabstop         =   FALSE
+   top             =   280
+   visible         =   FALSE
+   width           =   224
+End
+Begin Label lname
+'' Version         =   6
+   tabindex        =   40
+End
+Begin SAFUpdate Update1
+'' Version         =   6
+   tabindex        =   40
+End
+Begin SAFMaskedText cname
+'' Version         =   6
+   height          =   21
+   left            =   62
+'' parent          =   "frame5"
+'' parentform      =   "Form1"
+   tabindex        =   29
+   top             =   13
+   width           =   249
+End
+Begin GroupBox frame2
+'' Version         =   6
+   tabindex        =   44
+End
+Begin Label ltradedisc
+'' Version         =   6
+   tabindex        =   45
+End
+Begin SAFFloat ctradedisc
+'' Version         =   6
+   tabindex        =   46
+End
+Begin Label lPriceClass
+'' Version         =   6
+   tabindex        =   47
+End
+Begin SAFMaskedText cpriceclass
+'' Version         =   6
+   tabindex        =   48
+End
+Begin GroupBox frame4
+'' Version         =   6
+   tabindex        =   51
+End
+Begin Label lcrdtRule
+'' Version         =   6
+   tabindex        =   52
+End
+Begin SAFCombo cCreditRule
+'' Version         =   6
+   tabindex        =   53
+End
+Begin Label lcrlmt
+'' Version         =   6
+   tabindex        =   54
+End
+Begin SAFFloat ccrlmt
+'' Version         =   6
+   tabindex        =   55
+End
+Begin Label lavailbal
+'' Version         =   6
+   tabindex        =   56
+End
+Begin SAFFloat cavailbal
+'' Version         =   6
+   tabindex        =   57
+End
+Begin Label lavgdaytopay
+'' Version         =   6
+   tabindex        =   58
+End
+Begin SAFFloat cavgdaytopay
+'' Version         =   6
+   tabindex        =   59
+End
+Begin Label lgraceper
+'' Version         =   6
+   tabindex        =   60
+End
+Begin SAFInteger cGracePer
+'' Version         =   6
+   tabindex        =   61
+End
+Begin Label lCreditMngrID
+'' Version         =   6
+   tabindex        =   62
+End
+Begin SAFMaskedText cCreditMgrID
+'' Version         =   6
+   tabindex        =   63
+End
+Begin Label dCreditManagerID
+'' Version         =   6
+   tabindex        =   64
+End
+Begin GroupBox frame3
+'' Version         =   6
+   tabindex        =   65
+End
+Begin Label lcurrbal
+'' Version         =   6
+   tabindex        =   66
+End
+Begin SAFFloat ccurrbal
+'' Version         =   6
+   tabindex        =   67
+End
+Begin Label lfuturebal
+'' Version         =   6
+   tabindex        =   68
+End
+Begin SAFFloat cfuturebal
+'' Version         =   6
+   tabindex        =   69
+End
+Begin Label lAccrRev
+'' Version         =   6
+   tabindex        =   70
+End
+Begin SAFFloat cAccrRev
+'' Version         =   6
+   tabindex        =   71
+End
+Begin Label lopenord
+'' Version         =   6
+   tabindex        =   72
+End
+Begin SAFFloat copenord
+'' Version         =   6
+   tabindex        =   73
+End
+Begin Label lshipped
+'' Version         =   6
+   tabindex        =   74
+End
+Begin SAFFloat cshipped
+'' Version         =   6
+   tabindex        =   75
+End
+Begin Label Label1
+'' Version         =   6
+   tabindex        =   76
+End
+Begin SAFFloat FloatText1
+'' Version         =   6
+   tabindex        =   77
+End
+Begin Label LPastDue
+'' Version         =   6
+   tabindex        =   78
+End
+Begin SAFFloat cPastDue
+'' Version         =   6
+   tabindex        =   79
+End
+Begin Label llastinvcdate
+'' Version         =   6
+   tabindex        =   80
+End
+Begin DSLDate clastinvcdate
+'' Version         =   6
+   tabindex        =   81
+End
+Begin Label llastact
+'' Version         =   6
+   tabindex        =   82
+End
+Begin DSLDate clastactdate
+'' Version         =   6
+   tabindex        =   83
+End
+Begin GroupBox frame10
+'' Version         =   6
+   tabindex        =   112
+End
+Begin SAFCombo ctaxdflt
+'' Version         =   6
+   tabindex        =   113
+End
+Begin SAFMaskedText ctaxregnbr
+'' Version         =   6
+   tabindex        =   114
+End
+Begin SAFMaskedText ctaxlocid
+'' Version         =   6
+   tabindex        =   115
+End
+Begin SAFMaskedText ctaxid2
+'' Version         =   6
+   tabindex        =   117
+End
+Begin SAFMaskedText ctaxid3
+'' Version         =   6
+   tabindex        =   118
+End
+Begin SAFMaskedText ctaxid4
+'' Version         =   6
+   tabindex        =   119
+End
+Begin Label ltaxdflt
+'' Version         =   6
+   tabindex        =   120
+End
+Begin Label ltaxregnbr
+'' Version         =   6
+   tabindex        =   121
+End
+Begin Label ltaxlocid
+'' Version         =   6
+   tabindex        =   122
+End
+Begin Label ltaxid2
+'' Version         =   6
+   tabindex        =   124
+End
+Begin Label ltaxid3
+'' Version         =   6
+   tabindex        =   125
+End
+Begin Label ltaxid4
+'' Version         =   6
+   tabindex        =   126
+End
+Begin GroupBox Frame6
+'' Version         =   6
+   tabindex        =   127
+End
+Begin SAFMaskedText ccuryid
+'' Version         =   6
+   tabindex        =   128
+End
+Begin SAFMaskedText ccuryratetype
+'' Version         =   6
+   tabindex        =   129
+End
+Begin SAFMaskedText ccuryprclvlrttp
+'' Version         =   6
+   tabindex        =   130
+End
+Begin Label lcuryid
+'' Version         =   6
+   tabindex        =   131
+End
+Begin Label lcuryratetype
+'' Version         =   6
+   tabindex        =   132
+End
+Begin Label Label3
+'' Version         =   6
+   tabindex        =   133
+End
+Begin GroupBox frame20
+'' Version         =   6
+   tabindex        =   134
+End
+Begin SAFMaskedText caracct
+'' Version         =   6
+   tabindex        =   135
+End
+Begin SAFMaskedText carsub
+'' Version         =   6
+   tabindex        =   136
+End
+Begin SAFMaskedText cslsacct
+'' Version         =   6
+   tabindex        =   137
+End
+Begin SAFMaskedText cslssub
+'' Version         =   6
+   tabindex        =   138
+End
+Begin SAFMaskedText cprepayacct
+'' Version         =   6
+   tabindex        =   139
+End
+Begin SAFMaskedText cprepaysub
+'' Version         =   6
+   tabindex        =   140
+End
+Begin Label laracctsub
+'' Version         =   6
+   tabindex        =   141
+End
+Begin Label laracct
+'' Version         =   6
+   tabindex        =   142
+End
+Begin Label daracct
+'' Version         =   6
+   tabindex        =   143
+End
+Begin Label larsub
+'' Version         =   6
+   tabindex        =   144
+End
+Begin Label darsub
+'' Version         =   6
+   tabindex        =   145
+End
+Begin Label lsalesacctsub
+'' Version         =   6
+   tabindex        =   146
+End
+Begin Label lsalesacct
+'' Version         =   6
+   tabindex        =   147
+End
+Begin Label dslsacct
+'' Version         =   6
+   tabindex        =   148
+End
+Begin Label lsalessub
+'' Version         =   6
+   tabindex        =   149
+End
+Begin Label dslssub
+'' Version         =   6
+   tabindex        =   150
+End
+Begin Label lprepayacctsub
+'' Version         =   6
+   tabindex        =   151
+End
+Begin Label lprepayacct
+'' Version         =   6
+   tabindex        =   152
+End
+Begin Label dprepayacct
+'' Version         =   6
+   tabindex        =   153
+End
+Begin Label lprepaysub
+'' Version         =   6
+   tabindex        =   154
+End
+Begin Label dprepaysub
+'' Version         =   6
+   tabindex        =   155
+End
+Begin GroupBox frame11
+'' Version         =   6
+   tabindex        =   156
+End
+Begin SAFCheck cprtstmt
+'' Version         =   6
+   tabindex        =   157
+End
+Begin SAFCombo cstmttype
+'' Version         =   6
+   tabindex        =   158
+End
+Begin SAFCheck cdunmsg
+'' Version         =   6
+   tabindex        =   159
+End
+Begin SAFCheck capplfinchrg
+'' Version         =   6
+   tabindex        =   160
+End
+Begin SAFMaskedText cstmtcycleid
+'' Version         =   6
+   tabindex        =   161
+End
+Begin DSLDate claststmtdate
+'' Version         =   6
+   tabindex        =   162
+End
+Begin SAFCheck cautoapply
+'' Version         =   6
+   tabindex        =   163
+End
+Begin Label lstmttype
+'' Version         =   6
+   tabindex        =   164
+End
+Begin Label lstmtcycleid
+'' Version         =   6
+   tabindex        =   165
+End
+Begin Label llaststmtdate
+'' Version         =   6
+   tabindex        =   166
+End
+Begin GroupBox frame13
+'' Version         =   6
+   tabindex        =   167
+End
+Begin SAFMaskedText ccardnbr
+'' Version         =   6
+   tabindex        =   168
+End
+Begin SAFMaskedText ccardhldrname
+'' Version         =   6
+   tabindex        =   169
+End
+Begin SAFCombo ccardtype
+'' Version         =   6
+   tabindex        =   170
+End
+Begin SAFMaskedText cexp
+'' Version         =   6
+   tabindex        =   171
+End
+Begin Label lcardnbr
+'' Version         =   6
+   tabindex        =   172
+End
+Begin Label Label2
+'' Version         =   6
+   tabindex        =   173
+End
+Begin Label lcardtype
+'' Version         =   6
+   tabindex        =   174
+End
+Begin Label lcardexpdate
+'' Version         =   6
+   tabindex        =   175
+End
+Begin SAFMaskedText cterritory
+'' Version         =   6
+   tabindex        =   176
+End
+Begin SAFMaskedText cpernbr
+'' Version         =   6
+   tabindex        =   177
+End
+Begin SAFMaskedText cslsperid
+'' Version         =   6
+   tabindex        =   178
+End
+Begin Label dslsperid
+'' Version         =   6
+   height          =   17
+   left            =   539
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   179
+   top             =   58
+   width           =   176
+End
+Begin Label lterritory
+'' Version         =   6
+   tabindex        =   180
+End
+Begin Label lpernbr
+'' Version         =   6
+   tabindex        =   181
+End
+Begin Label lslsperid
+'' Version         =   6
+   height          =   13
+   left            =   360
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   182
+   top             =   57
+   width           =   57
+End
+Begin SAFCheck cDocPubCheck
+'' Version         =   6
+   tabindex        =   183
+End
+Begin GroupBox frame12
+'' Version         =   6
+   tabindex        =   183
+End
+Begin Label LSiteID
+'' Version         =   6
+   tabindex        =   184
+End
+Begin SAFMaskedText cSiteID
+'' Version         =   6
+   tabindex        =   185
+End
+Begin Label dPSiteId
+'' Version         =   6
+   tabindex        =   186
+End
+Begin Label dDfltShipToID
+'' Version         =   6
+   tabindex        =   188
+End
+Begin Label Ldfltbuyerid
+'' Version         =   6
+   tabindex        =   189
+End
+Begin SAFMaskedText cDfltbuyerid
+'' Version         =   6
+   tabindex        =   190
+End
+Begin Label dDfltbuyerid
+'' Version         =   6
+   tabindex        =   191
+End
+Begin Label lCertid
+'' Version         =   6
+   tabindex        =   192
+End
+Begin Label dCertId
+'' Version         =   6
+   tabindex        =   193
+End
+Begin SAFMaskedText cCertID
+'' Version         =   6
+   tabindex        =   194
+End
+Begin GroupBox Frame7
+'' Version         =   6
+   tabindex        =   195
+End
+Begin Label lshipcmplt
+'' Version         =   6
+   tabindex        =   196
+End
+Begin Label lcustfillpriority
+'' Version         =   6
+   tabindex        =   197
+End
+Begin Label lMinOrder
+'' Version         =   6
+   tabindex        =   198
+End
+Begin Label Lminwt
+'' Version         =   6
+   tabindex        =   199
+End
+Begin SAFCombo cshipcmplt
+'' Version         =   6
+   tabindex        =   200
+End
+Begin SAFFloat ccustfillpriority
+'' Version         =   6
+   tabindex        =   201
+End
+Begin SAFFloat cMinOrder
+'' Version         =   6
+   tabindex        =   202
+End
+Begin SAFFloat cMinWeight
+'' Version         =   6
+   tabindex        =   203
+End
+Begin SAFCheck csubstok
+'' Version         =   6
+   tabindex        =   204
+End
+Begin SAFCheck cBuyerReqd
+'' Version         =   6
+   tabindex        =   205
+End
+Begin SAFCheck cPOReqd
+'' Version         =   6
+   tabindex        =   206
+End
+Begin SAFCheck cCustItemReqd
+'' Version         =   6
+   tabindex        =   207
+End
+Begin Button Button_Salesperson
+'' Version         =   6
+   tabindex        =   208
+End
+Begin SAFCheck cConsInv
+'' Version         =   6
+   tabindex        =   209
+End
+Begin Button cmdConsAggLev
+'' Version         =   6
+   tabindex        =   210
+End
+Begin Label lCOGSAcctSubOM
+'' Version         =   6
+   tabindex        =   210
+End
+Begin Label lCOGSAcctOM
+'' Version         =   6
+   tabindex        =   211
+End
+Begin Label dCOGSAcctOM
+'' Version         =   6
+   tabindex        =   212
+End
+Begin Label lCOGSSubOM
+'' Version         =   6
+   tabindex        =   213
+End
+Begin Label dCOGSSubOM
+'' Version         =   6
+   tabindex        =   214
+End
+Begin Label lFrtAcctSubOM
+'' Version         =   6
+   tabindex        =   215
+End
+Begin Label lFrtAcctOM
+'' Version         =   6
+   tabindex        =   216
+End
+Begin Label dFrtAcctOM
+'' Version         =   6
+   tabindex        =   217
+End
+Begin Label lFrtSubOM
+'' Version         =   6
+   tabindex        =   218
+End
+Begin Label dFrtSubOM
+'' Version         =   6
+   tabindex        =   219
+End
+Begin Label lMiscAcctSubOM
+'' Version         =   6
+   tabindex        =   220
+End
+Begin Label lMiscAcctOM
+'' Version         =   6
+   tabindex        =   221
+End
+Begin Label dMiscAcctOM
+'' Version         =   6
+   tabindex        =   222
+End
+Begin Label lMiscSubOM
+'' Version         =   6
+   tabindex        =   223
+End
+Begin Label dMiscSubOM
+'' Version         =   6
+   tabindex        =   224
+End
+Begin Label lSalesAcctSubOM
+'' Version         =   6
+   tabindex        =   225
+End
+Begin Label lSalesAcctOM
+'' Version         =   6
+   tabindex        =   226
+End
+Begin Label dSlsAcctOM
+'' Version         =   6
+   tabindex        =   227
+End
+Begin Label lSalesSubOM
+'' Version         =   6
+   tabindex        =   228
+End
+Begin Label dSalesSubOM
+'' Version         =   6
+   tabindex        =   229
+End
+Begin Label lDiscAcctSubOM
+'' Version         =   6
+   tabindex        =   230
+End
+Begin Label lDiscAcctOM
+'' Version         =   6
+   tabindex        =   231
+End
+Begin Label dDiscAcctOM
+'' Version         =   6
+   tabindex        =   232
+End
+Begin Label lDiscSubOM
+'' Version         =   6
+   tabindex        =   233
+End
+Begin Label dDiscSubOM
+'' Version         =   6
+   tabindex        =   234
+End
+Begin SAFMaskedText cCOGSAcctOM
+'' Version         =   6
+   tabindex        =   235
+End
+Begin SAFMaskedText cCOGSSubOM
+'' Version         =   6
+   tabindex        =   236
+End
+Begin SAFMaskedText cFrtAcctOM
+'' Version         =   6
+   tabindex        =   237
+End
+Begin SAFMaskedText cFrtSubOM
+'' Version         =   6
+   tabindex        =   238
+End
+Begin SAFMaskedText cMiscAcctOM
+'' Version         =   6
+   tabindex        =   239
+End
+Begin SAFMaskedText cMiscSubOM
+'' Version         =   6
+   tabindex        =   240
+End
+Begin SAFMaskedText cSalesAcctOM
+'' Version         =   6
+   tabindex        =   241
+End
+Begin SAFMaskedText cSalesSubOM
+'' Version         =   6
+   tabindex        =   242
+End
+Begin SAFMaskedText cDiscAcctOM
+'' Version         =   6
+   tabindex        =   243
+End
+Begin SAFMaskedText cDiscSubOM
+'' Version         =   6
+   tabindex        =   244
+End
+Begin Label lAccruedRevenue
+'' Version         =   6
+   tabindex        =   245
+End
+Begin Label lAccrRevAcctOM
+'' Version         =   6
+   tabindex        =   246
+End
+Begin SAFMaskedText cAccrRevAcctOM
+'' Version         =   6
+   tabindex        =   247
+End
+Begin Label dAccrRevAcctOM
+'' Version         =   6
+   tabindex        =   248
+End
+Begin Label lAccrRevSubOM
+'' Version         =   6
+   tabindex        =   249
+End
+Begin SAFMaskedText cAccrRevSubOM
+'' Version         =   6
+   tabindex        =   250
+End
+Begin Label dAccrRevSubOM
+'' Version         =   6
+   tabindex        =   251
+End
+Begin GroupBox GroupBox1
+'' Version         =   6
+   tabindex        =   257
+End
+Begin Label ldefault
+'' Version         =   6
+   tabindex        =   257
+End
+Begin Label lblFileTypeList
+'' Version         =   6
+   tabindex        =   258
+End
+Begin Label lDocEDDType
+'' Version         =   6
+   tabindex        =   258
+End
+Begin Label lblFileTypeList
+   Index           =   1
+'' Version         =   6
+   tabindex        =   259
+End
+Begin SAFCombo cDocEDDType
+'' Version         =   6
+   tabindex        =   259
+End
+Begin SAFCheck cEDD
+'' Version         =   6
+   tabindex        =   260
+End
+Begin Label lShipToID
+'' Version         =   6
+   tabindex        =   261
+End
+Begin SAFMaskedText cShipToID
+'' Version         =   6
+   tabindex        =   262
+End
+Begin Label lDelMeth_0
+'' Version         =   6
+   tabindex        =   263
+End
+Begin SAFCombo CDeliveryMethod
+'' Version         =   6
+   tabindex        =   264
+End
+Begin Label lDeliveryPrioirty
+'' Version         =   6
+   tabindex        =   265
+End
+Begin SAFCombo cDeliveryPriority
+'' Version         =   6
+   tabindex        =   266
+End
+Begin Label lReceiverMailAddress
+'' Version         =   6
+   tabindex        =   267
+End
+Begin SAFMaskedText cRequestorEmail
+'' Version         =   6
+   tabindex        =   268
+End
+Begin Label lSenderEmail
+'' Version         =   6
+   tabindex        =   269
+End
+Begin SAFMaskedText cSenderEmail
+'' Version         =   6
+   tabindex        =   270
+End
+Begin Label lFileType
+'' Version         =   6
+   tabindex        =   271
+End
+Begin SAF.SAFMaskedText xcMetodoDePago
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.metododepago";2950;0"
+   heading         =   "xcMetodoDePago"
+   height          =   21
+   left            =   15
+   level           =   "---"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   27
+   top             =   380.000000
+   visible         =   TRUE
+   width           =   161
+End
+Begin SAF.SAFMaskedText xcNumeroDeCuenta
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.numerodecuenta";4322;0"
+   heading         =   "xcNumeroDeCuenta"
+   height          =   21
+   left            =   196.000000
+   level           =   "---"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   28
+   top             =   380.000000
+   visible         =   TRUE
+   width           =   161.000000
+End
+Begin SAF.SAFMaskedText xcTerms
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxfesoaddress.terms";5300;0"
+   heading         =   "xcTerms"
+   height          =   25
+   left            =   740
+   level           =   "---"
+   mask            =   "xx"
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   939
+   tabstop         =   FALSE
+   top             =   29
+   visible         =   FALSE
+   width           =   24
+End
+Begin SAFTools.SAFLabel xlMetodoDePago
+'' Created         =   True
+'' Version         =   6
+   caption         =   "M√©todo de Pago:"
+   height          =   16.000000
+   left            =   15.000000
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   940
+   top             =   364.000000
+   visible         =   TRUE
+   width           =   112
+End
+Begin SAFTools.SAFLabel xlNumeroDeCuenta
+'' Created         =   True
+'' Version         =   6
+   caption         =   "N√∫mero de Cuenta:"
+   height          =   16.000000
+   left            =   195
+'' parent          =   "frame1"
+'' parentform      =   "Form1"
+   tabindex        =   941
+   top             =   364.000000
+   visible         =   TRUE
+   width           =   128
+End
+Begin NotesAttachmentsButton NoteButton0
+'' Version         =   6
+   tabindex        =   953
+End
+Begin NotesAttachmentsButton NoteButton4
+'' Version         =   6
+   tabindex        =   955
+End
+Begin SAF.SAFMaskedText xcBatNbr
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bardoc.batnbr";204;0"
+   heading         =   "Lote"
+   height          =   25
+   left            =   614
+   level           =   "2"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "frame17"
+'' parentform      =   "f0826004"
+   tabindex        =   53
+   top             =   89
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFMaskedText crefnbr
+'' Version         =   6
+   tabindex        =   54
+End
+Begin DSLDate cdocdate
+'' Version         =   6
+   tabindex        =   55
+End
+Begin SAFCombo cdoctype
+'' Version         =   6
+   tabindex        =   56
+End
+Begin SAFFloat corigdocamt
+'' Version         =   6
+   tabindex        =   57
+End
+Begin SAFFloat cdocbal
+'' Version         =   6
+   tabindex        =   58
+End
+Begin SAFFloat ccurybal
+'' Version         =   6
+   tabindex        =   59
+End
+Begin SAFFloat cdiscbal
+'' Version         =   6
+   tabindex        =   60
+End
+Begin SAFMaskedText cordnbr
+'' Version         =   6
+   tabindex        =   61
+End
+Begin SAFMaskedText ccustordnbr
+'' Version         =   6
+   tabindex        =   62
+End
+Begin SAFMaskedText cmasterdocnbr
+'' Version         =   6
+   tabindex        =   63
+End
+Begin SAFMaskedText cdoccuryid
+'' Version         =   6
+   tabindex        =   64
+End
+Begin SAFFloat ccuryrgol
+'' Version         =   6
+   tabindex        =   65
+End
+Begin SAFMaskedText cperpost
+'' Version         =   6
+   tabindex        =   66
+End
+Begin SAFInteger cinstallnbr
+'' Version         =   6
+   tabindex        =   67
+End
+Begin SAFGrid Spread1
+'' Version         =   6
+   tabindex        =   68
+End
+Begin Label lTo
+'' Version         =   6
+   tabindex        =   69
+End
+Begin Label lOver
+'' Version         =   6
+   tabindex        =   70
+End
+Begin Label lpastdue1
+'' Version         =   6
+   tabindex        =   76
+End
+Begin NotesAttachmentsButton NoteButton2
+'' Version         =   6
+   tabindex        =   77
+End
+Begin GroupBox frame17
+'' Version         =   6
+   height          =   177
+   left            =   0
+   top             =   256
+   width           =   761
+End
+Begin DSLMaskedText xcCustomerCRM
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xcCustomerCRM"
+   enabled         =   TRUE
+   fieldname       =   ""bcustomer.user5";2940;0"
+   heading         =   "Cliente Padre CRM"
+   height          =   25
+   left            =   114
+   level           =   "0"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "frame4"
+'' parentform      =   "Form1"
+   pv              =   ""CRMCustomerAll","
+   tabindex        =   942
+   top             =   203
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFTools.SAFLabel Label4
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Corporativo:"
+   height          =   17
+   left            =   363
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   946
+   top             =   85
+   visible         =   TRUE
+   width           =   70
+End
+Begin DSLMaskedText xClienteCRM
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xClienteCRM"
+   enabled         =   TRUE
+   fieldname       =   ""bcustomer.user1";2804;0"
+   heading         =   ""
+   height          =   20
+   left            =   456
+   level           =   "0"
+   mask            =   "999999"
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   pv              =   ""xCorporative_All","
+   tabindex        =   947
+   top             =   83
+   visible         =   TRUE
+   width           =   78
+End
+Begin SAFTools.SAFLabel Label5
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Subsidiaria:"
+   height          =   17
+   left            =   363
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   951
+   top             =   110.000000
+   visible         =   TRUE
+   width           =   71
+End
+Begin DSLMaskedText xuser2
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser2"
+   enabled         =   TRUE
+   fieldname       =   ""bcustomer.user2";2864;0"
+   heading         =   ""
+   height          =   21
+   left            =   456
+   level           =   "0"
+   mask            =   "999999"
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   pv              =   "xSubsidaryCRM_All"
+   tabindex        =   952
+   top             =   109
+   visible         =   TRUE
+   width           =   78.000000
+End
+
+' Begin Macro Text
+
+Source: 1
+' VBComponent: ThisScreen, ComponentType: 100 **********************************************************
+Option Explicit
+Dim sExistexCustomerAdic As String * 1
+
+Private Sub cclassid_Chk(ChkStrg As String, retval As Integer)
+' ID......: Check al capturar el cliente id
+' Concepto: FunciÛn que determina si los campos de Tipo de Cliente, Cond de Pago e Impuesto se habilitan y sus valores default
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       01/09/2013  Rodolfo GarcÌa  Al capturar el tipo de cliente verifica, si viene de un cliente nuevo pone los valores default del tipo de cliente CONTADO,
+'                                       en caso contrario busca el valor capturado para poner los valores correspondientes.
+
+'---- INICIO 001
+    Dim sSql As String
+    If serr_custclass = 0 Then
+        sivMyApp.Controls("cTerms").Properties("Enabled") = True
+        sivMyApp.Controls("cTerms").value = bCustClass.Terms
+        sivMyApp.Controls("cTerms").Properties("Enabled") = False
+
+        sivMyApp.Controls("ctaxid1").Properties("Enabled") = True
+        sivMyApp.Controls("ctaxid1").value = bCustClass.User6
+        sivMyApp.Controls("ctaxid1").Properties("Enabled") = False
+    ElseIf serr_custclass = 123 Then
+        sSql = "Select * From CustClass where classid = " + SParm(ChkStrg)
+        serr_custclass = SqlFetch1(csr_custclass, sSql, bCustClass, LenB(bCustClass))
+        If serr_custclass = 0 Then
+            sivMyApp.Controls("cTerms").value = bCustClass.Terms
+            sivMyApp.Controls("ctaxid1").value = bCustClass.User6
+            End If
+        serr_custclass = 123
+    End If
+'---- FIN 001
+End Sub
+Private Sub cphone_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillphone").value = Trim(ChkStrg)
+    sivMyApp.Controls("cBillfax").value = Trim(ChkStrg)
+End Sub
+
+Private Sub cterms_Chk(ChkStrg As String, retval As Integer)
+If Trim(sivMyApp.Controls("ccustid").value) <> "" Then
+    sivMyApp.Controls("xcTerms").value = Trim(ChkStrg)
+End If
+End Sub
+Private Sub ccustid_Chk(ChkStrg As String, retval As Integer)
+' ID......: Check al capturar el cliente id
+' Concepto: FunciÛn que determina si los campos de Tipo de Cliente, Cond de Pago e Impuesto se habilitan y sus valores default
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       01/09/2013  Rodolfo GarcÌa  Al capturar el cliente verifica si el usuario pertenece a una sucursal, si pertenece, verifica si el cliente existe,
+'                                       si no existe verifica que sus iniciales correspondan con la sucursal del usuario y agrega el tipo de cliente default CONTADO
+'                                       Manda a llamar el check del tipo de cliente al terminar (solo para usuarios con sucursal asignada y clientes nuevos)
+
+'---- INICIO 001
+    Dim sSql As String
+    Dim sInicialesCte As String
+    Dim sTipoCliente As String
+    Dim sSucursal As String
+    Dim sUsuario As String
+    
+    ' ID......: Chk Cliente
+' Concepto: Evento cuando se captura ID cliente
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       12/06/2007  Rodolfo GarcÌa  AgrupaciÛn de Clientes por Grupo
+'                                       Este CHK manda a llamar una funciÛn la cual pone en una etiqueta la descripciÛn que tiene en este momento
+'                                       asignado el grupo del Cliente siendo este el campo Customer.PriceClassId. Este CHK deber· ser llamado cada vez que se abra un cliente existente.
+' 002       09/07/2007  Rodolfo GarcÌa  Se agregÛ al Chk del cliente un query que se ejecuta hacia la tabla adicional xCustomerAdic, si el query regresa registros significa que si existe
+'                                       un cliente con ese n˙mero en xCustomerAdic se activar· la variable global con S, en caso contrario se activa con N creando el buffer y asignando al nuevo buffer el id del cliente capturado
+' 003       10/06/2008  Rodolfo GarcÌa  Se manda a llamar la funciÛn fEtiquetaEstadoFacturacion y fEtiquetaPaisFacturacion en el momento en que alguien captura un valor en el campo.
+'                                       Este CHK manda a llamar una funciÛn la cual pone en una etiqueta la descripciÛn que tiene en este momento
+
+    'INICIO '002
+    '----------------------
+    sSql = "Select * from xfesoaddress where custid = " + SParm(ChkStrg)
+    serr_xFESOAddress = SqlFetch1(CSR_xFESOAddress, sSql, bxfesoaddress, LenB(bxfesoaddress))
+    If serr_xFESOAddress = 0 Then 'Valida si el FETCH regresÛ valores
+        sExistexCustomerAdic = "S" 'Si el FETCH regresÛ valores activa la bandera con S (SI)
+    Else
+        bxfesoaddress = nxfesoaddress 'Asigna nuevo buffer al buffer en que se hizo la lectura
+        bxfesoaddress.custid = ChkStrg 'Al buffer de lectura/escritura se le asigna el id del cliente
+        sExistexCustomerAdic = "N" 'Si el FETCH regresÛ valores activa la bandera con S (SI)
+    End If
+    Call DispFields("Form1", "") 'Se refrescan los campos (en teorÌa solo para cuando si existen datos del cliente adicional)
+    '----------------------
+    'FIN '002
+    
+    serr_custclass = 123
+    If Trim(ChkStrg) <> "" Then
+        Call GetBufferValue("bpes.UserId", sUsuario)
+        sSql = "xsp_userrec_all " + SParm(sUsuario)
+        serr_UserRec = SqlFetch1(csr_UserRec, sSql, bUserRec, LenB(bUserRec))
+        If serr_UserRec = 0 Then
+            If Trim(bUserRec.User1) <> "ALL" And Trim(bUserRec.User1) <> "" Then
+                If serr_xFESOAddress <> 0 Then
+                    sSql = "Select * From Territory Where Territory = " + SParm(bUserRec.User1)
+                    serr_Territory = SqlFetch1(csr_Territory, sSql, bTerritory, LenB(bTerritory))
+                    If serr_Territory = 0 Then
+                        If Left(Trim(ChkStrg), 2) <> Trim(bTerritory.User5) Then
+                            MessBox "Error, el cliente que quieres dar de alta es distinto a la sucursal a la que perteneces (" + Trim(bTerritory.User5) + ") favor de validar", MB_ICONEXCLAMATION, "Error cliente"
+                            retval = ErrNoMess
+                        Else
+                            sSql = "Select * From CustClass where user1 = '1' and User5 = " + SParm(bUserRec.User1)
+                            serr_custclass = SqlFetch1(csr_custclass, sSql, bCustClass, LenB(bCustClass))
+                            If serr_custclass = 0 Then
+                                sivMyApp.Controls("cClassID").Properties("Enabled") = True
+                                sivMyApp.Controls("cClassID").value = bCustClass.ClassId
+                                sivMyApp.Controls("cClassID").Properties("Enabled") = False
+                            Else
+                                sivMyApp.Controls("cClassID").Properties("Enabled") = True
+                                sivMyApp.Controls("cTerms").Properties("Enabled") = True
+                                sivMyApp.Controls("ctaxid1").Properties("Enabled") = True
+                            End If
+                        End If
+                    End If
+                End If
+                SSTab1.Tab = 1
+            Else
+                sivMyApp.Controls("cClassID").Properties("Enabled") = True
+                sivMyApp.Controls("cTerms").Properties("Enabled") = True
+                sivMyApp.Controls("ctaxid1").Properties("Enabled") = True
+            End If
+        Else
+            sivMyApp.Controls("cClassID").Properties("Enabled") = True
+            sivMyApp.Controls("cTerms").Properties("Enabled") = True
+            sivMyApp.Controls("ctaxid1").Properties("Enabled") = True
+        End If
+    End If
+End Sub
+
+
+Private Sub Form1_Display()
+' ID......: Display de pantalla de Clientes
+' Concepto: Cambios al formulario antes de cualquier check
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       09/09/2013  Rodolfo GarcÌa  Al ingresar a la pantalla de clientes debe validarse si el usuario pertenece a una sucursal o tiene privilegios para ALL.
+'                                       En caso que sea de una sucursal solo podr· modificar del cliente las notas (si los permisos de solomon asÌ lo permiten) si es ALL podr· modificar todo (IDEM a los permisos de SL)
+'---- INICIO 001
+
+    Dim sUsuario As String
+    Dim sSql As String
+    Call GetBufferValue("bpes.userid", sUsuario)
+    sSql = "xsp_userrec_all " + SParm(sUsuario)
+    serr_UserRec = SqlFetch1(csr_UserRec, sSql, bUserRec, LenB(bUserRec))
+    If serr_UserRec = 0 Then
+        If Trim(bUserRec.User1) = "ALL" Then
+            Call setprop("SSTab1", "TabEnabled(0)", True)
+            Call setprop("SSTab1", "TabEnabled(2)", True)
+            Call setprop("SSTab1", "TabEnabled(3)", True)
+            Call setprop("SSTab1", "TabEnabled(4)", True)
+            Call setprop("SSTab1", "TabEnabled(5)", True)
+            Call setprop("SSTab1", "TabEnabled(6)", True)
+            sivMyApp.Controls("cclassid").Properties("Enabled") = True
+            sivMyApp.Controls("ctaxid1").Properties("Enabled") = True
+            sivMyApp.Controls("cstatus").Properties("Enabled") = True
+            sivMyApp.Controls("cTerms").Properties("Enabled") = True
+        Else
+            Call setprop("SSTab1", "TabEnabled(0)", False)
+            Call setprop("SSTab1", "TabEnabled(2)", False)
+            Call setprop("SSTab1", "TabEnabled(3)", False)
+            Call setprop("SSTab1", "TabEnabled(4)", False)
+            Call setprop("SSTab1", "TabEnabled(5)", False)
+            Call setprop("SSTab1", "TabEnabled(6)", False)
+            sivMyApp.Controls("cclassid").Properties("Enabled") = False
+            sivMyApp.Controls("cstatus").Properties("Enabled") = False
+            sivMyApp.Controls("ctaxid1").Properties("Enabled") = False
+            sivMyApp.Controls("cTerms").Properties("Enabled") = False
+        End If
+    End If
+'---- FIN 001
+End Sub
+
+Private Sub Form1_Load()
+
+' ID......: Load de pantalla de Clientes
+' Concepto: Load de tablas adicionales
+' BIT√ÅCORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI√ìN
+' 001       09/09/2013  Rodolfo Garc√≠a  Tabla adicional vs_userrec para verificar si el usuario tiene permisos de modificaci√≥n a la pantalla o no mediante adaptaci√≥n
+'                                       Alta de tabla Tipo de Cliente (custclass) y Usuarios. Alta de cursor adicional para doble consulta a xfesoddress.
+
+'---- INICIO 001
+    Call VBA_SetAddr("vs_userrec", bUserRec, nUserRec, LenB(bUserRec))
+    Call SqlCursor(csr_UserRec, NOLEVEL)
+    
+    Call VBA_SetAddr("bxFESOAddress", bxfesoaddress, nxfesoaddress, LenB(bxfesoaddress))
+    Call SqlCursor(CSR_xFESOAddress, NOLEVEL + SqlUpdate)
+    
+     Call SqlCursor(csr1_xfesoaddres, NOLEVEL)
+     
+      Call VBA_SetAddr("custclass", bCustClass, nCustClass, LenB(bCustClass))
+    Call SqlCursor(csr_custclass, NOLEVEL)
+    
+'---- FIN 001
+End Sub
+
+Private Sub Update1_OnDelete(ByVal Level As Integer, retval As Integer)
+' ID......: Fin de evento al eliminar registro
+' Concepto: Evento al eliminar registro (Se elimine o no al momento de validar si tiene informaciÛn capturada
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       07/07/2007  Rodolfo GarcÌa  Al eliminar registros en xCustomerAdic (Tabla Adicional de Clientes). Se agregÛ una validaciÛn en donde si el nivel que se guarda es el 0 (primero) valide mediante un procedure creado para esto que no existan registros del cliente capturados en Dynamics SL
+'                                       El procedure, en caso de que exista alg˙n registro, regresa el n˙mero de registros encontrados, en caso contrario no regresa nada
+'                                       La validaciÛn es, si no regresa nada entonces borra el registro, en caso contrario no borres.
+'                                       Este cambio es debido a que cuando se manda a eliminar un registro, este ingresa a este evento y borra aun cuando despuÈs Dynamics SL revisa y detiene la eliminaciÛn debido a que existen registros en uso de ese cliente, sin mandar evento alguno.
+
+'INICIO 001
+'----------------------
+    If Level = 0 Then 'Valida que sea solo ejecutado en el nivel 0
+        serr1 = SqlFetch1(csr_xSP_ClienteUso, "xSP_ClienteUso " + SParm(sivMyApp.Controls("cCustId")), bxSP_ClienteUSO, LenB(bxSP_ClienteUSO)) 'Manda a llamar el procedimiento xSP_ClienteUso con el cliente que fue capturado
+        If serr_xSP_ClienteUso = 0 Then 'Si el procedure no regresa valor, significa que no encontrÛ registros usados por lo que se puede eliminar sin problema. Si este IF no existiera, Dynamics SL borrarÌa sin importar si existen o no registros de esos clientes capturados eliminando los datos adicionales mas no el cliente capturado.
+            If bxSP_ClienteUSO.CuentaRegistro = 0 Then
+                Call TranBeg(True) 'Inicia la transacciÛn
+                    serr1 = SDelete(CSR_xFESOAddress, "xFESOAddress") 'Elimina el registro del buffer de lectura en el CHK del cliente
+                Call TranEnd 'Termina la transacciÛn
+            End If
+        End If
+    End If
+'----------------------
+'FIN '001
+End Sub
+
+
+
+Private Sub Update1_OnInsert(ByVal Level As Integer, retval As Integer)
+' ID......: Fin de evento al Insertar regitro NUEVO
+' Concepto: Evento al INSERTAR registro NUEVO
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       09/07/2007  Rodolfo GarcÌa  Al insertar registros en xFESOAddress (Tabla Adicional de Clientes). Revisa si el nivel es el cero (primero) y marca al sistema como no existente ya que este evento solo se ejecuta cuando se
+'                                       inserta un nuevo registro de clientes, por lo que por lÛgica tampoco deberÌa existir datos en la tabla adicional (xcustomeradic)
+
+'INICIO 001
+'----------------------
+    If Level = 0 Then 'Valida el nivel que sea cero
+        sExistexCustomerAdic = "N" 'Marca que no existen registros para la tabla adicional
+        Call DispFields("Form1", "") 'Refresca la pantalla con los datos capturados
+    End If
+'----------------------
+'FIN '001
+End Sub
+
+
+
+Private Sub xcApellidoMaterno_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaRazonSocial
+End Sub
+
+Private Sub xcApellidoPaterno_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaRazonSocial
+End Sub
+
+Private Sub xcCalle_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBilladdr1").value = Left(ChkStrg, 30)
+    sivMyApp.Controls("caddr1").value = Left(ChkStrg, 30)
+End Sub
+
+Private Sub xcCodigoPostal_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillzip").value = Trim(ChkStrg)
+    sivMyApp.Controls("czip").value = Trim(ChkStrg)
+End Sub
+
+Private Sub xcColonia_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaAddr2
+End Sub
+
+Private Sub xcEstado_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillstate").value = Left(ChkStrg, 3)
+    sivMyApp.Controls("cstate").value = Left(ChkStrg, 3)
+End Sub
+
+Private Sub xcMunicipio_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillcity").value = Left(ChkStrg, 30)
+    sivMyApp.Controls("ccity").value = Left(ChkStrg, 30)
+End Sub
+
+Private Sub xcNoExterior_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaAddr2
+End Sub
+Public Function fnActualizaRazonSocial()
+    Dim sAppellidoPaterno As String
+    Dim sAppellidoMaterno As String
+    Dim sNombre As String
+    
+    sAppellidoPaterno = sivMyApp.Controls("xcApellidoPaterno").value
+    sAppellidoMaterno = sivMyApp.Controls("xcApellidoMaterno").value
+    sNombre = sivMyApp.Controls("xcNombre").value
+    sivMyApp.Controls("xcRazonSocial").Properties("Enabled") = True
+    sivMyApp.Controls("xcRazonSocial").value = Trim(sNombre) + " " + Trim(sAppellidoPaterno) + " " + Trim(sAppellidoMaterno)
+    sivMyApp.Controls("xcRazonSocial").Properties("Enabled") = False
+End Function
+Public Function fnActualizaAddr2()
+    Dim sColonia As String
+    Dim sNoExterior As String
+    Dim sNoInterior As String
+    sColonia = sivMyApp.Controls("xcColonia").value
+    sNoExterior = sivMyApp.Controls("xcNoExterior").value
+    sNoInterior = sivMyApp.Controls("xcNoInterior").value
+    sivMyApp.Controls("cBilladdr2").value = Left(Trim(sColonia) + Trim(sNoExterior) + Trim(sNoInterior), 30)
+    sivMyApp.Controls("caddr2").value = Left(Trim(sColonia) + Trim(sNoExterior) + Trim(sNoInterior), 30)
+End Function
+
+Private Sub xcNoInterior_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaAddr2
+End Sub
+
+Private Sub xcNombre_Chk(ChkStrg As String, retval As Integer)
+    fnActualizaRazonSocial
+End Sub
+
+Private Sub xcPais_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillcountry").value = Left(ChkStrg, 3)
+    sivMyApp.Controls("ccountry").value = Left(ChkStrg, 3)
+End Sub
+
+Private Sub xcRazonSocial_Chk(ChkStrg As String, retval As Integer)
+    sivMyApp.Controls("cBillname").value = Left(ChkStrg, 30)
+    sivMyApp.Controls("cName").Properties("Enabled") = True
+    sivMyApp.Controls("cName").value = Left(ChkStrg, 30)
+    sivMyApp.Controls("cName").Properties("Enabled") = False
+End Sub
+
+Private Sub xcRFC_Chk(ChkStrg As String, retval As Integer)
+' ID......: Check al capturar el RFC del cliente
+' Concepto: FunciÛn que valida si existe ya un RFC dado de alta dentro de la tabla de clientes
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       12/05/2013  Rodolfo GarcÌa  Al capturar el RFC validar· dentro de la pantalla de clientes adicional xFESoaddress que no exista otro cliente con ese RFC.
+'                                       En caso de existir mandar· una alerta con el Cliente Id y nombre
+
+'---- INICIO 001
+    If Trim(ChkStrg) <> "XAXX010101000" Then
+        Dim sSql As String
+        sSql = "Select * from xfesoaddress where rfc = " + SParm(ChkStrg)
+        serr1_xfesoaddres = SqlFetch1(csr1_xfesoaddres, sSql, bxfesoaddress1, LenB(bxfesoaddress1))
+        If serr1_xfesoaddres = 0 Then
+            MessBox "El RFC que est·s dando de alta ya le pertenece al cliente " + SParm(Trim(bxfesoaddress.custid) + " - " + Trim(bxfesoaddress.nombre)), MB_ICONINFORMATION, "RFC duplicado"
+        End If
+        sivMyApp.Controls("ctaxlocid").value = ChkStrg
+    End If
+'---- FIN 001
+End Sub
+
+Private Sub xcTipoPago_Chk(ChkStrg As String, retval As Integer)
+    If Trim(ChkStrg) = "F" Then
+        sivMyApp.Controls("xcRazonSocial").Properties("Enabled") = False
+        sivMyApp.Controls("xcApellidoMaterno").Properties("Enabled") = True
+        sivMyApp.Controls("xcApellidoPaterno").Properties("Enabled") = True
+        sivMyApp.Controls("xcNombre").Properties("Enabled") = True
+    ElseIf Trim(ChkStrg) = "M" Or Trim(ChkStrg) = "E" Then
+        sivMyApp.Controls("xcRazonSocial").Properties("Enabled") = True
+        sivMyApp.Controls("xcApellidoMaterno").Properties("Enabled") = False
+        sivMyApp.Controls("xcApellidoPaterno").Properties("Enabled") = False
+        sivMyApp.Controls("xcNombre").Properties("Enabled") = False
+    End If
+End Sub
+
+Private Sub Update1_OnUpdate(ByVal Level As Integer, ByVal InsertFlg As Integer, retval As Integer)
+' ID......: Fin de evento al actualizar
+' Concepto: Evento al actualizar (Actualiza registro o finalizar registro ya existente)
+' BIT¡CORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACI”N
+' 001       09/07/2007  Rodolfo GarcÌa  Al insertar registros en xFESOAddress (Tabla Adicional de Clientes). Se agregÛ que validara el nivel para que se ejecutar· solo en el nivel cero y valida la variable global. Si si existe entonces manda a llamar funciÛn de UPDATE
+'                                       En caso contrario manda a llamar a INSERT y actualiza la variable para que cualquier cambio sea UPDATE no INSERT.
+
+'INICIO 001
+'----------------------
+    If Level = 0 Then 'Valida el nivel que sea cero (primero)
+        If sExistexCustomerAdic = "S" Then 'Si existe ya registro en la tabla adicional entonces solamente se actualizar·
+            Call SUpdate1(CSR_xFESOAddress, "xFESOAddress", bxfesoaddress, LenB(bxfesoaddress)) 'FunciÛn para actualizar registro del cliente
+        Else 'Si no existe registro en la tabla adicional entonces manda a INSERT
+            Call SInsert1(CSR_xFESOAddress, "xFESOAddress", bxfesoaddress, LenB(bxfesoaddress)) 'FunciÛn de INSERT de los registros
+            sExistexCustomerAdic = "S" 'Actualiza variable Global como ya insertado por lo que nuevos cambios son ACTUALIZADOS
+        End If
+    End If
+'----------------------
+'FIN '001
+End Sub
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: TerritoryDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "TerritoryDH"
+Option Explicit
+ 
+Type Territory
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    Descr                           As String * 30
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    NoteID                          As Long
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    Territory                       As String * 10
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+End Type
+ 
+Public bTerritory As Territory, nTerritory As Territory
+Public csr_Territory As Integer, serr_Territory As Integer
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: ClienteUSODH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "ClienteUSODH"
+Type xSP_ClienteUSO
+    CuentaRegistro As Integer
+End Type
+Global bxSP_ClienteUSO As xSP_ClienteUSO, nxSP_ClienteUSO As xSP_ClienteUSO
+Global serr_xSP_ClienteUso As Integer, csr_xSP_ClienteUso As Integer
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: AcctClassDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "AcctClassDH"
+Option Explicit
+ 
+Type AcctClass
+    ClassId                         As String * 10
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    Descr                           As String * 30
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    NoteID                          As Long
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+End Type
+ 
+Public bAcctClass As AcctClass, nAcctClass As AcctClass
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: CustClassDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "CustClassDH"
+Option Explicit
+ 
+Type CustClass
+    ARAcct                          As String * 10
+    ARSub                           As String * 24
+    ClassId                         As String * 6
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    Descr                           As String * 30
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    NoteID                          As Long
+    PrcLvlID                        As String * 10
+    PrePayAcct                      As String * 10
+    PrePaySub                       As String * 24
+    PriceClass                      As String * 6
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    SlsAcct                         As String * 10
+    SlsSub                          As String * 24
+    Terms                           As String * 2
+    TradeDisc                       As Double
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+End Type
+ 
+Public bCustClass As CustClass, nCustClass As CustClass
+Public csr_custclass As Integer, serr_custclass As Integer
+
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: UserRecDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "UserRecDH"
+Option Explicit
+ 
+Type UserRec
+    AlignFormGrid                   As Integer
+    AppServerUser                   As Integer
+    AutoDecimal                     As Integer
+    AutoTab                         As Integer
+    BrowserOnTop                    As Integer
+    CacheFavorite                   As Integer
+    CacheMenu                       As Integer
+
+    CodeOnTop                       As Integer
+    CodeFont                        As String * 32
+    CodeFontSize                    As Integer
+    CodeTabWidth                    As Integer
+    
+    'added by bezell
+    'CR: 208094
+    'Added this to allow the color of the required fields to be modifiable
+    'and savable
+    ColorPref                       As Long
+    ColorPrefPV                     As Long
+    CustomGrp                       As String * 30
+    DefaultUser                     As Integer
+    
+    EMailAddress                    As String * 255
+    EnterForTab                     As Integer
+    FormGridHeigth                  As Integer
+    FormGridWidth                   As Integer
+    HomePage                        As String * 255
+    IntLogon                        As Integer
+    LastDatabase                    As String * 20
+    Location                        As String * 60
+    MenuGroup                       As String * 47
+    OutputFileName                  As String * 8
+    OutputPath                      As String * 41
+    OutputRouting                   As String * 1
+    Password                        As String * 256
+    Phone                           As String * 30
+    PropertiesOnTop                 As Integer
+    RecType                         As String * 1
+    Role                            As Integer
+    S4Future01                      As String * 128
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    SaveSettingsOnExit              As Integer
+    ShowFormGrid                    As Integer
+    ShowGridLines                   As Integer
+    ShowGridRowNbrs                 As Integer
+    SQMOptIn                        As String * 1
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    UserId                          As String * 47
+    UserName                        As String * 30
+    WindowsUserAcct                 As String * 85
+End Type
+ 
+Public bUserRec As UserRec, nUserRec As UserRec
+Public csr_UserRec As Integer, serr_UserRec As Integer
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: xFESoaddressDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "xFESoaddressDH"
+Option Explicit
+Type xFESOAddress
+        Addenda                 As String * 60
+        ApellidoMaterno                 As String * 60
+        ApellidoPaterno                 As String * 60
+        Atencion                        As String * 255
+        Calle                   As String * 255
+        CiudadID                        As String * 10
+        ClassId                 As String * 6
+        CodigoPostal                    As String * 10
+        CodigoProveedor                 As String * 30
+        Colonia                 As String * 255
+        Crtd_DateTime                   As Sdate
+        Crtd_Prog                       As String * 8
+        Crtd_User                       As String * 47
+        CURP                    As String * 18
+        custid                  As String * 15
+        EMail                   As String * 255
+        EstadoCivil                     As String * 30
+        EstadoID                        As String * 10
+        Genero                  As String * 30
+        LUpd_DateTime                   As Sdate
+        LUpd_Prog                       As String * 8
+        LUpd_User                       As String * 47
+        MetodoDePago                    As String * 200
+        MunicipioID                     As String * 10
+        nombre                  As String * 90
+        NoteID                  As Long
+        NoExterior                      As String * 255
+        NoInterior                      As String * 128
+        NumeroDeCuenta                  As String * 200
+        Pais                    As String * 10
+        RazonSocial                     As String * 255
+        ShipToId                        As String * 10
+        Status                  As String * 1
+        rfc                     As String * 13
+        Terms                   As String * 2
+        Tipo                    As String * 10
+        Titulo                  As String * 30
+        User1                   As String * 10
+        User2                   As String * 10
+        User3                   As String * 60
+        User4                   As String * 60
+        User5                   As String * 255
+        User6                   As String * 255
+        User7                   As Double
+        User8                   As Double
+        User9                   As Sdate
+        User10                  As Sdate
+        User11                  As Long
+        User12                  As Long
+        xFuture01                       As String * 60
+        xFuture02                       As String * 60
+        xFuture03                       As Double
+        xFuture04                       As Double
+        xFuture05                       As Sdate
+        xFuture06                       As Sdate
+        xFuture07                       As Long
+        xFuture08                       As Long
+        xFuture09                       As String * 10
+        xFuture10                       As String * 10
+End Type
+Public bxfesoaddress As xFESOAddress, nxfesoaddress As xFESOAddress
+Public bxfesoaddress1 As xFESOAddress, nxfesoaddress1 As xFESOAddress
+Public CSR_xFESOAddress As Integer, serr_xFESOAddress As Integer
+Public csr1_xfesoaddres As Integer, serr1_xfesoaddres As Integer
+
+' End VBComponent **********************************************************
+
+
+
+' Reference: Name=VBA, Guid={000204EF-0000-0000-C000-000000000046}, Major=4, Minor=2
+' Reference: Name=SWIMAPI, Guid={F4B33A61-96B4-11CF-B04B-0020AFDCBD63}, Major=1, Minor=1
+' Reference: Name=stdole, Guid={00020430-0000-0000-C000-000000000046}, Major=2, Minor=0
+' Reference: Name=SWIMAPIEx, Guid={C97F43B1-4A73-11D3-BF6C-006008C7915A}, Major=1, Minor=1
+' Reference: Name=SolVBWrappedControlsLib, Guid={A88846F2-6638-11D3-8154-00104B2E8513}, Major=1, Minor=0
+
+' End Macro Text
+
+' End Customization

@@ -1,0 +1,183 @@
+
+
+' Begin Customization Screen: 0801000  Version: 6 Sequence: 300   Description: "A New All Users Customization" System Administrator: FALSE Secure: 55
+Begin Button btnOneTimeRcv
+'' Version         =   6
+   height          =   21
+   left            =   2
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466
+   width           =   146
+End
+Begin VB.Form Form1
+'' Version         =   6
+   height          =   561
+   left            =   277
+   top             =   89
+   width           =   800
+   windowstate     =   0
+End
+Begin Button cmdPublish
+'' Version         =   6
+   height          =   21
+   left            =   161
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466.000000
+   width           =   145
+End
+Begin SAFTools.SAFLabel Label1
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No Proyecto:"
+   height          =   17
+   left            =   266
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   tabindex        =   899
+   top             =   50
+   visible         =   TRUE
+   width           =   74
+End
+Begin DSLMaskedText ccustid
+'' Version         =   6
+   height          =   21
+   left            =   343
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   top             =   12
+   width           =   127
+End
+Begin Label lcustid
+'' Version         =   6
+   height          =   13
+   left            =   264
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   top             =   12
+   width           =   60
+End
+Begin Button Button_drdwn
+'' Version         =   6
+   height          =   21
+   left            =   472
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   top             =   9
+   width           =   25
+End
+Begin Label dcustid
+'' Version         =   6
+   height          =   14
+   left            =   344
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   top             =   34
+   width           =   188
+End
+Begin DSLMaskedText xuser1
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser1"
+   enabled         =   TRUE
+   fieldname       =   ""bardoc.s4future01";1014;0"
+   heading         =   ""
+   height          =   21.000000
+   left            =   343
+   level           =   "1"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "frdocument"
+'' parentform      =   "Form1"
+   pv              =   ""ProyectosCRM_all","
+   tabindex        =   901
+   top             =   50
+   visible         =   TRUE
+   width           =   150.000000
+End
+Begin TabControl SSTab1
+'' Version         =   6
+   height          =   133
+   left            =   8
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   186
+   width           =   769
+End
+Begin Button cmdSendElec_Click
+'' Version         =   6
+   height          =   21
+   left            =   336
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466.000000
+   width           =   84
+End
+Begin Button cmdElecInquiry_Click
+'' Version         =   6
+   height          =   21
+   left            =   424
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466.000000
+   width           =   129
+End
+Begin Button cmdInvoicePreview
+'' Version         =   6
+   height          =   21
+   left            =   557
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466.000000
+   width           =   124
+End
+Begin Button Button_Tax
+'' Version         =   6
+   height          =   21
+   left            =   685
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   466.000000
+   width           =   80
+End
+Begin Label dacct
+'' Version         =   6
+   height          =   14
+   left            =   144
+'' parent          =   "frdetail"
+'' parentform      =   "Form1"
+   top             =   40
+   width           =   141
+End
+Begin GroupBox frdetail
+'' Version         =   6
+   height          =   137
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   320
+   width           =   793
+End
+Begin GroupBox frdocument
+'' Version         =   6
+   height          =   73
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   111
+   width           =   793
+End
+
+' Begin Macro Text
+
+Source: 1
+' Reference: Name=VBA, Guid={000204EF-0000-0000-C000-000000000046}, Major=4, Minor=2
+' Reference: Name=SWIMAPI, Guid={F4B33A61-96B4-11CF-B04B-0020AFDCBD63}, Major=1, Minor=1
+' Reference: Name=stdole, Guid={00020430-0000-0000-C000-000000000046}, Major=2, Minor=0
+' Reference: Name=SWIMAPIEx, Guid={C97F43B1-4A73-11D3-BF6C-006008C7915A}, Major=1, Minor=1
+' Reference: Name=SolVBWrappedControlsLib, Guid={A88846F2-6638-11D3-8154-00104B2E8513}, Major=1, Minor=0
+
+' End Macro Text
+
+' End Customization

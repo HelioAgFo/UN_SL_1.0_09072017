@@ -1,0 +1,1 @@
+"xCorporative_All","","","SELECT * FROM xCorporativeCRM where CustId like @parm1 order by CustId","Corporativos CRM","xCorporativeCRM.CustId;Corporativo ID;003;0","xCorporativeCRM.Name;Nombre;110;Customer1"

@@ -1,0 +1,1 @@
+"xSubsidaryCRM_All","","","SELECT * FROM xSubsidaryCRM where CustId like @parm1 order by CustId","Subsidiarias CRM","xSubsidaryCRM.CustId;Subsdidiaria ID;003;0","xSubsidaryCRM.Name;Nombre;110;Customer1"

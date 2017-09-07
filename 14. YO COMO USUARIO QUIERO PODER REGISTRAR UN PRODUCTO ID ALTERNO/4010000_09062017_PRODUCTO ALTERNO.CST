@@ -1,0 +1,2144 @@
+
+
+' Begin Customization Screen: 4010000  Version: 6 Sequence: 300   Description: "A New All Users Customization" System Administrator: FALSE Secure: 55
+Begin SAFMaskedText cinvtid_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   28
+   top             =   16
+   width           =   58
+End
+Begin SAFTools.SAFButton cmdFindItem
+'' Version         =   6
+   height          =   21
+   left            =   171
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   78
+   top             =   16
+   width           =   25
+End
+Begin SAFMaskedText csiteid_1
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   31
+   tabstop         =   FALSE
+   top             =   40
+   visible         =   FALSE
+   width           =   29
+End
+Begin SAFFloat cqtyord_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   36
+   top             =   64
+   width           =   51
+End
+Begin Label lcaption
+   Index           =   15
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   13
+   left            =   233
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   37
+   top             =   63
+   visible         =   FALSE
+   width           =   25
+End
+Begin SAFFloat ccuryslsprice_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   40
+   tabstop         =   FALSE
+   top             =   88
+   width           =   61
+End
+Begin SAFMaskedText cChainDisc_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   41
+   top             =   112
+   width           =   58
+End
+Begin SAFFloat cdiscpct_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   43
+   top             =   112
+   width           =   56
+End
+Begin SAFMaskedText cunitdesc_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   38
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFFloat ccurylistprice_1
+'' Version         =   6
+   height          =   21
+   left            =   304
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   49
+   tabstop         =   FALSE
+   top             =   88
+   visible         =   FALSE
+   width           =   63
+End
+Begin SAFFloat ccurycost_1
+'' Version         =   6
+   tabindex        =   58
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   29
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   57
+   visible         =   FALSE
+End
+Begin SAFFloat ccurytotord_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   45
+   tabstop         =   FALSE
+   top             =   136
+   width           =   77
+End
+Begin Label lcaption
+   Index           =   27
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   59
+   visible         =   FALSE
+End
+Begin SAFFloat ccurycommcost_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   60
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFFloat ccmmnpct_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   62
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcmmnpct_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   61
+   visible         =   FALSE
+End
+Begin SAFCheck cDropShip_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   81
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFCheck csample_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   82
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFMaskedText cdescr_1
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   29
+   tabstop         =   FALSE
+   top             =   232
+   width           =   247
+End
+Begin Label lcaption
+   Index           =   5
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   30
+   visible         =   FALSE
+End
+Begin Label dsiteid_1
+'' Version         =   6
+   tabindex        =   32
+End
+Begin Label lcaption
+   Index           =   6
+'' Version         =   6
+   tabindex        =   33
+End
+Begin Label lcaption
+   Index           =   72
+'' Version         =   6
+   tabindex        =   39
+End
+Begin Label lcaption
+   Index           =   82
+'' Version         =   6
+   tabindex        =   42
+End
+Begin Label lcaption
+   Index           =   76
+'' Version         =   6
+   tabindex        =   44
+End
+Begin Label lcaption
+   Index           =   7
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   46
+   visible         =   FALSE
+End
+Begin SAFDate creqdate_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   47
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   16
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   48
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   113
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   50
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   118
+'' Version         =   6
+   tabindex        =   51
+End
+Begin SAFFloat cqtyopenship_1
+'' Version         =   6
+   tabindex        =   52
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFFloat cqtytoinvoice_1
+'' Version         =   6
+   tabindex        =   53
+End
+Begin Label lcaption
+   Index           =   110
+'' Version         =   6
+   tabindex        =   54
+End
+Begin Label lcaption
+   Index           =   13
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   55
+   visible         =   FALSE
+End
+Begin SAFFloat cqtyship_1
+'' Version         =   6
+   tabindex        =   56
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   14
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   63
+   visible         =   FALSE
+End
+Begin SAFDate cpromdate_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   64
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   60
+'' Version         =   6
+   tabindex        =   65
+End
+Begin SAFMaskedText cbuildinvtid_0
+'' Version         =   6
+   tabindex        =   66
+End
+Begin Label dbuildinvtid_0
+'' Version         =   6
+   tabindex        =   67
+End
+Begin Label lcaption
+   Index           =   61
+'' Version         =   6
+   tabindex        =   68
+End
+Begin SAFMaskedText cbuildsiteid_0
+'' Version         =   6
+   tabindex        =   69
+End
+Begin Label dbuildsiteid_0
+'' Version         =   6
+   tabindex        =   70
+End
+Begin Label lcaption
+   Index           =   62
+'' Version         =   6
+   tabindex        =   71
+End
+Begin SAFFloat cbuildqty_0
+'' Version         =   6
+   tabindex        =   72
+End
+Begin Label lcaption
+   Index           =   63
+'' Version         =   6
+   tabindex        =   73
+End
+Begin SAFDate cbuildavaildate_0
+'' Version         =   6
+   tabindex        =   74
+End
+Begin Label lcaption
+   Index           =   64
+'' Version         =   6
+   tabindex        =   75
+End
+Begin SAFInteger cbuildassytime_0
+'' Version         =   6
+   tabindex        =   76
+End
+Begin SAFTools.SAFButton cmdCreateItems
+'' Version         =   6
+   tabindex        =   77
+End
+Begin SAFCheck ctaxable_1
+'' Version         =   6
+   tabindex        =   79
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFCheck csplitlots_1
+'' Version         =   6
+   height          =   21
+   left            =   82
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   80
+   tabstop         =   FALSE
+   top             =   208
+   visible         =   FALSE
+   width           =   99
+End
+Begin SAFCheck cLotSerialReq_1
+'' Version         =   6
+   tabindex        =   83
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFCheck cLotSerialHold_1
+'' Version         =   6
+   tabindex        =   84
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFCheck cIRDemand_1
+'' Version         =   6
+   tabindex        =   85
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   20
+'' Version         =   6
+   tabindex        =   86
+End
+Begin SAFMaskedText crebateid_1
+'' Version         =   6
+   tabindex        =   87
+End
+Begin Label lcaption
+   Index           =   11
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   88
+   visible         =   FALSE
+End
+Begin SAFMaskedText calternateid_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   89
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   115
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   90
+   visible         =   FALSE
+End
+Begin SAFMaskedText cIRInvtID_1
+'' Version         =   6
+   tabindex        =   91
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   127
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   92
+   visible         =   FALSE
+End
+Begin SAFMaskedText cslsperid_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   93
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   116
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   94
+   visible         =   FALSE
+End
+Begin SAFMaskedText cIRSiteID_1
+'' Version         =   6
+   tabindex        =   95
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label dslsperid_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   96
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   21
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   97
+   visible         =   FALSE
+End
+Begin SAFMaskedText cTaxCat_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   98
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label dTaxCat_1
+'' Version         =   6
+   tabindex        =   99
+End
+Begin Label lcaption
+   Index           =   22
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   100
+   visible         =   FALSE
+End
+Begin SAFCombo cdisp_1
+'' Version         =   6
+   tabindex        =   101
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   23
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   102
+   visible         =   FALSE
+End
+Begin SAFMaskedText creasoncd_1
+'' Version         =   6
+   tabindex        =   103
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label dreasoncd_1
+'' Version         =   6
+   tabindex        =   104
+End
+Begin Label lcaption
+   Index           =   24
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   105
+   visible         =   FALSE
+End
+Begin SAFMaskedText cinspid_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   106
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label dinspid_1
+'' Version         =   6
+   tabindex        =   107
+End
+Begin Label lprojectid_1
+'' Version         =   6
+   tabindex        =   108
+End
+Begin SAFMaskedText cprojectid_1
+'' Version         =   6
+   tabindex        =   109
+End
+Begin Label dprojectid_1
+'' Version         =   6
+   tabindex        =   110
+End
+Begin Label ltaskid_1
+'' Version         =   6
+   tabindex        =   111
+End
+Begin SAFMaskedText ctaskid_1
+'' Version         =   6
+   tabindex        =   112
+End
+Begin SAFCheck cautopo_1
+'' Version         =   6
+   tabindex        =   113
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   114
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   114
+   visible         =   FALSE
+End
+Begin SAFMaskedText cautopovendid_1
+'' Version         =   6
+   tabindex        =   115
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   12
+'' Version         =   6
+   tabindex        =   116
+End
+Begin SAFMaskedText cbuyerid_0
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   738
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   21
+   tabstop         =   FALSE
+   top             =   81
+   visible         =   FALSE
+   width           =   22
+End
+Begin SAFMaskedText cbuyername_0
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   766
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   22
+   tabstop         =   FALSE
+   top             =   81
+   visible         =   FALSE
+   width           =   18
+End
+Begin Label lcaption
+   Index           =   54
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   13
+   left            =   670
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   20
+   top             =   81
+   visible         =   FALSE
+   width           =   64
+End
+Begin SAFMaskedText ccustordnbr_0
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   302
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabstop         =   FALSE
+   top             =   81
+   visible         =   FALSE
+   width           =   150
+End
+Begin Label lcaption
+   Index           =   3
+'' Version         =   6
+   caption         =   "OC:"
+   enabled         =   FALSE
+   height          =   13
+   left            =   260
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   81
+   visible         =   FALSE
+   width           =   26
+End
+Begin Label lcaption
+   Index           =   8
+'' Version         =   6
+   caption         =   "CRM"
+   height          =   13
+   left            =   509
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   217
+   top             =   164
+   width           =   29
+End
+Begin Button cmdViewCredit
+'' Version         =   6
+   height          =   21
+   left            =   32
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   222
+   top             =   271
+   width           =   73
+End
+Begin SAFMaskedText cauthnbr_0
+'' Version         =   6
+   height          =   21
+   left            =   552
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   218
+   top             =   161
+   width           =   176
+End
+Begin VB.Form Form1
+'' Version         =   6
+   height          =   602
+   left            =   470
+   top             =   144
+   width           =   843
+   windowstate     =   0
+End
+Begin SAFMaskedText csotypeid_0
+'' Version         =   6
+   height          =   21
+   left            =   360
+'' parent          =   "pnlHdr"
+'' parentform      =   "Form1"
+   top             =   16
+   width           =   41
+End
+Begin SAF.SAFMaskedText cNoProyecto
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoheader.user1";3344;0"
+   heading         =   "cNoProyecto"
+   height          =   21
+   left            =   582
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   pv              =   "ProyectosCRM_all"
+   tabindex        =   18
+   top             =   81
+   visible         =   TRUE
+   width           =   124
+End
+Begin SAFTools.SAFLabel lNoProyecto
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No. Proyecto:"
+   height          =   17
+   left            =   503
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   17
+   top             =   81
+   visible         =   TRUE
+   width           =   76
+End
+Begin SAFMaskedText ccustid_0
+'' Version         =   6
+   height          =   21
+   left            =   88
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   81
+   width           =   112
+End
+Begin Button cmdFindCustomer
+'' Version         =   6
+   height          =   21
+   left            =   200
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   82
+   width           =   25
+End
+Begin Button cmdCustomerMaintenance
+'' Version         =   6
+   height          =   21
+   left            =   225
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   82
+   width           =   25
+End
+Begin Label lPORequired
+'' Version         =   6
+   tabindex        =   19
+End
+Begin Label ldefaulttab_1
+'' Version         =   6
+   tabindex        =   23
+End
+Begin Label lNewOrderText
+'' Version         =   6
+   tabindex        =   24
+End
+Begin GroupBox fraItem
+'' Version         =   6
+   height          =   296
+   left            =   1
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   25
+   top             =   0
+   width           =   799
+End
+Begin TabControl SSTab1
+'' Version         =   6
+   height          =   372
+   left            =   -2
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   26
+   top             =   140
+   width           =   817
+End
+Begin Label lcaption
+   Index           =   4
+'' Version         =   6
+   tabindex        =   27
+End
+Begin Label dtaskid_1
+'' Version         =   6
+   tabindex        =   117
+End
+Begin Label dSlsPriceID_0
+'' Version         =   6
+   tabindex        =   118
+End
+Begin SAFMaskedText cSlsPriceID_0
+'' Version         =   6
+   tabindex        =   119
+End
+Begin SAFFloat cs4future06
+'' Version         =   6
+   tabindex        =   120
+End
+Begin SAFGrid Spread1
+'' Version         =   6
+   tabindex        =   118
+End
+Begin Button cmdFindItem
+   Index           =   1
+'' Version         =   6
+   tabindex        =   122
+End
+Begin Button cmdAvailability
+'' Version         =   6
+   tabindex        =   123
+   top             =   298.000000
+End
+Begin Button cmdSchedule
+'' Version         =   6
+   height          =   21
+   left            =   197
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   124
+   top             =   298.000000
+   width           =   68
+End
+Begin Button cmdNegotiator
+'' Version         =   6
+   tabindex        =   125
+End
+Begin Button cmdSalespeopleItem
+'' Version         =   6
+   tabindex        =   126
+End
+Begin Button cmdRMA
+'' Version         =   6
+   tabindex        =   127
+End
+Begin Button cmdWORequest
+'' Version         =   6
+   tabindex        =   128
+End
+Begin Button cmdWORequestCancel
+'' Version         =   6
+   tabindex        =   129
+End
+Begin Button cmdBinLotSerial
+'' Version         =   6
+   tabindex        =   130
+   top             =   298.000000
+End
+Begin GroupBox fraShipInfo
+'' Version         =   6
+   tabindex        =   131
+End
+Begin Label lcaption
+   Index           =   28
+'' Version         =   6
+   tabindex        =   132
+End
+Begin SAFCombo cshiptotype_0
+'' Version         =   6
+   tabindex        =   133
+End
+Begin Label lcaption
+   Index           =   119
+'' Version         =   6
+   tabindex        =   134
+End
+Begin SAFMaskedText cShipCustID_0
+'' Version         =   6
+   tabindex        =   135
+End
+Begin Label lcaption
+   Index           =   120
+'' Version         =   6
+   tabindex        =   136
+End
+Begin SAFMaskedText cshiptoid_0
+'' Version         =   6
+   tabindex        =   137
+End
+Begin Label dShipToID_0
+'' Version         =   6
+   tabindex        =   138
+End
+Begin Label lcaption
+   Index           =   121
+'' Version         =   6
+   tabindex        =   139
+End
+Begin SAFMaskedText cshipvendid_0
+'' Version         =   6
+   tabindex        =   140
+End
+Begin Label lcaption
+   Index           =   109
+'' Version         =   6
+   tabindex        =   141
+End
+Begin SAFMaskedText cShipVendAddrID_0
+'' Version         =   6
+   tabindex        =   142
+End
+Begin Label dShipVendAddrID_0
+'' Version         =   6
+   tabindex        =   143
+End
+Begin Label lcaption
+   Index           =   122
+'' Version         =   6
+   tabindex        =   144
+End
+Begin SAFMaskedText cshipsiteid_0
+'' Version         =   6
+   tabindex        =   145
+End
+Begin Label lcaption
+   Index           =   123
+'' Version         =   6
+   tabindex        =   146
+End
+Begin SAFMaskedText cshipaddrid_0
+'' Version         =   6
+   tabindex        =   147
+End
+Begin Label lcaption
+   Index           =   33
+'' Version         =   6
+   tabindex        =   148
+End
+Begin SAFMaskedText cshipname_0
+'' Version         =   6
+   tabindex        =   149
+End
+Begin Label lcaption
+   Index           =   34
+'' Version         =   6
+   tabindex        =   150
+End
+Begin SAFMaskedText cshipattn_0
+'' Version         =   6
+   tabindex        =   151
+End
+Begin Label lcaption
+   Index           =   35
+'' Version         =   6
+   tabindex        =   152
+End
+Begin SAFMaskedText cshipaddr1_0
+'' Version         =   6
+   tabindex        =   153
+End
+Begin Label lcaption
+   Index           =   36
+'' Version         =   6
+   tabindex        =   154
+End
+Begin SAFMaskedText cshipaddr2_0
+'' Version         =   6
+   tabindex        =   155
+End
+Begin Label lcaption
+   Index           =   37
+'' Version         =   6
+   tabindex        =   156
+End
+Begin SAFMaskedText cshipcity_0
+'' Version         =   6
+   tabindex        =   157
+End
+Begin Label lcaption
+   Index           =   38
+'' Version         =   6
+   tabindex        =   158
+End
+Begin SAFMaskedText cshipstate_0
+'' Version         =   6
+   tabindex        =   159
+End
+Begin Label dshipstate_0
+'' Version         =   6
+   tabindex        =   160
+End
+Begin Label lcaption
+   Index           =   39
+'' Version         =   6
+   tabindex        =   161
+End
+Begin SAFMaskedText cshipzip_0
+'' Version         =   6
+   tabindex        =   162
+End
+Begin Label lcaption
+   Index           =   40
+'' Version         =   6
+   tabindex        =   163
+End
+Begin SAFMaskedText cshipcountry_0
+'' Version         =   6
+   tabindex        =   164
+End
+Begin Label dshipcountry_0
+'' Version         =   6
+   tabindex        =   165
+End
+Begin Label lcaption
+   Index           =   78
+'' Version         =   6
+   tabindex        =   166
+End
+Begin SAFMaskedText cShipPhone_0
+'' Version         =   6
+   tabindex        =   167
+End
+Begin SAFCheck cDropShip_0
+'' Version         =   6
+   tabindex        =   168
+End
+Begin SAFCheck cautoPO_0
+'' Version         =   6
+   tabindex        =   169
+End
+Begin Label lvendid
+'' Version         =   6
+   tabindex        =   170
+End
+Begin SAFMaskedText cautopovendid_0
+'' Version         =   6
+   tabindex        =   171
+End
+Begin Label lcaption
+   Index           =   41
+'' Version         =   6
+   tabindex        =   172
+End
+Begin SAFMaskedText cshipviaid_0
+'' Version         =   6
+   tabindex        =   173
+End
+Begin Label dshipviaid_0
+'' Version         =   6
+   tabindex        =   174
+End
+Begin Label lcaption
+   Index           =   43
+'' Version         =   6
+   tabindex        =   175
+End
+Begin SAFMaskedText cfrttermsid_0
+'' Version         =   6
+   tabindex        =   176
+End
+Begin Label dfrttermsid_0
+'' Version         =   6
+   tabindex        =   177
+End
+Begin Label lcaption
+   Index           =   42
+'' Version         =   6
+   tabindex        =   178
+End
+Begin SAFMaskedText cfobid_0
+'' Version         =   6
+   tabindex        =   179
+End
+Begin Label dfobid_0
+'' Version         =   6
+   tabindex        =   180
+End
+Begin Label lcaption
+   Index           =   44
+'' Version         =   6
+   tabindex        =   181
+End
+Begin SAFCombo cshipcmplt_0
+'' Version         =   6
+   tabindex        =   182
+End
+Begin Label lcaption
+   Index           =   45
+'' Version         =   6
+   tabindex        =   183
+End
+Begin SAFInteger cpriority_0
+'' Version         =   6
+   tabindex        =   184
+End
+Begin SAFCheck cweekenddelivery_0
+'' Version         =   6
+   tabindex        =   185
+End
+Begin Button cmdMarkForHeader
+'' Version         =   6
+   tabindex        =   186
+End
+Begin Label lcaption
+   Index           =   46
+'' Version         =   6
+   tabindex        =   187
+End
+Begin SAFMaskedText cbillname_0
+'' Version         =   6
+   tabindex        =   188
+End
+Begin Label lcaption
+   Index           =   47
+'' Version         =   6
+   tabindex        =   189
+End
+Begin SAFMaskedText cbillattn_0
+'' Version         =   6
+   tabindex        =   190
+End
+Begin Label lcaption
+   Index           =   48
+'' Version         =   6
+   tabindex        =   191
+End
+Begin SAFMaskedText cbilladdr1_0
+'' Version         =   6
+   tabindex        =   192
+End
+Begin Label lcaption
+   Index           =   49
+'' Version         =   6
+   tabindex        =   193
+End
+Begin SAFMaskedText cbilladdr2_0
+'' Version         =   6
+   tabindex        =   194
+End
+Begin Label lcaption
+   Index           =   50
+'' Version         =   6
+   tabindex        =   195
+End
+Begin SAFMaskedText cbillcity_0
+'' Version         =   6
+   tabindex        =   196
+End
+Begin Label lcaption
+   Index           =   51
+'' Version         =   6
+   tabindex        =   197
+End
+Begin SAFMaskedText cbillstate_0
+'' Version         =   6
+   tabindex        =   198
+End
+Begin Label dbillstate_0
+'' Version         =   6
+   tabindex        =   199
+End
+Begin Label lcaption
+   Index           =   52
+'' Version         =   6
+   tabindex        =   200
+End
+Begin SAFMaskedText cbillzip_0
+'' Version         =   6
+   tabindex        =   201
+End
+Begin Label lcaption
+   Index           =   53
+'' Version         =   6
+   tabindex        =   202
+End
+Begin SAFMaskedText cbillcountry_0
+'' Version         =   6
+   tabindex        =   203
+End
+Begin Label dbillcountry_0
+'' Version         =   6
+   tabindex        =   204
+End
+Begin Label lcaption
+   Index           =   107
+'' Version         =   6
+   tabindex        =   205
+End
+Begin SAFMaskedText cBillPhone_0
+'' Version         =   6
+   tabindex        =   206
+End
+Begin Label lcaption
+   Index           =   56
+'' Version         =   6
+   tabindex        =   207
+End
+Begin SAFMaskedText cdiv_0
+'' Version         =   6
+   tabindex        =   208
+End
+Begin Label lcaption
+   Index           =   57
+'' Version         =   6
+   tabindex        =   209
+End
+Begin SAFMaskedText cdept_0
+'' Version         =   6
+   tabindex        =   210
+End
+Begin Label lcaption
+   Index           =   58
+'' Version         =   6
+   tabindex        =   211
+End
+Begin SAFMaskedText ccontractnbr_0
+'' Version         =   6
+   tabindex        =   212
+End
+Begin Label lcaption
+   Index           =   69
+'' Version         =   6
+   tabindex        =   213
+End
+Begin SAFMaskedText cblktordnbr_0
+'' Version         =   6
+   tabindex        =   214
+End
+Begin Label lcaption
+   Index           =   70
+'' Version         =   6
+   tabindex        =   215
+End
+Begin SAFMaskedText corigordnbr_0
+'' Version         =   6
+   tabindex        =   216
+End
+Begin Label lcaption
+   Index           =   106
+'' Version         =   6
+   tabindex        =   219
+End
+Begin SAFMaskedText ctermsid_0
+'' Version         =   6
+   tabindex        =   220
+End
+Begin Label dtermsid_0
+'' Version         =   6
+   tabindex        =   221
+End
+Begin Label lcaption
+   Index           =   65
+'' Version         =   6
+   tabindex        =   223
+End
+Begin SAFDate corddate_0
+'' Version         =   6
+   tabindex        =   224
+End
+Begin Label lcaption
+   Index           =   66
+'' Version         =   6
+   tabindex        =   225
+End
+Begin SAFDate ccanceldate_0
+'' Version         =   6
+   tabindex        =   226
+End
+Begin Label lcaption
+   Index           =   124
+'' Version         =   6
+   tabindex        =   227
+End
+Begin SAFMaskedText cslsperid_0
+'' Version         =   6
+   tabindex        =   228
+End
+Begin Button cmdSalespeople
+'' Version         =   6
+   tabindex        =   229
+End
+Begin Label dslsperid_0
+'' Version         =   6
+   tabindex        =   230
+End
+Begin Label lcaption
+   Index           =   125
+'' Version         =   6
+   tabindex        =   231
+End
+Begin SAFFloat ccmmnpct_0
+'' Version         =   6
+   tabindex        =   232
+End
+Begin Label lcaption
+   Index           =   71
+'' Version         =   6
+   tabindex        =   233
+End
+Begin SAFMaskedText ccertid_0
+'' Version         =   6
+   tabindex        =   234
+End
+Begin Label dcertid_0
+'' Version         =   6
+   tabindex        =   235
+End
+Begin Label lprojectid_0
+'' Version         =   6
+   tabindex        =   236
+End
+Begin SAFMaskedText cprojectid_0
+'' Version         =   6
+   tabindex        =   237
+End
+Begin SAFMaskedText cinvcnbr_0
+'' Version         =   6
+   tabindex        =   238
+End
+Begin SAFDate cInvcDate
+'' Version         =   6
+   tabindex        =   239
+End
+Begin SAFMaskedText cperpost
+'' Version         =   6
+   tabindex        =   240
+End
+Begin SAFCheck cRequireStepInsp_0
+'' Version         =   6
+   tabindex        =   241
+End
+Begin SAFCheck cRequireStepAssy_0
+'' Version         =   6
+   tabindex        =   242
+End
+Begin SAFCheck cIRDemand_0
+'' Version         =   6
+   tabindex        =   243
+End
+Begin SAFCheck cConsolInv_0
+'' Version         =   6
+   tabindex        =   244
+End
+Begin SAFCheck cedi856_0
+'' Version         =   6
+   tabindex        =   245
+End
+Begin SAFCheck cedi810_0
+'' Version         =   6
+   tabindex        =   246
+End
+Begin GroupBox fraOrderStatus
+'' Version         =   6
+   tabindex        =   247
+End
+Begin Label lcaption
+   Index           =   98
+'' Version         =   6
+   tabindex        =   248
+End
+Begin SAFCombo cstatus_0
+'' Version         =   6
+   tabindex        =   249
+End
+Begin SAFCheck capprdetails_0
+'' Version         =   6
+   tabindex        =   250
+End
+Begin SAFCheck capprtech_0
+'' Version         =   6
+   tabindex        =   251
+End
+Begin SAFCheck creleased_0
+'' Version         =   6
+   tabindex        =   252
+End
+Begin SAFCheck capprrma_0
+'' Version         =   6
+   tabindex        =   253
+End
+Begin SAFCheck cadminhold_0
+'' Version         =   6
+   tabindex        =   254
+End
+Begin SAFCheck ccredithold_0
+'' Version         =   6
+   tabindex        =   255
+End
+Begin SAFDate ccreditholddate_0
+'' Version         =   6
+   tabindex        =   256
+End
+Begin SAFCheck ccancelled_0
+'' Version         =   6
+   tabindex        =   257
+End
+Begin SAFCheck ccancelled_0
+   Index           =   1
+'' Version         =   6
+   tabindex        =   258
+End
+Begin SAFDate cdatecancelled_0
+'' Version         =   6
+   tabindex        =   259
+End
+Begin GroupBox fraNextStep
+'' Version         =   6
+   tabindex        =   260
+End
+Begin GroupBox fraTaxID
+'' Version         =   6
+   tabindex        =   261
+End
+Begin Label lcaption
+   Index           =   101
+'' Version         =   6
+   tabindex        =   262
+End
+Begin SAFMaskedText ctaxid_0
+'' Version         =   6
+   tabindex        =   263
+End
+Begin Label lcaption
+   Index           =   102
+'' Version         =   6
+   tabindex        =   264
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   1
+'' Version         =   6
+   tabindex        =   265
+End
+Begin Label lcaption
+   Index           =   103
+'' Version         =   6
+   tabindex        =   266
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   2
+'' Version         =   6
+   tabindex        =   267
+End
+Begin Label lcaption
+   Index           =   104
+'' Version         =   6
+   tabindex        =   268
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   3
+'' Version         =   6
+   tabindex        =   269
+End
+Begin GroupBox fraQuote
+'' Version         =   6
+   tabindex        =   270
+End
+Begin Label lcaption
+   Index           =   73
+'' Version         =   6
+   tabindex        =   271
+End
+Begin SAFDate cquotedate_0
+'' Version         =   6
+   tabindex        =   272
+End
+Begin Label lcaption
+   Index           =   74
+'' Version         =   6
+   tabindex        =   273
+End
+Begin SAFFloat cawardprobability_0
+'' Version         =   6
+   tabindex        =   274
+End
+Begin Label lcaption
+   Index           =   75
+'' Version         =   6
+   tabindex        =   275
+End
+Begin SAFMaskedText clostsaleid_0
+'' Version         =   6
+   tabindex        =   276
+End
+Begin Label dlostsaleid_0
+'' Version         =   6
+   tabindex        =   277
+End
+Begin GroupBox fraMiscCharges
+'' Version         =   6
+   tabindex        =   278
+End
+Begin Label lcaption
+   Index           =   96
+'' Version         =   6
+   tabindex        =   279
+End
+Begin SAFMaskedText cmiscchrgid_3
+'' Version         =   6
+   tabindex        =   280
+End
+Begin Label lcaption
+   Index           =   95
+'' Version         =   6
+   tabindex        =   281
+End
+Begin SAFMaskedText cdescr_3
+'' Version         =   6
+   tabindex        =   282
+End
+Begin Label lcaption
+   Index           =   93
+'' Version         =   6
+   tabindex        =   283
+End
+Begin SAFFloat ccurymiscchrg_3
+'' Version         =   6
+   tabindex        =   284
+End
+Begin Label lcaption
+   Index           =   94
+'' Version         =   6
+   tabindex        =   285
+End
+Begin SAFFloat ccurymiscchrgappl_3
+'' Version         =   6
+   tabindex        =   286
+End
+Begin SAFCheck ctaxable_3
+'' Version         =   6
+   tabindex        =   287
+End
+Begin Label lcaption
+   Index           =   97
+'' Version         =   6
+   tabindex        =   288
+End
+Begin SAFMaskedText ctaxcat_3
+'' Version         =   6
+   tabindex        =   289
+End
+Begin Label dtaxcat_3
+'' Version         =   6
+   tabindex        =   290
+End
+Begin SAFGrid Spread3
+'' Version         =   6
+   tabindex        =   288
+End
+Begin GroupBox fraSalesTax
+'' Version         =   6
+   tabindex        =   292
+End
+Begin Label lcaption
+   Index           =   100
+'' Version         =   6
+   tabindex        =   293
+End
+Begin SAFMaskedText ctaxid_4
+'' Version         =   6
+   tabindex        =   294
+End
+Begin Label dtaxid_4
+'' Version         =   6
+   tabindex        =   295
+End
+Begin Label lcaption
+   Index           =   99
+'' Version         =   6
+   tabindex        =   296
+End
+Begin SAFMaskedText ctaxcat_4
+'' Version         =   6
+   tabindex        =   297
+End
+Begin Label dtaxcat_4
+'' Version         =   6
+   tabindex        =   298
+End
+Begin Label lcaption
+   Index           =   30
+'' Version         =   6
+   tabindex        =   299
+End
+Begin SAFFloat ccuryfrttax_4
+'' Version         =   6
+   tabindex        =   300
+End
+Begin Label lcaption
+   Index           =   32
+'' Version         =   6
+   tabindex        =   301
+End
+Begin SAFFloat ccurymerchtax_4
+'' Version         =   6
+   tabindex        =   302
+End
+Begin Label lcaption
+   Index           =   59
+'' Version         =   6
+   tabindex        =   303
+End
+Begin SAFFloat ccurymisctax_4
+'' Version         =   6
+   tabindex        =   304
+End
+Begin Label lcaption
+   Index           =   77
+'' Version         =   6
+   tabindex        =   305
+End
+Begin SAFFloat ccurytottax_4
+'' Version         =   6
+   tabindex        =   306
+End
+Begin Label lcaption
+   Index           =   31
+'' Version         =   6
+   tabindex        =   307
+End
+Begin SAFFloat ccuryfrttxbl_4
+'' Version         =   6
+   tabindex        =   308
+End
+Begin Label lcaption
+   Index           =   55
+'' Version         =   6
+   tabindex        =   309
+End
+Begin SAFFloat ccurymerchtxbl_4
+'' Version         =   6
+   tabindex        =   310
+End
+Begin Label lcaption
+   Index           =   67
+'' Version         =   6
+   tabindex        =   311
+End
+Begin SAFFloat ccurymisctxbl_4
+'' Version         =   6
+   tabindex        =   312
+End
+Begin Label lcaption
+   Index           =   79
+'' Version         =   6
+   tabindex        =   313
+End
+Begin SAFFloat ccurytottxbl_4
+'' Version         =   6
+   tabindex        =   314
+End
+Begin Label lcaption
+   Index           =   105
+'' Version         =   6
+   tabindex        =   315
+End
+Begin SAFFloat ctaxrate_4
+'' Version         =   6
+   tabindex        =   316
+End
+Begin SAFGrid Spread4
+'' Version         =   6
+   tabindex        =   314
+End
+Begin GroupBox fraPayments
+'' Version         =   6
+   tabindex        =   318
+End
+Begin Label lcaption
+   Index           =   92
+'' Version         =   6
+   tabindex        =   319
+End
+Begin SAFMaskedText cpmttypeid_5
+'' Version         =   6
+   tabindex        =   320
+End
+Begin Label dpmttypeid_5
+'' Version         =   6
+   tabindex        =   321
+End
+Begin Label lcaption
+   Index           =   68
+'' Version         =   6
+   tabindex        =   322
+End
+Begin SAFFloat ccurypmtamt_5
+'' Version         =   6
+   tabindex        =   323
+End
+Begin Label lcaption
+   Index           =   91
+'' Version         =   6
+   tabindex        =   324
+End
+Begin SAFDate cpmtdate_5
+'' Version         =   6
+   tabindex        =   325
+End
+Begin Label lcaption
+   Index           =   26
+'' Version         =   6
+   tabindex        =   326
+End
+Begin SAFMaskedText cchknbr_5
+'' Version         =   6
+   tabindex        =   327
+End
+Begin Label lcaption
+   Index           =   25
+'' Version         =   6
+   tabindex        =   328
+End
+Begin SAFMaskedText ccardnbr_5
+'' Version         =   6
+   tabindex        =   329
+End
+Begin Label lcaption
+   Index           =   19
+'' Version         =   6
+   tabindex        =   330
+End
+Begin SAFMaskedText ccardhldrname_5
+'' Version         =   6
+   tabindex        =   331
+End
+Begin Label lcaption
+   Index           =   18
+'' Version         =   6
+   tabindex        =   332
+End
+Begin SAFDate ccardexpdate_5
+'' Version         =   6
+   tabindex        =   333
+End
+Begin Label lcaption
+   Index           =   17
+'' Version         =   6
+   tabindex        =   334
+End
+Begin SAFMaskedText ccardauthnbr_5
+'' Version         =   6
+   tabindex        =   335
+End
+Begin SAFGrid Spread5
+'' Version         =   6
+   tabindex        =   333
+End
+Begin Label lcaption
+   Index           =   81
+'' Version         =   6
+   tabindex        =   337
+End
+Begin SAFFloat cdiscpct_0
+'' Version         =   6
+   tabindex        =   338
+End
+Begin Label lcaption
+   Index           =   83
+'' Version         =   6
+   tabindex        =   339
+End
+Begin SAFFloat ctotshipwght_0
+'' Version         =   6
+   tabindex        =   340
+End
+Begin Label lcaption
+   Index           =   108
+'' Version         =   6
+   tabindex        =   341
+End
+Begin SAFFloat cCuryUnshippedBalance_0
+'' Version         =   6
+   tabindex        =   342
+End
+Begin Label lcaption
+   Index           =   84
+'' Version         =   6
+   tabindex        =   343
+End
+Begin SAFFloat ccurytotmerch_0
+'' Version         =   6
+   tabindex        =   344
+End
+Begin Label lcaption
+   Index           =   85
+'' Version         =   6
+   tabindex        =   345
+End
+Begin SAFFloat cCuryWholeOrdDisc_0
+'' Version         =   6
+   tabindex        =   346
+End
+Begin Label lcaption
+   Index           =   86
+'' Version         =   6
+   tabindex        =   347
+End
+Begin SAFFloat ccurytottax_0
+'' Version         =   6
+   tabindex        =   348
+End
+Begin Label lcaption
+   Index           =   87
+'' Version         =   6
+   tabindex        =   349
+End
+Begin SAFFloat ccurytotfrt_0
+'' Version         =   6
+   tabindex        =   350
+End
+Begin Label lcaption
+   Index           =   88
+'' Version         =   6
+   tabindex        =   351
+End
+Begin SAFFloat ccurytotpremfrt_0
+'' Version         =   6
+   tabindex        =   352
+End
+Begin Label lcaption
+   Index           =   89
+'' Version         =   6
+   tabindex        =   353
+End
+Begin SAFFloat ccurytotmisc_0
+'' Version         =   6
+   tabindex        =   354
+End
+Begin Label lcaption
+   Index           =   80
+'' Version         =   6
+   tabindex        =   355
+End
+Begin SAFFloat ccurytotord_0
+'' Version         =   6
+   tabindex        =   356
+End
+Begin Label lcaption
+   Index           =   90
+'' Version         =   6
+   tabindex        =   357
+End
+Begin SAFFloat ccurytotpmt_0
+'' Version         =   6
+   tabindex        =   358
+End
+Begin Button cmdPrint
+'' Version         =   6
+   height          =   21
+   left            =   39
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   359
+   top             =   514
+   width           =   73
+End
+Begin Button cmdEventHistory
+'' Version         =   6
+   height          =   21
+   left            =   114
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   360
+   top             =   515
+   width           =   77
+End
+Begin Button cmdShipments
+'' Version         =   6
+   height          =   21
+   left            =   199
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   361
+   top             =   516
+   width           =   69
+End
+Begin Button cmdPOEntry
+'' Version         =   6
+   height          =   21
+   left            =   271
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   362
+   top             =   516
+   width           =   73
+End
+Begin Button cmdEDI
+'' Version         =   6
+   height          =   21
+   left            =   350
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   363
+   top             =   516
+   width           =   73
+End
+Begin Button cmdReleaseForInvoice
+'' Version         =   6
+   height          =   20
+   left            =   426
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   364
+   top             =   321
+   width           =   124
+End
+Begin Label lcaption
+   Index           =   10
+'' Version         =   6
+   height          =   13
+   left            =   586
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   365
+   top             =   522
+   width           =   88
+End
+Begin SAFUpdate Update1
+'' Version         =   6
+   tabindex        =   365
+End
+Begin SAFFloat cCuryBalDue_0
+'' Version         =   6
+   height          =   21
+   left            =   684
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   366
+   top             =   516
+   width           =   112
+End
+Begin Label lcaption
+   Index           =   111
+'' Version         =   6
+   tabindex        =   372
+End
+Begin Label lcaption
+   Index           =   112
+'' Version         =   6
+   tabindex        =   373
+End
+Begin Label lcaption
+   Index           =   126
+'' Version         =   6
+   tabindex        =   374
+End
+Begin Button cmdShopRates
+'' Version         =   6
+   tabindex        =   375
+End
+Begin Label lcaption
+   Index           =   117
+'' Version         =   6
+   tabindex        =   376
+End
+Begin Label lNextStep
+'' Version         =   6
+   tabindex        =   377
+End
+Begin NoteButton NoteButton0
+'' Version         =   6
+   tabindex        =   902
+End
+Begin NoteButton NoteButton1
+'' Version         =   6
+   tabindex        =   903
+End
+Begin NoteButton NoteButton3
+'' Version         =   6
+   tabindex        =   904
+End
+Begin NoteButton NoteButton4
+'' Version         =   6
+   tabindex        =   905
+End
+Begin NoteButton NoteButton5
+'' Version         =   6
+   tabindex        =   906
+End
+Begin Label dcustid_0
+'' Version         =   6
+   fontbold        =   TRUE
+   fontsize        =   10.000000
+   height          =   22
+   left            =   4
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   108
+   width           =   375
+End
+Begin DSLMaskedText cordnbr_0
+'' Version         =   6
+   height          =   21
+   left            =   88
+'' parent          =   "pnlHdr"
+'' parentform      =   "Form1"
+   top             =   16
+   width           =   112
+End
+Begin DSLCheck xuser2
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "Agru Cant"
+   default         =   "1;"";0;0;0"
+   enabled         =   TRUE
+   fieldname       =   ""bsoline.s4future09";1512;1"
+   heading         =   "Agru Cant"
+   height          =   25
+   left            =   377
+   level           =   "1"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   34
+   top             =   228
+   visible         =   TRUE
+   width           =   53
+End
+Begin VB.Form frmPrint
+'' Version         =   6
+   height          =   312
+   left            =   860
+   top             =   127
+   width           =   577
+   windowstate     =   0
+End
+Begin CheckBox cCreatePjt
+'' Version         =   6
+   tabindex        =   234
+End
+Begin DSLCombo cInvoiceIn
+'' Version         =   6
+   tabindex        =   373
+End
+Begin Label lInvoiceIn
+'' Version         =   6
+   tabindex        =   374
+End
+Begin Label lblFileTypeList
+'' Version         =   6
+   tabindex        =   376
+End
+Begin Label lblFileTypeList
+   Index           =   1
+'' Version         =   6
+   tabindex        =   377
+End
+Begin DSLCheck xuser21
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "Agru Desc"
+   default         =   "1;"";0;0;0"
+   enabled         =   TRUE
+   fieldname       =   ""bsoline.s4future10";1516;1"
+   heading         =   "Agru Desc"
+   height          =   25
+   left            =   425
+   level           =   "1"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   35
+   top             =   229
+   visible         =   TRUE
+   width           =   53
+End
+Begin SAFTools.SAFButton Button1
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Importar Excel"
+   height          =   21
+   left            =   434
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   900
+   top             =   514
+   visible         =   TRUE
+   width           =   85.000000
+End
+Begin SAFTools.SAFLabel Label1
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No Articulo Alt:"
+   height          =   17
+   left            =   223
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   901
+   top             =   13
+   visible         =   TRUE
+   width           =   83
+End
+Begin DSLMaskedText xuser10
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser10"
+   enabled         =   TRUE
+   fieldname       =   ""bsoline.s4future01";1352;0"
+   heading         =   "No Articulo Alt"
+   height          =   21.000000
+   left            =   305
+   level           =   "1"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   pv              =   ""DMG_Inventory_Sales", "
+   tabindex        =   907
+   top             =   10
+   visible         =   TRUE
+   width           =   100.000000
+End
+
+' Begin Macro Text
+
+Source: 1
+' VBComponent: ThisScreen, ComponentType: 100 **********************************************************
+Private Sub Button1_Click()
+'  Call ApplSetParmValue(PRMSECTION_VBRDT, "CustId", sCustId)
+'  Call ApplSetParmValue(PRMSECTION_VBRDT, "ShipToId", sShipToId)
+'
+'  Call ApplSetParmValue(PRMSECTION_VBRDT, "Banco", sBanco)
+'  Call ApplSetParmValue(PRMSECTION_VBRDT, "MetodoPago", sMetodoPago)
+'  Call ApplSetParmValue(PRMSECTION_VBRDT, "DigitosCuenta", sDigitosCuenta)
+'
+'   serr1 = Launch("AU\AU25110", True, True, 1)
+
+End Sub
+
+Private Sub xuser2_Chk(ChkStrg As String, retval As Integer)
+Dim sLineRef As String
+    Call GetBufferValue("bsoline.LineRef", sLineRef)
+     If Trim(sLineRef) = "00001" And ChkStrg = "0" Then
+      MessBox "Error: No se puede desmarcar La primer partida " + sLineRef + ", tiene que ser encabezado agrupador ", MB_ICONEXCLAMATION, "Error"
+      retval = ErrNoMess
+     End If
+
+   
+End Sub
+
+Private Sub xuser21_Chk(ChkStrg As String, retval As Integer)
+Dim sLineRef As String
+    Call GetBufferValue("bsoline.LineRef", sLineRef)
+     If Trim(sLineRef) = "00001" And ChkStrg = "0" Then
+      MessBox "Error: No se puede desmarcar La primer partida " + sLineRef + ", tiene que ser encabezado agrupador ", MB_ICONEXCLAMATION, "Error"
+      retval = ErrNoMess
+     End If
+     
+End Sub
+
+
+' End VBComponent **********************************************************
+
+
+
+' Reference: Name=VBA, Guid={000204EF-0000-0000-C000-000000000046}, Major=4, Minor=2
+' Reference: Name=SWIMAPI, Guid={F4B33A61-96B4-11CF-B04B-0020AFDCBD63}, Major=1, Minor=1
+' Reference: Name=stdole, Guid={00020430-0000-0000-C000-000000000046}, Major=2, Minor=0
+' Reference: Name=SWIMAPIEx, Guid={C97F43B1-4A73-11D3-BF6C-006008C7915A}, Major=1, Minor=1
+' Reference: Name=SolVBWrappedControlsLib, Guid={A88846F2-6638-11D3-8154-00104B2E8513}, Major=1, Minor=0
+
+' End Macro Text
+
+' End Customization

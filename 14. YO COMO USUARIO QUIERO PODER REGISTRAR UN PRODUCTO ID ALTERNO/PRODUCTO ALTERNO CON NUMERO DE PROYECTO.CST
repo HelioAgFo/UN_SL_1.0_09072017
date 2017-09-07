@@ -1,0 +1,4390 @@
+
+
+' Begin Customization Screen: 4011000  Version: 6 Sequence: 300   Description: "A New All Users Customization" System Administrator: FALSE Secure: 55
+Begin SAFMaskedText cinvtid_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   42
+   top             =   16
+   width           =   60
+End
+Begin SAF.SAFMaskedText xcMetodoDePago
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxsoshipheaderadic.metododepago";20;0"
+   heading         =   "xcMetodoDePago"
+   height          =   21
+   left            =   129
+   level           =   "---"
+   mask            =   "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   pv              =   ""
+   tabindex        =   1017
+   top             =   300.000000
+   visible         =   TRUE
+   width           =   274
+End
+Begin SAF.SAFMaskedText xcNumeroDeCuenta
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxsoshipheaderadic.numerodecuenta";220;0"
+   heading         =   "xcNumeroDeCuenta"
+   height          =   21
+   left            =   129
+   level           =   "---"
+   mask            =   "NNNN"
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   1011
+   top             =   324.000000
+   visible         =   TRUE
+   width           =   87
+End
+Begin SAF.SAFCombo xcFormaDePago
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bxsoshipheaderadic.user6";608;0"
+   heading         =   "xcFormaDePago"
+   height          =   21
+   left            =   617
+   level           =   "---"
+   list            =   "P1;PAGO EN UNA SOLA EXHIBICION,P2;2 PARCIALIDADES,P3;3 PARCIALIDADES,P4;4 PARCIALIDADES,P5;5 PARCIALIDADES,P6;6 PARCIALIDADES,P7;7 PARCIALIDADES,P8;8 PARCIALIDADES,P9;9 PARCIALIDADES,P10;10 PARCIALIDADES,P11;11 PARCIALIDADES,P12;12 PARCIALIDADES"
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   1029
+   top             =   300
+   visible         =   TRUE
+   width           =   200
+End
+Begin SAF.SAFMaskedText xcLineRefOculta
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipline.user7";2308;0"
+   heading         =   "xcLineRefOculta"
+   height          =   25
+   left            =   803
+   level           =   "1"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   1027
+   tabstop         =   FALSE
+   top             =   37
+   visible         =   FALSE
+   width           =   88
+End
+Begin SAF.SAFCheck xcNoteDescr
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "Nota en Descripción"
+   default         =   ""0""
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipline.user8";2328;0"
+   heading         =   "Nota en Descripción"
+   height          =   25
+   left            =   550
+   level           =   "1"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   1028
+   top             =   247
+   visible         =   TRUE
+   width           =   233
+End
+Begin SAFTools.SAFButton cmdFindItem
+'' Version         =   6
+   height          =   21
+   left            =   171
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   45
+   top             =   16
+   width           =   25
+End
+Begin SAFFloat cqtyship_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   47
+   top             =   40
+   width           =   80
+End
+Begin Label lcaption
+   Index           =   8
+'' Version         =   6
+   caption         =   "Cantidad:"
+   tabindex        =   46
+End
+Begin SAFFloat ccuryslsprice_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   52
+   tabstop         =   FALSE
+   top             =   64
+   width           =   69
+End
+Begin SAFMaskedText cChainDisc_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   53
+   top             =   88
+   width           =   51
+End
+Begin Label lcaption
+   Index           =   28
+'' Version         =   6
+   caption         =   "Descuento:"
+   tabindex        =   49
+End
+Begin SAFFloat ccurytotinvc_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   55
+   tabstop         =   FALSE
+   top             =   112
+   width           =   71
+End
+Begin SAFMaskedText cWhseLoc_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   59
+   tabstop         =   FALSE
+   top             =   136
+   width           =   47
+End
+Begin Label lcaption
+   Index           =   26
+'' Version         =   6
+   caption         =   "Localiz:"
+   tabindex        =   58
+End
+Begin SAFMaskedText cunitdesc_1
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   304
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   57
+   tabstop         =   FALSE
+   top             =   40
+   width           =   35
+End
+Begin SAFFloat ccurylistprice_1
+'' Version         =   6
+   height          =   21
+   left            =   304
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   61
+   top             =   64
+   visible         =   FALSE
+   width           =   84
+End
+Begin SAFFloat ccurycost_1
+'' Version         =   6
+   height          =   21
+   left            =   304
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   63
+   top             =   88
+   visible         =   FALSE
+   width           =   83
+End
+Begin Label lcaption
+   Index           =   18
+'' Version         =   6
+   tabindex        =   62
+   visible         =   FALSE
+End
+Begin SAFFloat cqtypick_1
+'' Version         =   6
+   tabindex        =   65
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   17
+'' Version         =   6
+   tabindex        =   64
+   visible         =   FALSE
+End
+Begin SAFCheck csample_1
+'' Version         =   6
+   caption         =   "Factura por Lote"
+   enabled         =   TRUE
+   heading         =   "Muestra"
+   height          =   21
+   left            =   222
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   48
+   tabstop         =   FALSE
+   top             =   184
+   visible         =   FALSE
+   width           =   73
+End
+Begin SAFCheck csplitlots_1
+'' Version         =   6
+   tabindex        =   67
+   visible         =   FALSE
+End
+Begin SAFCheck ctaxable_1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   66
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFMaskedText calternateid_1
+'' Version         =   6
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   94
+   top             =   208
+   visible         =   FALSE
+   width           =   153
+End
+Begin SAFMaskedText cdescr_1
+'' Version         =   6
+   enabled         =   TRUE
+   height          =   21
+   left            =   112
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   44
+   tabstop         =   FALSE
+   top             =   232
+   width           =   200
+End
+Begin Label lcaption
+   Index           =   13
+'' Version         =   6
+   tabindex        =   43
+End
+Begin Label lcaption
+   Index           =   14
+'' Version         =   6
+   tabindex        =   56
+End
+Begin Label lcaption
+   Index           =   19
+'' Version         =   6
+   tabindex        =   51
+End
+Begin SAFFloat cdiscpct_1
+'' Version         =   6
+   tabindex        =   50
+End
+Begin Label lcaption
+   Index           =   24
+'' Version         =   6
+   tabindex        =   54
+End
+Begin Label lcaption
+   Index           =   15
+'' Version         =   6
+   tabindex        =   60
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   20
+'' Version         =   6
+   tabindex        =   68
+End
+Begin SAFMaskedText crebateid_1
+'' Version         =   6
+   tabindex        =   69
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   7
+'' Version         =   6
+   tabindex        =   70
+   visible         =   FALSE
+End
+Begin SAFMaskedText cordlineref_1
+'' Version         =   6
+   tabindex        =   71
+   visible         =   FALSE
+End
+Begin Label lslsperid_1
+'' Version         =   6
+   tabindex        =   72
+   visible         =   FALSE
+End
+Begin SAFMaskedText cslsperid_1
+'' Version         =   6
+   tabindex        =   73
+   visible         =   FALSE
+End
+Begin Label dslsperid_1
+'' Version         =   6
+   tabindex        =   74
+End
+Begin Label lcaption
+   Index           =   16
+'' Version         =   6
+   tabindex        =   75
+   visible         =   FALSE
+End
+Begin SAFFloat ccurycommcost_1
+'' Version         =   6
+   tabindex        =   76
+   visible         =   FALSE
+End
+Begin Label lcmmnpct_1
+'' Version         =   6
+   tabindex        =   77
+   visible         =   FALSE
+End
+Begin SAFFloat ccmmnpct_1
+'' Version         =   6
+   tabindex        =   78
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   86
+'' Version         =   6
+   tabindex        =   79
+   visible         =   FALSE
+End
+Begin SAFMaskedText cTaxCat_1
+'' Version         =   6
+   height          =   21
+   left            =   544
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   80
+   top             =   112
+   visible         =   FALSE
+   width           =   67
+End
+Begin Label dTaxCat_1
+'' Version         =   6
+   height          =   13
+   left            =   614
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   81
+   top             =   117
+   visible         =   FALSE
+   width           =   152
+End
+Begin Label lcaption
+   Index           =   22
+'' Version         =   6
+   tabindex        =   82
+   visible         =   FALSE
+End
+Begin SAFCombo cdisp_1
+'' Version         =   6
+   enabled         =   TRUE
+   tabindex        =   83
+   tabstop         =   FALSE
+   visible         =   TRUE
+End
+Begin Label lcaption
+   Index           =   23
+'' Version         =   6
+   tabindex        =   84
+   visible         =   FALSE
+End
+Begin SAFMaskedText cinspid_1
+'' Version         =   6
+   tabindex        =   85
+   visible         =   FALSE
+End
+Begin Label dinspid_1
+'' Version         =   6
+   tabindex        =   86
+End
+Begin Label lprojectid_1
+'' Version         =   6
+   tabindex        =   87
+   visible         =   FALSE
+End
+Begin SAFMaskedText cprojectid_1
+'' Version         =   6
+   tabindex        =   88
+End
+Begin Label dprojectid_1
+'' Version         =   6
+   tabindex        =   89
+End
+Begin Label ltaskid_1
+'' Version         =   6
+   tabindex        =   90
+End
+Begin SAFMaskedText ctaskid_1
+'' Version         =   6
+   tabindex        =   91
+End
+Begin Label dtaskid_1
+'' Version         =   6
+   tabindex        =   92
+End
+Begin Label lcaption
+   Index           =   12
+'' Version         =   6
+   tabindex        =   93
+   visible         =   FALSE
+End
+Begin Frame fraItem
+'' Version         =   6
+   height          =   304
+   left            =   4
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   40
+   top             =   9
+   visible         =   TRUE
+   width           =   828
+End
+Begin VB.Form Form1
+'' Version         =   6
+   height          =   607
+   left            =   178
+   top             =   58
+   width           =   866
+   windowstate     =   0
+End
+Begin SAFMaskedText ccardnbr_5
+'' Version         =   6
+   tabindex        =   301
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   114
+'' Version         =   6
+   tabindex        =   300
+   visible         =   FALSE
+End
+Begin SAFMaskedText ccardhldrname_5
+'' Version         =   6
+   tabindex        =   303
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   113
+'' Version         =   6
+   tabindex        =   302
+   visible         =   FALSE
+End
+Begin SAFDate ccardexpdate_5
+'' Version         =   6
+   tabindex        =   305
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   112
+'' Version         =   6
+   tabindex        =   304
+   visible         =   FALSE
+End
+Begin SAFMaskedText ccardauthnbr_5
+'' Version         =   6
+   height          =   21
+   left            =   184
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   tabindex        =   307
+   top             =   224
+   visible         =   FALSE
+   width           =   176
+End
+Begin Label lcaption
+   Index           =   111
+'' Version         =   6
+   tabindex        =   306
+   visible         =   FALSE
+End
+Begin Frame fraPayments
+'' Version         =   6
+   height          =   289
+   left            =   -1
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   289
+   top             =   5
+   width           =   825
+End
+Begin SSTab.1 SSTab1
+'' Version         =   6
+   height          =   375
+   left            =   -3
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   28
+   top             =   130
+   visible         =   TRUE
+   width           =   844
+End
+Begin SAFMaskedText ccustordnbr_0
+'' Version         =   6
+   height          =   21
+   left            =   540.000000
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   14
+   tabstop         =   TRUE
+   top             =   82
+   visible         =   TRUE
+   width           =   90
+End
+Begin SAFMaskedText cordnbr_0
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   22
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFMaskedText csiteid_0
+'' Version         =   6
+   tabindex        =   24
+   tabstop         =   FALSE
+End
+Begin Label lPORequired
+'' Version         =   6
+   height          =   13
+   left            =   779
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   20
+   top             =   95
+   width           =   50
+End
+Begin Label lcaption
+   Index           =   9
+'' Version         =   6
+End
+Begin SAFLabel Label2
+'' Version         =   6
+   height          =   17
+   left            =   531
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   357
+   top             =   104
+   visible         =   FALSE
+   width           =   82
+End
+Begin SAFLabel Cliente
+   height          =   255
+   left            =   4080
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   1185
+   width           =   1485
+End
+Begin Label lcaption
+   Index           =   5
+'' Version         =   6
+   height          =   13
+   left            =   464
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   15
+   top             =   84
+   visible         =   TRUE
+   width           =   34
+End
+Begin SAFTools.SAFButton cmdFindCustomer
+'' Version         =   6
+   height          =   21
+   left            =   200
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   18
+   top             =   80
+   width           =   25
+End
+Begin SAFTools.SAFButton cmdCustomerMaintenance
+'' Version         =   6
+   height          =   21
+   left            =   225
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   19
+   top             =   81
+   width           =   25
+End
+Begin Label lcaption
+   Index           =   1
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   21
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   2
+'' Version         =   6
+   tabindex        =   23
+End
+Begin Label dsiteid_0
+'' Version         =   6
+   height          =   15
+   left            =   923
+   tabindex        =   25
+   top             =   105
+   width           =   97
+End
+Begin Label ldefaulttab_1
+'' Version         =   6
+   height          =   17
+   left            =   715
+   tabindex        =   26
+   top             =   157
+   width           =   25
+End
+Begin Label lNewShipperText
+'' Version         =   6
+   tabindex        =   27
+End
+Begin Label lcaption
+   Index           =   62
+'' Version         =   6
+   tabindex        =   29
+End
+Begin SAFMaskedText cbuildinvtid_0
+'' Version         =   6
+   tabindex        =   30
+End
+Begin Label dbuildinvtid_0
+'' Version         =   6
+   tabindex        =   31
+End
+Begin Label lcaption
+   Index           =   63
+'' Version         =   6
+   tabindex        =   32
+End
+Begin SAFFloat cbuildqty_0
+'' Version         =   6
+   tabindex        =   33
+End
+Begin Label lcaption
+   Index           =   64
+'' Version         =   6
+   tabindex        =   34
+End
+Begin SAFFloat cbuildactqty_0
+'' Version         =   6
+   tabindex        =   35
+End
+Begin Label lcaption
+   Index           =   65
+'' Version         =   6
+   tabindex        =   36
+End
+Begin SAFDate cbuildcmpltdate_0
+'' Version         =   6
+   tabindex        =   37
+End
+Begin SAFTools.SAFButton cmdCreateItems
+'' Version         =   6
+   tabindex        =   38
+End
+Begin SAFTools.SAFButton cLotSerialWO
+'' Version         =   6
+   tabindex        =   39
+End
+Begin Label lcaption
+   Index           =   6
+'' Version         =   6
+   tabindex        =   41
+End
+Begin Label dSlsPriceID_0
+'' Version         =   6
+   tabindex        =   95
+End
+Begin SAFMaskedText cSlsPriceID_0
+'' Version         =   6
+   tabindex        =   96
+End
+Begin SAFGrid Spread1
+'' Version         =   6
+   tabindex        =   95
+End
+Begin Frame fraShipInfo
+'' Version         =   6
+   tabindex        =   98
+End
+Begin Label lcaption
+   Index           =   25
+'' Version         =   6
+   tabindex        =   99
+End
+Begin SAFCombo cshiptotype_0
+'' Version         =   6
+   tabindex        =   100
+End
+Begin Label lcaption
+   Index           =   68
+'' Version         =   6
+   tabindex        =   101
+End
+Begin SAFMaskedText cshipcustid_0
+'' Version         =   6
+   tabindex        =   102
+End
+Begin Label lcaption
+   Index           =   69
+'' Version         =   6
+   tabindex        =   103
+End
+Begin SAFMaskedText cshiptoid_0
+'' Version         =   6
+   tabindex        =   104
+End
+Begin Label dShipToID_0
+'' Version         =   6
+   tabindex        =   105
+End
+Begin Label lcaption
+   Index           =   73
+'' Version         =   6
+   tabindex        =   106
+End
+Begin SAFMaskedText cshipvendid_0
+'' Version         =   6
+   tabindex        =   107
+End
+Begin Label lcaption
+   Index           =   80
+'' Version         =   6
+   tabindex        =   108
+End
+Begin SAFMaskedText cShipVendAddrID_0
+'' Version         =   6
+   tabindex        =   109
+End
+Begin Label dShipVendAddrID_0
+'' Version         =   6
+   tabindex        =   110
+End
+Begin Label lcaption
+   Index           =   77
+'' Version         =   6
+   tabindex        =   111
+End
+Begin SAFMaskedText cshipsiteid_0
+'' Version         =   6
+   tabindex        =   112
+End
+Begin Label lcaption
+   Index           =   78
+'' Version         =   6
+   tabindex        =   113
+End
+Begin SAFMaskedText cshipaddrid_0
+'' Version         =   6
+   tabindex        =   114
+End
+Begin Label lcaption
+   Index           =   31
+'' Version         =   6
+   tabindex        =   115
+End
+Begin SAFMaskedText cshipname_0
+'' Version         =   6
+   tabindex        =   116
+End
+Begin Label lcaption
+   Index           =   32
+'' Version         =   6
+   tabindex        =   117
+End
+Begin SAFMaskedText cshipattn_0
+'' Version         =   6
+   tabindex        =   118
+End
+Begin Label lcaption
+   Index           =   33
+'' Version         =   6
+   tabindex        =   119
+End
+Begin SAFMaskedText cshipaddr1_0
+'' Version         =   6
+   tabindex        =   120
+End
+Begin Label lcaption
+   Index           =   34
+'' Version         =   6
+   tabindex        =   121
+End
+Begin SAFMaskedText cshipaddr2_0
+'' Version         =   6
+   tabindex        =   122
+End
+Begin Label lcaption
+   Index           =   35
+'' Version         =   6
+   tabindex        =   123
+End
+Begin SAFMaskedText cshipcity_0
+'' Version         =   6
+   tabindex        =   124
+End
+Begin Label lcaption
+   Index           =   36
+'' Version         =   6
+   tabindex        =   125
+End
+Begin SAFMaskedText cshipstate_0
+'' Version         =   6
+   tabindex        =   126
+End
+Begin Label dshipstate_0
+'' Version         =   6
+   tabindex        =   127
+End
+Begin Label lcaption
+   Index           =   37
+'' Version         =   6
+   tabindex        =   128
+End
+Begin SAFMaskedText cshipzip_0
+'' Version         =   6
+   tabindex        =   129
+End
+Begin Label lcaption
+   Index           =   38
+'' Version         =   6
+   tabindex        =   130
+End
+Begin SAFMaskedText cshipcountry_0
+'' Version         =   6
+   tabindex        =   131
+End
+Begin Label dshipcountry_0
+'' Version         =   6
+   height          =   13
+   left            =   200
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   132
+   top             =   263
+   width           =   145
+End
+Begin Label lcaption
+   Index           =   44
+'' Version         =   6
+   tabindex        =   133
+End
+Begin SAFMaskedText cShipPhone_0
+'' Version         =   6
+   tabindex        =   134
+End
+Begin SAFCheck cDropShip_0
+'' Version         =   6
+   tabindex        =   135
+End
+Begin Label lcaption
+   Index           =   39
+'' Version         =   6
+   tabindex        =   136
+End
+Begin SAFMaskedText cshipviaid_0
+'' Version         =   6
+   tabindex        =   137
+End
+Begin Label dshipviaid_0
+'' Version         =   6
+   tabindex        =   138
+End
+Begin Label lcaption
+   Index           =   40
+'' Version         =   6
+   tabindex        =   139
+End
+Begin SAFMaskedText cfrttermsid_0
+'' Version         =   6
+   tabindex        =   140
+End
+Begin Label dfrttermsid_0
+'' Version         =   6
+   tabindex        =   141
+End
+Begin Label lcaption
+   Index           =   41
+'' Version         =   6
+   tabindex        =   142
+End
+Begin SAFMaskedText cfobid_0
+'' Version         =   6
+   tabindex        =   143
+End
+Begin Label dfobid_0
+'' Version         =   6
+   tabindex        =   144
+End
+Begin SAFCheck cshipcmplt_0
+'' Version         =   6
+   tabindex        =   145
+End
+Begin SAFCheck cweekenddelivery_0
+'' Version         =   6
+   tabindex        =   146
+End
+Begin Label lcaption
+   Index           =   42
+'' Version         =   6
+   tabindex        =   147
+End
+Begin SAFDate cshipdateplan_0
+'' Version         =   6
+   tabindex        =   148
+End
+Begin Label lcaption
+   Index           =   45
+'' Version         =   6
+   tabindex        =   149
+End
+Begin SAFInteger ctransittime_0
+'' Version         =   6
+   tabindex        =   150
+End
+Begin Label lcaption
+   Index           =   43
+'' Version         =   6
+   tabindex        =   151
+End
+Begin SAFDate cshipdateact_0
+'' Version         =   6
+   tabindex        =   152
+End
+Begin Label lcaption
+   Index           =   46
+'' Version         =   6
+   tabindex        =   153
+End
+Begin SAFDate cetadate_0
+'' Version         =   6
+   tabindex        =   154
+End
+Begin SAFTools.SAFButton cmdMarkForHeader
+'' Version         =   6
+   height          =   25
+   left            =   32
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   155
+   top             =   280
+   width           =   73
+End
+Begin Label lcaption
+   Index           =   48
+'' Version         =   6
+   tabindex        =   156
+End
+Begin SAFMaskedText cbillname_0
+'' Version         =   6
+   tabindex        =   157
+End
+Begin Label lcaption
+   Index           =   49
+'' Version         =   6
+   tabindex        =   158
+End
+Begin SAFMaskedText cbillattn_0
+'' Version         =   6
+   tabindex        =   159
+End
+Begin Label lcaption
+   Index           =   50
+'' Version         =   6
+   tabindex        =   160
+End
+Begin SAFMaskedText cbilladdr1_0
+'' Version         =   6
+   tabindex        =   161
+End
+Begin Label lcaption
+   Index           =   51
+'' Version         =   6
+   tabindex        =   162
+End
+Begin SAFMaskedText cbilladdr2_0
+'' Version         =   6
+   tabindex        =   163
+End
+Begin Label lcaption
+   Index           =   52
+'' Version         =   6
+   tabindex        =   164
+End
+Begin SAFMaskedText cbillcity_0
+'' Version         =   6
+   tabindex        =   165
+End
+Begin Label lcaption
+   Index           =   53
+'' Version         =   6
+   tabindex        =   166
+End
+Begin SAFMaskedText cbillstate_0
+'' Version         =   6
+   tabindex        =   167
+End
+Begin Label dbillstate_0
+'' Version         =   6
+   tabindex        =   168
+End
+Begin Label lcaption
+   Index           =   54
+'' Version         =   6
+   tabindex        =   169
+End
+Begin SAFMaskedText cbillzip_0
+'' Version         =   6
+   tabindex        =   170
+End
+Begin Label lcaption
+   Index           =   55
+'' Version         =   6
+   height          =   13
+   left            =   8
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   171
+   top             =   185
+   width           =   30
+End
+Begin SAFMaskedText cbillcountry_0
+'' Version         =   6
+   height          =   21
+   left            =   120
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   172
+   top             =   185
+   width           =   33
+End
+Begin Label dbillcountry_0
+'' Version         =   6
+   tabindex        =   173
+End
+Begin Label lcaption
+   Index           =   79
+'' Version         =   6
+   tabindex        =   174
+End
+Begin SAFMaskedText cBillPhone_0
+'' Version         =   6
+   tabindex        =   175
+End
+Begin Label lcaption
+   Index           =   56
+'' Version         =   6
+   tabindex        =   176
+End
+Begin SAFMaskedText cbuyerid_0
+'' Version         =   6
+   tabindex        =   177
+End
+Begin Label lcaption
+   Index           =   57
+'' Version         =   6
+   tabindex        =   178
+End
+Begin SAFMaskedText cbuyername_0
+'' Version         =   6
+   tabindex        =   179
+End
+Begin Label lcaption
+   Index           =   58
+'' Version         =   6
+   height          =   13
+   left            =   416
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   180
+   top             =   89
+   visible         =   FALSE
+   width           =   47
+End
+Begin SAFMaskedText cdiv_0
+'' Version         =   6
+   height          =   21
+   left            =   120
+   mask            =   "NUUNNNNNNNNNN"
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   181
+   top             =   209
+   visible         =   FALSE
+   width           =   224
+End
+Begin Label lcaption
+   Index           =   59
+'' Version         =   6
+   tabindex        =   182
+End
+Begin SAFMaskedText cdept_0
+'' Version         =   6
+   tabindex        =   183
+End
+Begin Label lcaption
+   Index           =   60
+'' Version         =   6
+   tabindex        =   184
+End
+Begin SAFMaskedText ccontractnbr_0
+'' Version         =   6
+   tabindex        =   185
+End
+Begin Label lcaption
+   Index           =   70
+'' Version         =   6
+   tabindex        =   186
+End
+Begin SAFMaskedText cblktordnbr_0
+'' Version         =   6
+   tabindex        =   187
+End
+Begin Label lcaption
+   Index           =   71
+'' Version         =   6
+   tabindex        =   188
+End
+Begin SAFMaskedText cauthnbr_0
+'' Version         =   6
+   tabindex        =   189
+End
+Begin Label lcaption
+   Index           =   11
+'' Version         =   6
+   height          =   13
+   left            =   416
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   190
+   top             =   233
+   visible         =   TRUE
+   width           =   95
+End
+Begin SAFMaskedText ctermsid_0
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   191
+End
+Begin Label dtermsid_0
+'' Version         =   6
+   tabindex        =   192
+End
+Begin SAFTools.SAFButton cmdViewCredit
+'' Version         =   6
+   tabindex        =   193
+End
+Begin SAFTools.SAFButton cmdFindItem
+   Index           =   1
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   278
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   194
+   top             =   318
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdAvailability
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   357
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   195
+   top             =   318
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdLotSerial
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   350
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   196
+   top             =   508
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdSalespeopleItem
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   594
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   197
+   top             =   318
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdRMA
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   677
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   198
+   top             =   318
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdShipAll
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   755
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   199
+   top             =   318
+   width           =   81
+End
+Begin SAFTools.SAFButton cmdClearAll
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   428.000000
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   200
+   top             =   508.000000
+   width           =   81
+End
+Begin Label lcaption
+   Index           =   67
+'' Version         =   6
+   tabindex        =   201
+End
+Begin SAFDate corddate_0
+'' Version         =   6
+   height          =   21
+   left            =   144
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   202
+   top             =   17
+   width           =   77
+End
+Begin Label lslsperid_0
+'' Version         =   6
+   tabindex        =   203
+End
+Begin SAFMaskedText cslsperid_0
+'' Version         =   6
+   tabindex        =   204
+End
+Begin SAFTools.SAFButton cmdSalespeople
+'' Version         =   6
+   tabindex        =   205
+End
+Begin Label dslsperid_0
+'' Version         =   6
+   tabindex        =   206
+End
+Begin Label lcmmnpct_0
+'' Version         =   6
+   tabindex        =   207
+   visible         =   FALSE
+End
+Begin SAFFloat ccmmnpct_0
+'' Version         =   6
+   tabindex        =   208
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   72
+'' Version         =   6
+   tabindex        =   209
+   visible         =   FALSE
+End
+Begin SAFMaskedText ccertid_0
+'' Version         =   6
+   tabindex        =   210
+   visible         =   FALSE
+End
+Begin Label dcertid_0
+'' Version         =   6
+   tabindex        =   211
+End
+Begin Label lprojectid_0
+'' Version         =   6
+   tabindex        =   212
+   visible         =   FALSE
+End
+Begin SAFMaskedText cprojectid_0
+'' Version         =   6
+   tabindex        =   213
+   visible         =   FALSE
+End
+Begin Label dprojectid_0
+'' Version         =   6
+   height          =   13
+   left            =   176
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   214
+   top             =   105
+   width           =   137
+End
+Begin Label lcaption
+   Index           =   81
+'' Version         =   6
+   height          =   13
+   left            =   7
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   216
+   top             =   169.000000
+   width           =   121
+End
+Begin SAFMaskedText cinvcnbr_0
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   144
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   217
+   top             =   169
+   width           =   103
+End
+Begin Label lcaption
+   Index           =   21
+'' Version         =   6
+   height          =   13
+   left            =   7
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   218
+   top             =   193.000000
+   width           =   101
+End
+Begin SAFMaskedText cPerPost_0
+'' Version         =   6
+   height          =   21
+   left            =   145
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   219
+   top             =   193
+   width           =   49
+End
+Begin SAFCheck cRequireStepInsp_0
+'' Version         =   6
+   tabindex        =   220
+   visible         =   FALSE
+End
+Begin SAFCheck cRequireStepAssy_0
+'' Version         =   6
+   tabindex        =   221
+   visible         =   FALSE
+End
+Begin SAFCheck cedi810_0
+'' Version         =   6
+   tabindex        =   222
+   visible         =   FALSE
+End
+Begin Frame fraShipStatus
+'' Version         =   6
+   tabindex        =   223
+End
+Begin Label lcaption
+   Index           =   66
+'' Version         =   6
+   tabindex        =   224
+End
+Begin SAFCombo cstatus_0
+'' Version         =   6
+   tabindex        =   225
+End
+Begin Label lcaption
+   Index           =   74
+'' Version         =   6
+   tabindex        =   226
+End
+Begin SAFDate creldate_0
+'' Version         =   6
+   tabindex        =   227
+End
+Begin Label lcaption
+   Index           =   75
+'' Version         =   6
+   tabindex        =   228
+End
+Begin SAFDate cpickdate_0
+'' Version         =   6
+   tabindex        =   229
+End
+Begin Label lcaption
+   Index           =   76
+'' Version         =   6
+   tabindex        =   230
+End
+Begin SAFDate cpackdate_0
+'' Version         =   6
+   tabindex        =   231
+End
+Begin SAFCheck cShippingManifested_0
+'' Version         =   6
+   tabindex        =   232
+   visible         =   FALSE
+End
+Begin SAFCheck chold_0
+'' Version         =   6
+   tabindex        =   233
+End
+Begin SAFCheck ccredithold_0
+'' Version         =   6
+   tabindex        =   234
+End
+Begin SAFDate ccreditholddate_0
+'' Version         =   6
+   tabindex        =   235
+End
+Begin SAFCheck ccancelled_0
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   236
+   visible         =   TRUE
+End
+Begin SAFDate cdatecancelled_0
+'' Version         =   6
+   tabindex        =   237
+End
+Begin Frame fraNextStep
+'' Version         =   6
+   height          =   68
+   left            =   329
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   238
+   top             =   233
+   width           =   225
+End
+Begin Label lNextStep
+'' Version         =   6
+   fontbold        =   TRUE
+   fontsize        =   11.000000
+   height          =   22
+   left            =   8
+'' parent          =   "fraNextStep"
+'' parentform      =   "Form1"
+   tabindex        =   239
+   top             =   20
+   width           =   209
+End
+Begin Frame fraTaxID
+'' Version         =   6
+   tabindex        =   240
+End
+Begin Label lcaption
+   Index           =   29
+'' Version         =   6
+   tabindex        =   241
+End
+Begin SAFMaskedText ctaxid00_0
+   tabindex        =   241
+End
+Begin Label lcaption
+   Index           =   30
+'' Version         =   6
+   tabindex        =   243
+End
+Begin SAFMaskedText ctaxid01_0
+   tabindex        =   243
+End
+Begin Label lcaption
+   Index           =   47
+'' Version         =   6
+   tabindex        =   245
+End
+Begin SAFMaskedText ctaxid02_0
+   tabindex        =   245
+End
+Begin Label lcaption
+   Index           =   61
+'' Version         =   6
+   height          =   13
+   left            =   8
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   247
+   top             =   96
+   width           =   87
+End
+Begin SAFMaskedText ctaxid03_0
+   tabindex        =   247
+End
+Begin SAFCheck ccancelbo_0
+'' Version         =   6
+   tabindex        =   249
+End
+Begin SAFCheck cRelRMARet_0
+'' Version         =   6
+   tabindex        =   250
+End
+Begin Frame fraMiscCharges
+'' Version         =   6
+   height          =   291
+   left            =   4
+   tabindex        =   251
+   top             =   9
+   width           =   1020
+End
+Begin Label lcaption
+   Index           =   82
+'' Version         =   6
+   tabindex        =   252
+End
+Begin SAFMaskedText cmiscchrgid_3
+'' Version         =   6
+   tabindex        =   253
+End
+Begin Label lcaption
+   Index           =   83
+'' Version         =   6
+   tabindex        =   254
+End
+Begin SAFMaskedText cdescr_3
+'' Version         =   6
+   tabindex        =   255
+End
+Begin Label lcaption
+   Index           =   84
+'' Version         =   6
+   tabindex        =   256
+End
+Begin SAFFloat ccurymiscchrg_3
+'' Version         =   6
+   tabindex        =   257
+End
+Begin SAFCheck ctaxable_3
+'' Version         =   6
+   tabindex        =   258
+End
+Begin Label lcaption
+   Index           =   85
+'' Version         =   6
+   tabindex        =   259
+End
+Begin SAFMaskedText ctaxcat_3
+'' Version         =   6
+   tabindex        =   260
+End
+Begin Label dtaxcat_3
+'' Version         =   6
+   tabindex        =   261
+End
+Begin SAFGrid Spread3
+'' Version         =   6
+   tabindex        =   270
+End
+Begin Frame fraSalesTax
+'' Version         =   6
+   height          =   291
+   left            =   4
+   tabindex        =   263
+   top             =   9
+   width           =   1020
+End
+Begin Label lcaption
+   Index           =   100
+'' Version         =   6
+   tabindex        =   264
+End
+Begin SAFMaskedText ctaxid_4
+'' Version         =   6
+   tabindex        =   265
+End
+Begin Label dtaxid_4
+'' Version         =   6
+   tabindex        =   266
+End
+Begin Label lcaption
+   Index           =   101
+'' Version         =   6
+   tabindex        =   267
+End
+Begin SAFMaskedText ctaxcat_4
+'' Version         =   6
+   tabindex        =   268
+End
+Begin Label dtaxcat_4
+'' Version         =   6
+   tabindex        =   269
+End
+Begin Label lcaption
+   Index           =   102
+'' Version         =   6
+   tabindex        =   270
+End
+Begin SAFFloat ccuryfrttax_4
+'' Version         =   6
+   tabindex        =   271
+End
+Begin Label lcaption
+   Index           =   104
+'' Version         =   6
+   tabindex        =   272
+End
+Begin SAFFloat ccurymerchtax_4
+'' Version         =   6
+   tabindex        =   273
+End
+Begin Label lcaption
+   Index           =   106
+'' Version         =   6
+   tabindex        =   274
+End
+Begin SAFFloat ccurymisctax_4
+'' Version         =   6
+   tabindex        =   275
+End
+Begin Label lcaption
+   Index           =   108
+'' Version         =   6
+   tabindex        =   276
+End
+Begin SAFFloat ccurytottax_4
+'' Version         =   6
+   tabindex        =   277
+End
+Begin Label lcaption
+   Index           =   103
+'' Version         =   6
+   tabindex        =   278
+End
+Begin SAFFloat ccuryfrttxbl_4
+'' Version         =   6
+   tabindex        =   279
+End
+Begin Label lcaption
+   Index           =   105
+'' Version         =   6
+   tabindex        =   280
+End
+Begin SAFFloat ccurymerchtxbl_4
+'' Version         =   6
+   tabindex        =   281
+End
+Begin Label lcaption
+   Index           =   107
+'' Version         =   6
+   tabindex        =   282
+End
+Begin SAFFloat ccurymisctxbl_4
+'' Version         =   6
+   tabindex        =   283
+End
+Begin Label lcaption
+   Index           =   109
+'' Version         =   6
+   tabindex        =   284
+End
+Begin SAFFloat ccurytottxbl_4
+'' Version         =   6
+   tabindex        =   285
+End
+Begin Label lcaption
+   Index           =   110
+'' Version         =   6
+   tabindex        =   286
+End
+Begin SAFFloat ctaxrate_4
+'' Version         =   6
+   tabindex        =   287
+End
+Begin SAFGrid Spread4
+'' Version         =   6
+   tabindex        =   296
+End
+Begin Label lcaption
+   Index           =   118
+'' Version         =   6
+   height          =   13
+   left            =   10
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   tabindex        =   291
+   top             =   254
+   width           =   58
+End
+Begin SAFMaskedText cpmttypeid_5
+'' Version         =   6
+   height          =   21
+   left            =   184
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   tabindex        =   292
+   top             =   24
+   visible         =   FALSE
+   width           =   41
+End
+Begin Label dpmttypeid_5
+'' Version         =   6
+   tabindex        =   293
+End
+Begin Label lcaption
+   Index           =   116
+'' Version         =   6
+   tabindex        =   294
+End
+Begin SAFFloat ccurypmtamt_5
+'' Version         =   6
+   enabled         =   FALSE
+   height          =   21
+   left            =   185
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   tabindex        =   295
+   tabstop         =   FALSE
+   top             =   48
+   width           =   112
+End
+Begin Label lcaption
+   Index           =   117
+'' Version         =   6
+   tabindex        =   296
+End
+Begin SAFDate cpmtdate_5
+'' Version         =   6
+   enabled         =   TRUE
+   tabindex        =   297
+   tabstop         =   FALSE
+End
+Begin Label lcaption
+   Index           =   115
+'' Version         =   6
+   tabindex        =   298
+End
+Begin SAFMaskedText cchknbr_5
+'' Version         =   6
+   height          =   21
+   left            =   184
+   mask            =   "NNNN"
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   tabindex        =   299
+   top             =   112
+   width           =   176
+End
+Begin SAFGrid Spread5
+'' Version         =   6
+   tabindex        =   315
+End
+Begin Label lcaption
+   Index           =   96
+'' Version         =   6
+   tabindex        =   309
+   visible         =   FALSE
+End
+Begin SAFFloat ctotshipwght_0
+'' Version         =   6
+   tabindex        =   310
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   97
+'' Version         =   6
+   tabindex        =   311
+   visible         =   FALSE
+End
+Begin SAFInteger ctotboxes_0
+'' Version         =   6
+   tabindex        =   312
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   98
+'' Version         =   6
+   tabindex        =   313
+   visible         =   FALSE
+End
+Begin SAFInteger ctotpallets_0
+'' Version         =   6
+   tabindex        =   314
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   27
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   315
+   visible         =   FALSE
+End
+Begin SAFFloat cdiscpct_0
+'' Version         =   6
+   height          =   21
+   left            =   409
+'' parent          =   "_SSTab1_TabPage8"
+'' parentform      =   "Form1"
+   tabindex        =   316
+   tabstop         =   FALSE
+   top             =   113
+   visible         =   FALSE
+   width           =   112
+End
+Begin Label lcaption
+   Index           =   87
+'' Version         =   6
+   tabindex        =   317
+   visible         =   FALSE
+End
+Begin SAFFloat ccurytotfrtcost_0
+'' Version         =   6
+   tabindex        =   318
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   88
+'' Version         =   6
+   tabindex        =   319
+End
+Begin SAFFloat ccurytotmerch_0
+'' Version         =   6
+   tabindex        =   320
+End
+Begin Label lcaption
+   Index           =   89
+'' Version         =   6
+   tabindex        =   321
+End
+Begin SAFFloat cCuryWholeOrdDisc_0
+'' Version         =   6
+   tabindex        =   322
+End
+Begin Label lcaption
+   Index           =   90
+'' Version         =   6
+   tabindex        =   323
+End
+Begin SAFFloat ccurytottax_0
+'' Version         =   6
+   tabindex        =   324
+End
+Begin Label lcaption
+   Index           =   91
+'' Version         =   6
+   tabindex        =   325
+   visible         =   FALSE
+End
+Begin SAFFloat ccurytotfrtinvc_0
+'' Version         =   6
+   tabindex        =   326
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   92
+'' Version         =   6
+   tabindex        =   327
+   visible         =   FALSE
+End
+Begin SAFFloat ccurypremfrtamt_0
+'' Version         =   6
+   tabindex        =   328
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   93
+'' Version         =   6
+   tabindex        =   329
+End
+Begin SAFFloat ccurytotmisc_0
+'' Version         =   6
+   tabindex        =   330
+End
+Begin Label lcaption
+   Index           =   95
+'' Version         =   6
+   tabindex        =   331
+End
+Begin SAFFloat ccurytotinvc_0
+'' Version         =   6
+   tabindex        =   332
+End
+Begin Label lcaption
+   Index           =   94
+'' Version         =   6
+   tabindex        =   333
+End
+Begin SAFFloat ccurytotpmt_0
+'' Version         =   6
+   height          =   21
+   left            =   672
+'' parent          =   "_SSTab1_TabPage8"
+'' parentform      =   "Form1"
+   tabindex        =   334
+   top             =   265
+   width           =   112
+End
+Begin SAFTools.SAFButton cmdRelease
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   515
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   335
+   top             =   508.000000
+   visible         =   FALSE
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdPrint
+'' Version         =   6
+   caption         =   "Imprimir"
+   customtabpagenumber=   1
+   default         =   TRUE
+   height          =   19
+   left            =   276
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   336
+   top             =   508
+   visible         =   FALSE
+   width           =   56
+End
+Begin SAFTools.SAFButton cmdEventHistory
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   111
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   337
+   top             =   508.000000
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdViewOrder
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   189.000000
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   338
+   top             =   508.000000
+   width           =   73
+End
+Begin SAFTools.SAFButton cmdManifest
+'' Version         =   6
+   customtabpagenumber=   1
+   height          =   21
+   left            =   438
+'' parent          =   "_SSTab1_TabPage1"
+'' parentform      =   "Form1"
+   tabindex        =   339
+   top             =   318
+   width           =   73
+End
+Begin Label lcaption
+   Index           =   10
+'' Version         =   6
+   customtabpagenumber=   1
+   fontbold        =   TRUE
+   fontsize        =   11.000000
+   height          =   18
+   left            =   598
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   340
+   top             =   508.000000
+   width           =   134
+End
+Begin SAFFloat cCuryBalDue_0
+'' Version         =   6
+   backcolor       =   16777088
+   customtabpagenumber=   1
+   fontbold        =   TRUE
+   fontitalic      =   FALSE
+   fontname        =   "Tahoma"
+   fontsize        =   12
+   fontstrikethru  =   FALSE
+   fontunderline   =   FALSE
+   height          =   25
+   left            =   735
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   341
+   top             =   508
+   width           =   112
+End
+Begin Frame SAFNewFrame
+   height          =   480.000000
+   left            =   -2000.000000
+   tabindex        =   340
+   top             =   480.000000
+   width           =   1200.000000
+End
+Begin SSTab.1 SAFNewTab
+   height          =   480.000000
+   left            =   -2000.000000
+   tabindex        =   341
+   top             =   480.000000
+   width           =   1845.000000
+End
+Begin Label dcustid_0
+'' Version         =   6
+   fontbold        =   TRUE
+   fontsize        =   11.000000
+   forecolor       =   -2147483635
+   height          =   23
+   left            =   9
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   17
+   top             =   108
+   width           =   436
+End
+Begin SAFLabel Label1
+'' Version         =   6
+   height          =   17
+   left            =   0
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   356
+   top             =   25
+   width           =   48
+End
+Begin SAFTools.SAFLabel Terminos
+'' Created         =   True
+'' Version         =   6
+   alignment       =   2
+   caption         =   ""
+   fontbold        =   TRUE
+   fontitalic      =   FALSE
+   fontname        =   "Arial Narrow"
+   fontsize        =   12
+   fontstrikethru  =   FALSE
+   fontunderline   =   FALSE
+   forecolor       =   255
+   height          =   19
+   left            =   269
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   902
+   top             =   83
+   visible         =   TRUE
+   width           =   201
+End
+Begin SAFLabel Termino
+   height          =   255
+   left            =   3900
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   top             =   870
+   width           =   2265
+End
+Begin SAFMaskedText cIRInvtID_1
+'' Version         =   6
+   tabindex        =   56
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   119
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   55
+   visible         =   FALSE
+End
+Begin Label lcaption
+   Index           =   120
+'' Version         =   6
+   enabled         =   FALSE
+   tabindex        =   67
+   visible         =   FALSE
+End
+Begin SAFMaskedText cIRSiteID_1
+'' Version         =   6
+   tabstop         =   FALSE
+   visible         =   FALSE
+End
+Begin SAFCheck cIRDemand_1
+'' Version         =   6
+   tabindex        =   60
+   tabstop         =   FALSE
+   visible         =   TRUE
+End
+Begin SAFDate cInvcDate
+'' Version         =   6
+   height          =   21
+   left            =   249
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   220
+   top             =   169
+   width           =   77
+End
+Begin SAFMaskedText cShipRegisterID
+'' Version         =   6
+   height          =   21
+   left            =   144
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   223
+   top             =   217
+   width           =   100
+End
+Begin SAFMaskedText cAccrPerPost_0
+'' Version         =   6
+   height          =   20
+   left            =   144
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   224
+   top             =   265
+   visible         =   FALSE
+   width           =   49
+End
+Begin SAFMaskedText cAccrShipRegisterID_0
+'' Version         =   6
+   height          =   20
+   left            =   144
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   225
+   top             =   289
+   visible         =   FALSE
+   width           =   77
+End
+Begin SAFCheck cConsolInv_0
+'' Version         =   6
+   tabindex        =   228
+   visible         =   FALSE
+End
+Begin SAFMaskedText ctaxid_0
+'' Version         =   6
+   tabindex        =   249
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   1
+'' Version         =   6
+   tabindex        =   251
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   2
+'' Version         =   6
+   tabindex        =   253
+End
+Begin SAFMaskedText ctaxid_0
+   Index           =   3
+'' Version         =   6
+   height          =   21
+   left            =   128
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   255
+   top             =   96
+   width           =   77
+End
+Begin SAFCheck cHoldOrder
+'' Version         =   6
+   tabindex        =   258
+   visible         =   FALSE
+End
+Begin SAFUpdate Update1
+'' Version         =   6
+   tabindex        =   348
+End
+Begin Label lcaption
+   Index           =   99
+'' Version         =   6
+   height          =   16
+   left            =   7
+'' parent          =   "_SSTab1_TabPage4"
+'' parentform      =   "Form1"
+   tabindex        =   355
+   top             =   217.000000
+   width           =   104
+End
+Begin NoteButton NoteButton0
+'' Version         =   6
+   tabindex        =   1037
+End
+Begin NoteButton NoteButton1
+'' Version         =   6
+   tabindex        =   1038
+End
+Begin NoteButton NoteButton3
+'' Version         =   6
+   tabindex        =   1039
+End
+Begin NoteButton NoteButton4
+'' Version         =   6
+   tabindex        =   1040
+End
+Begin NoteButton NoteButton5
+'' Version         =   6
+   tabindex        =   1041
+End
+Begin SAFMaskedText cshipperid_0
+'' Version         =   6
+   height          =   21
+   left            =   88
+'' parent          =   "fraHdr"
+'' parentform      =   "Form1"
+   top             =   16
+   width           =   112
+End
+Begin VB.Form frmPrint
+'' Version         =   6
+   height          =   314
+   left            =   353
+   top             =   294
+   width           =   413
+   windowstate     =   0
+End
+Begin SAFOption cprint_0
+   Index           =   11
+'' Version         =   6
+   height          =   19
+   left            =   16
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   tabindex        =   8
+   top             =   112
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   10
+'' Version         =   6
+   height          =   19
+   left            =   216
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   top             =   112
+   width           =   153
+End
+Begin SAFOption cprint_0
+'' Version         =   6
+   height          =   19
+   left            =   16
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   tabindex        =   4
+   top             =   18
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   6
+'' Version         =   6
+   height          =   19
+   left            =   216
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   top             =   16
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   7
+'' Version         =   6
+   height          =   19
+   left            =   216
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   top             =   40
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   8
+'' Version         =   6
+   height          =   19
+   left            =   216
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   top             =   64
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   9
+'' Version         =   6
+   height          =   19
+   left            =   216
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   top             =   88
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   5
+'' Version         =   6
+   height          =   19
+   left            =   16
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   tabindex        =   2
+   top             =   136
+   width           =   153
+End
+Begin SAFOption cprint_0
+   Index           =   4
+'' Version         =   6
+   height          =   19
+   left            =   369
+'' parent          =   "Frame1Print"
+'' parentform      =   "frmPrint"
+   tabindex        =   9
+   top             =   131
+   width           =   153
+End
+Begin GroupBox Frame1Print
+'' Version         =   6
+   tabindex        =   3
+End
+Begin SAFOption cprint_0
+   Index           =   1
+'' Version         =   6
+   tabindex        =   5
+End
+Begin SAFOption cprint_0
+   Index           =   2
+'' Version         =   6
+   tabindex        =   6
+End
+Begin SAFOption cprint_0
+   Index           =   3
+'' Version         =   6
+   tabindex        =   7
+End
+Begin SAFMaskedText csotypeid_0
+'' Version         =   6
+   height          =   21
+   left            =   360
+'' parent          =   "fraHdr"
+'' parentform      =   "Form1"
+   top             =   16
+   width           =   41
+End
+Begin VB.Form frmSubstitutes
+'' Version         =   6
+   height          =   156
+   left            =   200
+   top             =   475
+   width           =   260
+End
+Begin VB.Form frmRelease
+'' Version         =   6
+   height          =   296
+   left            =   261
+   top             =   198
+   width           =   402
+   windowstate     =   0
+End
+Begin VB.Form frmPriceNegotiator
+'' Version         =   6
+   height          =   461
+   left            =   92
+   top             =   263
+   width           =   778
+End
+Begin VB.Form frmMarkForHeader
+'' Version         =   6
+   height          =   407
+   left            =   110
+   top             =   271
+   width           =   755
+   windowstate     =   0
+End
+Begin VB.Form frmLotSerial
+'' Version         =   6
+   height          =   308
+   left            =   124
+   top             =   244
+   width           =   708
+End
+Begin VB.Form frmKitExplode
+'' Version         =   6
+   height          =   177
+   left            =   220
+   top             =   283
+   width           =   269
+End
+Begin VB.Form frmCreateShipper
+'' Version         =   6
+   height          =   405
+   left            =   287
+   top             =   211
+   width           =   389
+End
+Begin Button xbDatosAddenda
+'' Version         =   6
+   height          =   21
+   left            =   6
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   939
+   top             =   508.000000
+   width           =   100
+End
+Begin SAF.SAFMaskedText xuser11
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user3";3752;0"
+   heading         =   "xuser11"
+   height          =   22
+   left            =   492
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   974
+   top             =   295
+   visible         =   TRUE
+   width           =   98
+End
+Begin SAF.SAFMaskedText xuser1
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user1";3628;0"
+   heading         =   "xuser1"
+   height          =   22
+   left            =   135
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   975
+   top             =   293
+   visible         =   TRUE
+   width           =   169
+End
+Begin SAF.SAFMaskedText xuser10
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user2";3692;0"
+   heading         =   "xuser10"
+   height          =   21
+   left            =   311
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   981
+   top             =   294
+   visible         =   TRUE
+   width           =   176
+End
+Begin SAF.SAFMaskedText xuser101
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user4";3812;0"
+   heading         =   "xuser101"
+   height          =   19
+   left            =   613
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   982
+   top             =   296
+   visible         =   TRUE
+   width           =   20
+End
+Begin SAF.SAFMaskedText xuser102
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user7";3888;0"
+   heading         =   "xuser102"
+   height          =   20
+   left            =   640
+   level           =   "0"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   983
+   top             =   295
+   visible         =   TRUE
+   width           =   78
+End
+Begin SAFTools.SAFLabel Label3
+'' Created         =   True
+'' Version         =   6
+   caption         =   "PAQUETERIA"
+   height          =   17
+   left            =   133
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   984
+   top             =   318
+   visible         =   TRUE
+   width           =   78
+End
+Begin SAFTools.SAFLabel Label4
+'' Created         =   True
+'' Version         =   6
+   caption         =   "GUIA"
+   height          =   17
+   left            =   312
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   984
+   top             =   316
+   visible         =   TRUE
+   width           =   76
+End
+Begin SAFTools.SAFLabel Label5
+'' Created         =   True
+'' Version         =   6
+   caption         =   "FECHA ENVIO"
+   height          =   17
+   left            =   493
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   985
+   top             =   318
+   visible         =   TRUE
+   width           =   82
+End
+Begin SAFTools.SAFLabel Label6
+'' Created         =   True
+'' Version         =   6
+   caption         =   "FECHA RECIBIDA"
+   height          =   17
+   left            =   641
+'' parent          =   "_SSTab1_TabPage2"
+'' parentform      =   "Form1"
+   tabindex        =   987
+   top             =   314
+   visible         =   TRUE
+   width           =   96
+End
+Begin SAF.SAFMaskedText cOrdNbrOrig
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.user8";3908;0"
+   heading         =   "cOrdNbrOrig"
+   height          =   21
+   left            =   533
+   level           =   "0"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "frmMarkForHeader"
+'' parentform      =   "frmMarkForHeader"
+   pv              =   ""soheader_all", "bSOShipHeader.CpnyID"; 0; 0; 10; 0,"
+   tabindex        =   987
+   top             =   96
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFMaskedText cMarkName1_0
+'' Version         =   6
+   height          =   21
+   left            =   120
+'' parent          =   "frmMarkForHeader"
+'' parentform      =   "frmMarkForHeader"
+   top             =   96
+   width           =   224
+End
+Begin SAFTools.SAFLabel lOrdNbrOrig
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Cotización Original:"
+   height          =   17
+   left            =   422
+'' parent          =   "frmMarkForHeader"
+'' parentform      =   "frmMarkForHeader"
+   tabindex        =   988
+   top             =   96
+   visible         =   TRUE
+   width           =   105
+End
+Begin SAFMaskedText cMarkAddrID_0
+'' Version         =   6
+   height          =   21
+   left            =   656.000000
+'' parent          =   "fraMark_0"
+'' parentform      =   "frmMarkForHeader"
+   top             =   32
+   width           =   77
+End
+Begin SAFMaskedText cMarkSiteID_0
+'' Version         =   6
+   height          =   21
+   left            =   560
+'' parent          =   "fraMark_0"
+'' parentform      =   "frmMarkForHeader"
+   top             =   32
+   width           =   77
+End
+Begin SAF.SAFMaskedText cPaymentTypeUser
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   TRUE
+   enabled         =   TRUE
+   fieldname       =   ""bsoshippayments.user7";916;0"
+   heading         =   "Tipo Pago"
+   height          =   25
+   left            =   184
+   level           =   "5"
+   mask            =   "UUUUUUUUU"
+'' parent          =   "fraPayments"
+'' parentform      =   "Form1"
+   pv              =   ""PmtType_Account_Shipper", "bSOShipPayments.CpnyID"; 0; 0; 0; 0, "bSOShipHeader.CuryID"; 0; 0; 0; 0, "bSOType.User7"; 0; 0; 0; 0,"
+   tabindex        =   290
+   top             =   252
+   visible         =   TRUE
+   width           =   88
+End
+Begin SAFMaskedText xcHora
+'' Version         =   6
+   tabindex        =   908
+End
+Begin Button xbCargaPago
+'' Version         =   6
+   height          =   25
+   left            =   64
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   945
+   top             =   293
+   visible         =   FALSE
+   width           =   120
+End
+Begin Label xlMetodoDePago
+'' Version         =   6
+   height          =   18
+   left            =   34
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   951
+   top             =   301
+   width           =   97
+End
+Begin Label xlNumeroDeCuenta
+'' Version         =   6
+   height          =   19
+   left            =   390
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   952
+   top             =   299
+   width           =   110
+End
+Begin Button xbF3
+'' Version         =   6
+   caption         =   "IMPRIMIR"
+   height          =   21
+   left            =   267
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   960
+   tabstop         =   TRUE
+   top             =   508.000000
+   visible         =   TRUE
+   width           =   73
+End
+Begin Label xlMetodoDePagoDescr
+'' Version         =   6
+   tabindex        =   961
+End
+Begin Button xbRegenerarFE
+'' Version         =   6
+   tabindex        =   967
+End
+Begin SAFTools.SAFLabel lUUID
+'' Created         =   True
+'' Version         =   6
+   alignment       =   1
+   caption         =   ""
+   fontbold        =   TRUE
+   forecolor       =   -2147483646
+   height          =   17
+   left            =   283
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   993
+   top             =   529
+   visible         =   TRUE
+   width           =   332
+End
+Begin SAFTools.SAFLabel lFacturada
+'' Created         =   True
+'' Version         =   6
+   alignment       =   2
+   caption         =   ""
+   fontbold        =   TRUE
+   fontsize        =   10.000000
+   forecolor       =   -2147483635
+   height          =   17
+   left            =   3
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   994
+   top             =   528
+   visible         =   TRUE
+   width           =   262
+End
+Begin SAFTools.SAFLabel lRFC
+'' Created         =   True
+'' Version         =   6
+   caption         =   "RFC:"
+   height          =   17
+   left            =   8.000000
+'' parent          =   "_SSTab1_TabPage3"
+'' parentform      =   "Form1"
+   tabindex        =   995
+   top             =   209
+   visible         =   FALSE
+   width           =   32
+End
+Begin SAFTools.SAFButton bAceptarRelease
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Aceptar"
+   default         =   TRUE
+   enabled         =   TRUE
+   height          =   21
+   left            =   118.000000
+'' parent          =   "frmRelease"
+'' parentform      =   "frmRelease"
+   tabindex        =   1001
+   top             =   199.000000
+   visible         =   TRUE
+   width           =   73
+End
+Begin SAFOption crelease_0
+   Index           =   12
+'' Version         =   6
+   tabindex        =   11
+End
+Begin SAFOption crelease_0
+   Index           =   13
+'' Version         =   6
+   tabindex        =   13
+End
+Begin Button cmdCancelRelease
+'' Version         =   6
+   height          =   21
+   left            =   201
+'' parent          =   "frmRelease"
+'' parentform      =   "frmRelease"
+   top             =   200
+   width           =   73
+End
+Begin Button cmdOKRelease
+'' Version         =   6
+   height          =   21
+   left            =   119
+'' parent          =   "frmRelease"
+'' parentform      =   "frmRelease"
+   top             =   219
+   visible         =   TRUE
+   width           =   73
+End
+Begin SAF.SAFMaskedText cLoteAR
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   FALSE
+   fieldname       =   ""bsoshipheader.arbatnbr";158;0"
+   heading         =   "cLoteAR"
+   height          =   21
+   left            =   128
+   level           =   "0"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   1002
+   top             =   122
+   visible         =   TRUE
+   width           =   77
+End
+Begin DSLDate cBIInvDate
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin SAFMaskedText cBIInvNum
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin Label lInvNbr
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin Label lDraftNum
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin SAFMaskedText cBIDraftNum
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin CheckBox cCreatePjt
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin SAFCombo cbInvoiceIn
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin Label lInvoiceIn
+'' Version         =   6
+   visible         =   FALSE
+End
+Begin SAF.SAFMaskedText cINBatNbr
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   enabled         =   FALSE
+   fieldname       =   ""bsoshipheader.inbatnbr";1996;0"
+   heading         =   "cINBatNbr"
+   height          =   21.000000
+   left            =   128.000000
+   level           =   "0"
+   mask            =   "xxxxxxxxxx"
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   1003
+   top             =   145
+   visible         =   TRUE
+   width           =   77.000000
+End
+Begin SAFTools.SAFLabel lLoteAR
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Lote AR:"
+   height          =   17
+   left            =   8.000000
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   1009
+   top             =   122.000000
+   visible         =   TRUE
+   width           =   56
+End
+Begin SAFTools.SAFLabel lLoteIN
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Lote IN:"
+   height          =   17
+   left            =   8
+'' parent          =   "fraTaxID"
+'' parentform      =   "Form1"
+   tabindex        =   1010
+   top             =   145.000000
+   visible         =   TRUE
+   width           =   56
+End
+Begin SAFTools.SAFLabel lNumeroDeCuenta
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Número de Cuenta:"
+   height          =   17
+   left            =   25.000000
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   1018
+   top             =   324.000000
+   visible         =   TRUE
+   width           =   101
+End
+Begin SAFTools.SAFLabel lMetodoDePago
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Método de Pago:"
+   height          =   17
+   left            =   25
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   1019
+   top             =   300.000000
+   visible         =   TRUE
+   width           =   95
+End
+Begin SAFTools.SAFButton bImprimirCFDI
+'' Created         =   True
+'' Version         =   6
+   caption         =   "IMPRIMIR"
+   height          =   21
+   left            =   272
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   1020
+   top             =   508
+   visible         =   TRUE
+   width           =   73
+End
+Begin SAFTools.SAFLabel xlFormaDePago
+'' Created         =   True
+'' Version         =   6
+   caption         =   "Forma de Pago:"
+   height          =   17
+   left            =   525
+'' parent          =   "_SSTab1_TabPage7"
+'' parentform      =   "Form1"
+   tabindex        =   1035
+   top             =   300
+   visible         =   TRUE
+   width           =   86
+End
+Begin SAFTools.SAFLabel Label7
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No Artic Alterno:"
+   height          =   17
+   left            =   233
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   tabindex        =   1036
+   top             =   15
+   visible         =   TRUE
+   width           =   90.000000
+End
+Begin SAFTools.SAFLabel Label8
+'' Created         =   True
+'' Version         =   6
+   caption         =   "No Proyecto"
+   height          =   17
+   left            =   465
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   tabindex        =   1036
+   top             =   105
+   visible         =   TRUE
+   width           =   70.000000
+End
+Begin Form FilePreviewForm
+'' Version         =   6
+   height          =   492
+   left            =   62
+   top             =   62
+   width           =   648
+End
+Begin Form TemplateForm
+'' Version         =   6
+   height          =   300
+   left            =   104
+   top             =   104
+   width           =   600
+End
+Begin Form RecForm
+'' Version         =   6
+   height          =   543
+   left            =   83
+   top             =   83
+   width           =   728
+End
+Begin DSLMaskedText xuser103
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser103"
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipline.s4future01";1348;0"
+   heading         =   "No Articulo Alt"
+   height          =   21
+   left            =   321
+   level           =   "1"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "fraItem"
+'' parentform      =   "Form1"
+   pv              =   ""DMG_Inventory_Sales","
+   tabindex        =   1042
+   top             =   12
+   visible         =   TRUE
+   width           =   90
+End
+Begin DSLMaskedText xuser104
+'' Created         =   True
+'' Version         =   6
+   blankerr        =   FALSE
+   caption         =   "xuser104"
+   enabled         =   TRUE
+   fieldname       =   ""bsoshipheader.s4future01";2280;0"
+   heading         =   ""
+   height          =   21
+   left            =   540.000000
+   level           =   "0"
+   mask            =   "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+'' parent          =   "Form1"
+'' parentform      =   "Form1"
+   pv              =   "ProyectosCRM_all"
+   tabindex        =   1042
+   top             =   105.000000
+   visible         =   TRUE
+   width           =   90
+End
+
+' Begin Macro Text
+
+Source: 1
+' VBComponent: ThisScreen, ComponentType: 100 **********************************************************
+Option Explicit
+
+
+Private Sub bImprimirCFDI_Click()
+    Dim sShipperId As String
+    Dim sInvcNbr As String
+    Dim sRFC As String
+    Dim sQCFDIXML As String
+    Dim sCerrado As String
+    Dim iAnswer As Integer
+    Dim sSql As String
+    Dim sCustId As String
+    
+    fInicializaDirectoriosFacturaElectronica
+    sShipperId = Trim(sivMyApp.Controls("cshipperid_0").value)
+    sSql = "xSP_SoShipLineByLot " + SParm(sShipperId) 'EJECUTA REVISIÓN DE LINEREF PARA IMPRESIÓN DE GRUPOS SOSHIPLINE.SAMPLE (AGRUPACIÓN DE PARTIDAS OCULTAS)
+    Call sql(c10, sSql)
+    
+    sInvcNbr = Trim(sivMyApp.Controls("cinvcnbr_0").value)
+    sCustId = sivMyApp.Controls("ccustid_0").value
+    serr1 = SqlFetch1(CSR_xFESOAddress, "xsp_xFESOAddress_All" & SParm(sCustId) & SParm("DEFAULT"), bxFESOAddress, LenB(bxFESOAddress))
+    sRFC = Trim(bxFESOAddress.RFC)
+    If Trim(sShipperId) <> "<NEW>" Then
+        If fEmbarqueFacturado(sShipperId) Then
+            fExisteArchivoFacturaElectronica sInvcNbr, sShipperId, sRFC
+            iAnswer = MsgBox("Desea enviar la factura por correo electrónico", vbYesNo, "Cancelacion factura")
+            If iAnswer = vbYes Then
+                Send_Email
+            Else
+                fAbrePDF
+            End If
+        Else
+            sCerrado = sivMyApp.Controls("cstatus_0")
+            If sCerrado = "Abierto" Then
+                sivMyApp.Save
+            
+                fGeneraFacturaElectronica
+                sQCFDIXML = "xsp_NextFunctionId " + SParm(sShipperId)
+                Call sql(c9, sQCFDIXML)
+                
+                Send_Email
+            End If
+            sivMyApp.Cancel
+        End If
+    End If
+End Sub
+
+Private Sub ccancelled_0_Chk(ChkStrg As String, retval As Integer)
+ 'ID: 001
+'DESCRIPCIÓN: Función que habilita o deshabilita campos de Factura Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001       11/11/2013  Rodolfo García  Valida si ya está el embarque facturado, si es así bloquea los campos y pone el UUID en TOTALES
+'INICIO '001
+'----------------------
+
+    Dim sSql As String
+    Dim bCancelled As Boolean
+    Dim sCancelled As String
+    Dim iAnswerCancell As Integer
+    Dim sUsuario As String 'Declaración de variable donde se guardará el id de usuario
+    Dim sShipperId As String
+    Dim sStatus As String
+    Call GetBufferValue("bpes.UserId", sUsuario) 'Toma el id del usuario y lo pasa a la variable
+    sStatus = Trim(sivMyApp.Controls("cstatus_0").value)
+
+    sShipperId = Trim(sivMyApp.Controls("cshipperid_0").value)
+    bCancelled = sivMyApp.Controls("ccancelled_0").value
+    If bCancelled And Trim(sStatus) <> "Cerrado" Then
+        sSql = "Select * From xvr_CFDIXML Where ShipperId = " + SParm(sShipperId)
+        serr_xCFDIXML = SqlFetch1(csr_xCFDIXML, sSql, bxCFDIXML, LenB(bxCFDIXML))
+        If serr_xCFDIXML = 0 Then
+            Select Case bxCFDIXML.Status
+                Case "U", "Q", "X", "C"
+                    iAnswerCancell = MsgBox("La cancelacion de la factura no puede revertirse, estas seguro de continuar?", vbYesNo, "Cancelacion factura")
+                    If iAnswerCancell = vbYes Then
+                        sSql = "xsp_Cancel_CFDIXML " + SParm(sShipperId) + SParm(sUsuario)
+                        Call sql(c11, sSql)
+                        
+                        fInicializaDirectoriosFacturaElectronica
+                        fEliminaRegistrosFactElectronica
+                        
+                        sivMyApp.Save
+                    Else
+                        sivMyApp.Controls("cdatecancelled_0").value = "01/01/1900"
+                        retval = ErrNoMess
+                    End If
+                Case "V"
+                    MessBox "La factura ya fue cancelada con anterioridad, favor de validar", MB_ICONEXCLAMATION, "Factura ya cancelada"
+                    retval = ErrNoMess
+            End Select
+        End If
+    End If
+
+End Sub
+
+Private Sub ccustid_0_Chk(ChkStrg As String, retval As Integer)
+    Dim Sqlst As String
+
+    If Trim(ChkStrg) = "" Then Exit Sub
+    Sqlst = "Select * from XFESOADDRESS where Custid = " + SParm(ChkStrg)
+    serr1 = SqlFetch1(c1, Sqlst, bxFESOAddress, LenB(bxFESOAddress))
+    If serr1 = 0 Then
+        If Len(Trim(bxFESOAddress.NumeroDeCuenta)) <= 4 Then
+            If sivMyApp.Controls("xcMetodoDePago").Properties("Enabled") Then
+                sivMyApp.Controls("xcMetodoDePago").value = Trim(bxFESOAddress.MetodoDePago)
+                sivMyApp.Controls("xcNumeroDeCuenta").value = bxFESOAddress.NumeroDeCuenta
+            End If
+        End If
+        If bxFESOAddress.Terms = 0 Then
+           'Call setprop("cpmttypeid_5", PROP_BLANKERR, LTRUE)
+           Call setprop("Terminos", PROP_CAPTION, "CONTADO")
+        Else
+            'Call setprop("cpmttypeid_5", PROP_BLANKERR, LFALSE)
+            Call setprop("Terminos", PROP_CAPTION, "CREDITO")
+          End If
+    Else
+       Call setprop("Terminos", PROP_CAPTION, "")
+    End If
+End Sub
+
+
+Private Sub cshipperid_0_Chk(ChkStrg As String, retval As Integer)
+    Call GetBufferValue("bpes.cpnyid", sCpnyId)
+    serr1 = SqlFetch1(csr_xSoShipHeaderAdic, "xsp_xSOShipHeaderAdicAll" & SParm(Trim(sCpnyId)) & SParm(Trim(ChkStrg)), bxSoShipHeaderAdic, LenB(bxSoShipHeaderAdic))
+    Call DispFields("Form1", "xcMetodoDePago")
+    Call DispFields("Form1", "xcNumeroDeCuenta")
+    Call DispFields("Form1", "")
+    
+    fEmbarqueFacturado (ChkStrg)
+    fnOcultaBotonImprimirCFDI (Left(Trim(ChkStrg), 2))
+End Sub
+
+Private Sub fnOcultaBotonImprimirCFDI(SOTypeID As String)
+    If fValidaTipoOrdenFactElectronica Then
+        sivMyApp.Controls("cmdPrint").Properties("Visible") = False
+        sivMyApp.Controls("bImprimirCFDI").Properties("Visible") = True
+    Else
+        sivMyApp.Controls("cmdPrint").Properties("Visible") = True
+        sivMyApp.Controls("bImprimirCFDI").Properties("Visible") = False
+    End If
+End Sub
+
+Private Sub csotypeid_0_Chk(ChkStrg As String, retval As Integer)
+        Dim sCpnyId As String
+    Call GetBufferValue("bpes.CpnyID", sCpnyId)
+
+    serr1 = SqlFetch1(CSR_SOType, "SOType_All" & SParm(Trim(sCpnyId)) & SParm(ChkStrg), bSOType, LenB(bSOType))
+    If serr1 = 0 And Trim(bSOType.User1) <> "" And Asc(bSOType.User1) <> 0 Then
+        sivMyApp.Controls("ccustid_0").value = Trim(bSOType.User1)
+    End If
+'    If serr1 = 0 And Trim(bSOType.User7) <> "" And Asc(bSOType.User7) <> 0 Then
+'    If sivMyApp.Controls("csiteid_0").Properties("Enabled") Then
+'        sivMyApp.Controls("csiteid_0").value = Trim(bSOType.User7)
+'    End If
+'    End If
+    fnOcultaBotonImprimirCFDI (Trim(ChkStrg))
+End Sub
+
+Private Sub Form1_Display()
+
+End Sub
+
+Private Sub Form1_Load()
+    Call SqlCursor(csr_SoShipLine, NOLEVEL)
+    Call VBA_SetAddr("SoShipLine", bSOShipLine, nSOShipLine, LenB(bSOShipLine))
+    
+    Call SqlCursor(csr_SIUserAppAuth, NOLEVEL)
+    Call VBA_SetAddr(csr_SIUserAppAuth, bSIUserAppAuth, nSIUserAppAuth, LenB(bSIUserAppAuth))
+     
+    Call SqlCursor(csr_PmtType, NOLEVEL)
+    Call VBA_SetAddr(csr_PmtType, bPmtType, nPmtType, LenB(bPmtType))
+    
+    Call VBA_SetAddr("bxSoShipHeaderAdic", bxSoShipHeaderAdic, nxSoShipHeaderAdic, LenB(bxSoShipHeaderAdic))
+    Call SqlCursor(csr_xSoShipHeaderAdic, NOLEVEL + SqlUpdate)
+End Sub
+
+
+
+
+Public Function fnValidaEmbarqueCreditoContado() As Boolean
+' ID......: Función para validar embarque crédito contado
+' Concepto: Función que valida la verificación del embarque, si es contado y tiene saldo TRUE, si es crédito y tiene pagos TRUE, todo lo demás TRUE
+' BITÁCORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACIÓN
+' 001       07/09/2013  Rodolfo García  Al guardar verifica en base a la tabla siuserappauth (Valores Omisión Usuario) si el usuario validará
+'                                       que el embarque debe estar totalmente pagado para clientes contado o no pagado para clientes crédito
+
+'---- INICIO 001
+    Dim Sqlst As String
+    Dim sCustId As String
+    Dim dSaldo As Double
+    Dim dMontoFactura As Double
+    Dim dPagos As Double
+    
+    sCustId = sivMyApp.Controls("ccustid_0").value
+    dSaldo = sivMyApp.Controls("cCuryBalDue_0").value
+    dPagos = sivMyApp.Controls("ccurytotpmt_0").value
+    dMontoFactura = sivMyApp.Controls("ccurytotinvc_0").value
+    
+    If Trim(sCustId) <> "" Then
+        Sqlst = "Select * from Customer where Custid = " + SParm(sCustId)
+        serr1 = SqlFetch1(c1, Sqlst, bCustomer, LenB(bCustomer))
+        If serr1 = 0 Then
+            If Trim(bCustomer.Terms) = "0" Then
+                If dSaldo = 0 Then
+                    fnValidaEmbarqueCreditoContado = False
+                Else
+                    MessBox "Error, cliente CONTADO y embarque con SALDO, favor de capturar los pagos correspondientes", MB_ICONEXCLAMATION, "Error cliente contado"
+                    fnValidaEmbarqueCreditoContado = True
+                End If
+            ElseIf Trim(bCustomer.Terms) <> "0" Then
+                If dPagos = 0 Then
+                    fnValidaEmbarqueCreditoContado = False
+                Else
+                MessBox "Error, cliente CRÉDITO y embarque con PAGOS, favor de eliminar los pagos correspondientes y capturar el pago dentro de la pantalla REGISTRAR PAGOS de CUENTAS POR COBRAR", MB_ICONEXCLAMATION, "Error cliente crédito"
+                    fnValidaEmbarqueCreditoContado = True
+                End If
+            End If
+        End If
+    End If
+'---- FIN 001
+End Function
+
+
+Private Sub xcNumeroDeCuenta_Chk(ChkStrg As String, retval As Integer)
+    Dim sNumeroCuentaHeader As String
+    
+    sNumeroCuentaHeader = Trim(ChkStrg)
+    If Len(sNumeroCuentaHeader) <> 0 And Len(sNumeroCuentaHeader) <> 4 And sNumeroCuentaHeader <> "NA" Then
+        MessBox "Error, el número de cuenta debe constar de 4 dígitos", MB_ICONEXCLAMATION, "Error"
+        retval = ErrNoMess
+    End If
+End Sub
+
+
+Private Sub cinvtid_1_Chk(ChkStrg As String, retval As Integer)
+    If Left(ChkStrg, 2) = "27" Then
+        Call SetBufferValue("bsoshipline.IRDemand", 1)
+    End If
+End Sub
+
+Private Sub cPaymentTypeUser_Chk(ChkStrg As String, retval As Integer)
+' ID......: Check de campo usuario Pago Id
+' Concepto: Evento al elegir con F3 un Pago Id
+' BITÁCORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACIÓN
+' 001       07/09/2013  Rodolfo García  Al elegir un valor del PVREC asigna automáticamente el valor del sistema PMTTYPE
+
+'---- INICIO 001
+        sivMyApp.Controls("cpmttypeid_5").value = ChkStrg
+'---- FIN 001
+End Sub
+
+Private Sub Update1_OnUpdate(ByVal Level As Integer, ByVal InsertFlg As Integer, retval As Integer)
+    ' ID......: Fin de evento al actualizar
+' Concepto: Evento al actualizar (Actualiza registro o finalizar registro ya existente)
+' BITÁCORA DE CAMBIOS
+' ID        FECHA       USUARIO         MODIFICACIÓN
+' 001       07/09/2013  Rodolfo García  Al guardar verifica en base a la tabla siuserappauth (Valores Omisión Usuario) si el usuario validará
+'                                       que el embarque debe estar totalmente pagado para clientes contado o no pagado para clientes crédito
+
+'---- INICIO 001
+    Dim sUsuario As String
+    Dim sSql As String
+    Dim bValidaEmbarqueCreditoContado As Boolean
+    Dim sTipoOrden As String
+
+    Call GetBufferValue("bSoType.Behavior", sTipoOrden)
+    If Trim(sTipoOrden) = "CS" Then
+        Call GetBufferValue("bpes.userid", sUsuario)
+        bValidaEmbarqueCreditoContado = False
+        sSql = "Select * From SIUserAppAuth Where UserId = " + SParm(sUsuario)
+
+        serr_SIUserAppAuth = SqlFetch1(csr_SIUserAppAuth, sSql, bSIUserAppAuth, LenB(bSIUserAppAuth))
+        If serr_SIUserAppAuth = 0 Then
+            If Trim(bSIUserAppAuth.User5) = "1" Then
+                bValidaEmbarqueCreditoContado = fnValidaEmbarqueCreditoContado
+            End If
+        Else
+            bValidaEmbarqueCreditoContado = fnValidaEmbarqueCreditoContado
+        End If
+        If bValidaEmbarqueCreditoContado Then
+            retval = ErrNoMess
+        End If
+    End If
+'---- FIN 001
+
+    Dim sMetodoPago As String
+    Dim sPmtTypeId As String
+    Dim sNumeroCuenta As String
+    Dim sNumeroCuentaHeader As String
+    Dim sUserID As String
+    Dim sShipperId As String
+    Dim sCustId As String
+
+    If Level = 32001 Then
+        sCustId = Trim(sivMyApp.Controls("ccustid_0").value)
+        Call GetBufferValue("bSOShipheader.ShipperID", sShipperId)
+        Call GetBufferValue("bpes.UserID", sUserID)
+        Call GetBufferValue("bpes.cpnyid", sCpnyId)
+        sCpnyId = Trim(sCpnyId)
+        sPmtTypeId = sivMyApp.Controls("cpmttypeid_5").value
+        sSql = "Select * From PmtType Where PmtTypeId = " + SParm(sPmtTypeId)
+        serr_PmtType = SqlFetch1(csr_PmtType, sSql, bPmtType, LenB(bPmtType))
+        If serr_PmtType = 0 Then
+            Select Case Trim(bPmtType.User7)
+                Case "CHQ"
+                     sMetodoPago = "CHEQUE NOMINATIVO"
+                Case "TRA"
+                    sMetodoPago = "TRANSFERENCIA ELECTRÓNICA"
+                Case "EFE"
+                    sMetodoPago = "EFECTIVO"
+                Case "TCR"
+                    sMetodoPago = "TARJETA"
+                Case Else
+                    sMetodoPago = "NO IDENTIFICADO"
+            End Select
+            sivMyApp.Controls("xcMetodoDePago").Properties("Enabled") = True
+            sivMyApp.Controls("xcNumeroDeCuenta").Properties("Enabled") = True
+            sivMyApp.Controls("xcMetodoDePago").value = sMetodoPago
+            sNumeroCuenta = sivMyApp.Controls("cchknbr_5").value
+            sivMyApp.Controls("xcNumeroDeCuenta").value = Trim(sNumeroCuenta)
+            sivMyApp.Controls("xcNumeroDeCuenta").Properties("Enabled") = False
+            sivMyApp.Controls("xcMetodoDePago").Properties("Enabled") = False
+        End If
+
+        Call TranBeg(True)
+            Call sql(c1, "xsp_xSoShipHeaderAdicInsert" & SParm(Trim(sCpnyId)) & SParm(sShipperId) & SParm(bxSoShipHeaderAdic.MetodoDePago) & SParm(bxSoShipHeaderAdic.NumeroDeCuenta) & SParm(bxSoShipHeaderAdic.User6))
+            Call SqlFree(c1)
+        Call TranEnd
+    End If
+End Sub
+
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: fnCFDI, ComponentType: 1 **********************************************************
+Attribute VB_Name = "fnCFDI"
+Option Explicit
+Public sCpnyId As String
+Public sFilePDF As String
+Public sFileXML As String
+Public sFilePDFDir As String
+Public sFileXMLDir As String
+Public sFilePDFArch As String
+Public sFileXMLArch As String
+
+Public Function fValidaTipoOrdenFactElectronica() As Boolean
+'ID: 001
+'DESCRIPCIÓN: Función que Valida que el Tipo de Orden sea para Factura Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que Valida que el Tipo de Orden sea para Factura Electrónica. Se agregó un campo en SoType.User8 llamado si es factura electrónica
+'                                       el Tipo de Orden. Si dice SI, entonces el Tipo de Orden es para Factura Electrónica, si dice NO entonces no.
+
+'INICIO 001
+'---------------------
+    Dim sTipoOrdenFacturacionElectronica As String
+    Call GetBufferValue("bSOType.User8", sTipoOrdenFacturacionElectronica)
+    If Trim(sTipoOrdenFacturacionElectronica) = "SI" Then
+        fValidaTipoOrdenFactElectronica = True
+    Else
+        fValidaTipoOrdenFactElectronica = False
+    End If
+'FIN 001
+'------------------------
+End Function
+
+
+Public Function fInicializaDirectoriosFacturaElectronica()
+'ID: 001
+'DESCRIPCIÓN: Función que Inicializa Directoriso de Facturación Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que Inicializa Directoriso de Facturación Electrónica
+
+'INICIO 001
+'---------------------
+    ' ----------- INICIALIZA DIRECTORIOS -----------------
+    
+    Call GetBufferValue("bpes.CpnyId", sCpnyId)
+    sCpnyId = Trim(sCpnyId)
+    sFilePDFDir = "L:\" + sCpnyId + "\"
+    sFileXMLDir = "L:\" + sCpnyId + "\"
+    ' ----------- FINALIZA DIRECTORIOS -------------------
+'FIN 001
+'------------------------
+End Function
+
+
+Public Function fGeneraFacturaElectronica()
+'ID: 001
+'DESCRIPCIÓN: Botón que genera el movimiento para crear la Factura Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Creación del Botón que genera el movimiento para crear la Factura Electrónica
+
+'INICIO 001
+'---------------------
+
+    Dim sEmbarqueId As String
+    Dim sParmROI As String
+
+    Dim PauseTime, Start, Finish
+    Dim sFolio As String
+    Dim sSerie As String
+    
+    Dim sInvcNbr As String
+    Dim sRFC As String
+    Dim sShipperId As String
+    
+    Dim sQSoPrintQueue As String
+    
+    Dim sSQLDeleteSoPrintQueue As String
+    Dim sCerrado As String
+    Dim sSQLValidaDobleImpuesto As String
+    Dim sQCFDIXML As String
+    Dim sUsuario As String 'Declaración de variable donde se guardará el id de usuario
+    Dim sCustId As String
+    fInicializaDirectoriosFacturaElectronica
+    
+    sCerrado = sivMyApp.Controls("cstatus_0")
+    If fValidaTipoOrdenFactElectronica Then
+        sCustId = sivMyApp.Controls("ccustid_0").value
+        serr1 = SqlFetch1(CSR_xFESOAddress, "xsp_xFESOAddress_All" & SParm(sCustId) & SParm("DEFAULT"), bxFESOAddress, LenB(bxFESOAddress))
+        sRFC = Trim(bxFESOAddress.RFC)
+        sInvcNbr = Trim(Replace(sivMyApp.Controls("cinvcnbr_0"), "-", ""))
+        sShipperId = Trim(sivMyApp.Controls("cshipperid_0"))
+        '--- Si no existen registros, verifica el paso actual y manda a generar la Factura Electrónica sin preguntar. Nota: Solo usuarios y tipos de orden válidos
+        If Not fEmbarqueFacturado(sShipperId) And sCerrado = "Abierto" And sInvcNbr = "" Then
+                'En caso de que no exista XML ni PDF lanza proceso CFDI a inserción a tabla mediante SP.
+                Call GetBufferValue("bpes.UserId", sUsuario) 'Toma el id del usuario y lo pasa a la variable
+                
+                sQCFDIXML = "xsp_Insert_CFDIXML " + SParm(sCpnyId) + SParm(sShipperId) + SParm(sUsuario) + SParm(sShipperId) + SParm(sRFC)
+                Call sql(c12, sQCFDIXML)
+                
+                '--- Genera Timer para esperar que se genere el PDF y XML
+                fExisteArchivoFacturaElectronica sInvcNbr, sShipperId, sRFC
+                PauseTime = 40
+                Start = Timer
+                Do While Timer < Start + PauseTime
+                    sFilePDF = FileSystem.Dir(sFilePDFDir + sFilePDFArch)
+                    If Trim(sFilePDF) <> "" Then
+                        Exit Do
+                    End If
+                Loop
+                Finish = Timer
+                fAbrePDF
+        ElseIf fEmbarqueFacturado(sShipperId) And sInvcNbr <> "" Then
+            fExisteArchivoFacturaElectronica sInvcNbr, sShipperId, sRFC
+            fAbrePDF
+        Else
+            MessBox "Error, el pedido aún no está facturado en CFDI", MB_ICONEXCLAMATION, "Error"
+        End If
+    End If
+'FIN 001
+'------------------------
+End Function
+
+
+
+Public Function fEmbarqueFacturado(sShipperId As String) As Boolean
+'ID: 001
+'DESCRIPCIÓN: Función que habilita o deshabilita campos de Factura Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001       11/11/2013  Rodolfo García  Valida si ya está el embarque facturado, si es así bloquea los campos y pone el UUID en TOTALES
+'INICIO '001
+'----------------------
+    Dim sSql As String
+    Dim sStatus As String
+    Dim sInvcNbr As String
+    Dim bReturnValue As Boolean
+    sivMyApp.Controls("lFacturada").Properties("Caption") = ""
+    sStatus = Trim(sivMyApp.Controls("cstatus_0").value)
+    
+    sSql = "Select * From xvr_CFDIXML Where ShipperId = " + SParm(sShipperId)
+    serr_xCFDIXML = SqlFetch1(csr_xCFDIXML, sSql, bxCFDIXML, LenB(bxCFDIXML))
+    If serr_xCFDIXML = 0 Then
+        Select Case bxCFDIXML.Status
+            Case "O", "U", "Q", "X"
+                sivMyApp.Controls("lFacturada").Properties("Caption") = "ERROR CFDI - " + bxCFDIXML.Status
+                sivMyApp.Controls("lUUID").Properties("Caption") = ""
+                If sStatus <> "Cerrado" Then
+                    fHabilitaDeshabilitaCamposFacturaElectronica False
+                End If
+                bReturnValue = True
+            Case "P"
+                sivMyApp.Controls("lFacturada").Properties("Caption") = "ERROR CFDI - " + bxCFDIXML.Status
+                sivMyApp.Controls("lUUID").Properties("Caption") = ""
+                If sStatus <> "Cerrado" Then
+                    fHabilitaDeshabilitaCamposFacturaElectronica False
+                End If
+                bReturnValue = False
+            Case "V"
+                sivMyApp.Controls("lFacturada").Properties("Caption") = "CFDI CANCELADO"
+                sivMyApp.Controls("lUUID").Properties("Caption") = ""
+                If sStatus <> "Cerrado" Then
+                    fHabilitaDeshabilitaCamposFacturaElectronica False
+                End If
+                bReturnValue = True
+            Case "C"
+                sivMyApp.Controls("lFacturada").Properties("Caption") = "FACTURADO CFDI"
+                sivMyApp.Controls("lUUID").Properties("Caption") = bxCFDIXML.UUID
+                If sStatus <> "Cerrado" Then
+                    fHabilitaDeshabilitaCamposFacturaElectronica False
+                    sivMyApp.Controls("ccancelled_0").Properties("Enabled") = True
+                End If
+                bReturnValue = True
+        End Select
+        fEmbarqueFacturado = bReturnValue
+    Else
+        sInvcNbr = Trim(sivMyApp.Controls("cinvcnbr_0").value)
+        If sivMyApp.Controls("ccancelled_0").value Then
+            sivMyApp.Controls("lFacturada").Properties("Caption") = "CANCELADO"
+            sivMyApp.Controls("lUUID").Properties("Caption") = ""
+            bReturnValue = False
+        ElseIf sInvcNbr <> "" And sStatus = "Cerrado" Then
+            sivMyApp.Controls("lFacturada").Properties("Caption") = "FACTURADO"
+            sivMyApp.Controls("lUUID").Properties("Caption") = ""
+            bReturnValue = False
+        ElseIf sInvcNbr <> "" And sStatus <> "Cerrado" Then
+            sivMyApp.Controls("lFacturada").Properties("Caption") = "PENDIENTE CFDI"
+            If sStatus <> "Cerrado" Then
+                fHabilitaDeshabilitaCamposFacturaElectronica True
+            End If
+            sivMyApp.Controls("lUUID").Properties("Caption") = ""
+            bReturnValue = False
+        Else
+            sivMyApp.Controls("lFacturada").Properties("Caption") = ""
+            If sStatus <> "Cerrado" Then
+                fHabilitaDeshabilitaCamposFacturaElectronica True
+            End If
+            sivMyApp.Controls("lUUID").Properties("Caption") = ""
+            bReturnValue = False
+        End If
+        fEmbarqueFacturado = bReturnValue
+    End If
+'----------------------
+'FIN '001
+End Function
+
+
+Public Function fValidaSiguientePasoFactElectronica() As Boolean
+'ID: 001
+'DESCRIPCIÓN: Función que verifica el siguiente paso en el embarque
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que Valida que el siguiente paso en el Embarque. Si es igual a Imprimir Factura entonces manda bandera para que se imprima
+'                                       el reporte 40680/40680PRE, si es distinto imprime el 4068E/40680CLO que no tiene preproceso. Valida también que no esté cancelado
+
+'INICIO 001
+'---------------------
+    Dim sSiguientePaso As String
+    Call GetBufferValue("bSoShipHeader.NextFunctionId", sSiguientePaso)
+    
+    If Trim(sSiguientePaso) = "4065400" Then
+        fValidaSiguientePasoFactElectronica = True
+    Else
+        MessBox "¡¡¡¡¡¡ ALERTA!!!! El Siguiente Paso en la pestaña Otra Información debe ser IMPRIMIR CORTE DIARIO, por favor IMPRIME LA FACTURA y Guarda para poder continuar", MB_ICONEXCLAMATION, "ERROR EN PASO"
+        fValidaSiguientePasoFactElectronica = False
+    End If
+'FIN 001
+'------------------------
+End Function
+
+Public Function fExisteArchivoFacturaElectronica(sInvcNbr As String, sShipperId As String, sRFC As String)
+'ID: 001
+'DESCRIPCIÓN: Función que Valida si existe el archivo XML, LOG, PDF y XMLLog
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que Valida si existe el archivo XML, LOG, PDF y XMLLog. En caso de que no exista Factura la eliminación de los registros de XML generados
+'                                       se deja en vacío para no eliminar todos los documentos (*.xml)
+
+'INICIO 001
+'---------------------
+'MARESA_T00051447_TL52342
+    sFilePDFArch = sCpnyId + "_" + sRFC + "_" + sShipperId + ".pdf"
+    sFileXMLArch = sCpnyId + "_" + sRFC + "_" + sShipperId + ".xml"
+    
+    sFilePDF = FileSystem.Dir(sFilePDFDir + sFilePDFArch)
+    sFileXML = FileSystem.Dir(sFileXMLDir + sFileXMLArch)
+'FIN 001
+'------------------------
+End Function
+
+Public Function fAbrePDF()
+'ID: 001
+'DESCRIPCIÓN: Función que Elimina PDF's con erro generados dobles, uno con el SERIE + FOLIO y otro con RFC + SERIE + FOLIO
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           12/02/2009  RODOLFO G.A.Abre el PDF
+
+'INICIO 001
+'---------------------
+    serr2 = Launch("AcroRd32.exe " + sFilePDFDir + sFilePDFArch, False, True, 0)
+'FIN 001
+'---------------------
+End Function
+
+
+Public Function fHabilitaDeshabilitaCamposFacturaElectronica(bValor As Boolean)
+'ID: 001
+'DESCRIPCIÓN: Función que habilita o deshabilita campos de Factura Electrónica
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que habilita o deshabilita campos de Factura Electrónica cuando el usuario no es de Facturación (fValidaUsuariosFactElectronica)
+
+'INICIO 001
+'---------------------
+    sivMyApp.Controls("ccustordnbr_0").Properties("Enabled") = bValor
+    
+    'sivMyApp.Controls("fraItem").Properties("Enabled") = bValor
+    
+    sivMyApp.Controls("fraShipInfo").Properties("Enabled") = bValor
+    If sivMyApp.Controls("cshipname_0").Properties("Enabled") Then
+        sivMyApp.Controls("cshipname_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipattn_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipaddr1_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipaddr2_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipcity_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipstate_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipzip_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cShipPhone_0").Properties("Enabled") = bValor
+        sivMyApp.Controls("cshipviaid_0").Properties("Enabled") = bValor
+           
+        sivMyApp.Controls("cslsperid_0").Properties("Enabled") = bValor
+    End If
+    sivMyApp.Controls("fraMiscCharges").Properties("Enabled") = bValor
+    
+    sivMyApp.Controls("cinvcnbr_0").Properties("Enabled") = False
+    sivMyApp.Controls("cInvcDate").Properties("Enabled") = False
+    sivMyApp.Controls("cdatecancelled_0").Properties("Enabled") = False
+    sivMyApp.Controls("ccancelled_0").Properties("Enabled") = bValor
+'FIN 001
+'------------------------
+End Function
+
+
+Public Function fEliminaRegistrosFactElectronica()
+'ID: 001
+'DESCRIPCIÓN: Función que elimina registros XML, PDF, XMLLog de la Fact. Electrónica y SQL
+' CAMBIO ID     FECHA       AUTOR       DESCRIPCIÓN
+' 001           04/12/2008  RODOLFO G.A.Función que elimina registros XML, PDF, XMLLog de la Fact. Electrónica y SQL.
+' 002           12/07/2012  RGA         Se agregó una función que elimina el XML temporal de XMLFACTURAS
+
+'INICIO 001
+'---------------------
+    If sFilePDF <> "" Then
+        FileSystem.Kill (sFilePDFDir + sFilePDFArch)
+    End If
+    If sFileXML <> "" Then
+        FileSystem.Kill (sFileXMLDir + sFileXMLArch)
+    End If
+'FIN 001
+'------------------------
+End Function
+
+
+
+
+Public Function Send_Email()
+'    Dim sSubject As String
+'    Dim sBody As String
+'    Dim sProfile As String
+'    Dim sCustId As String
+'    Dim sCpnyId As String
+'    Dim sShipperId As String
+'    Dim sPathPDF As String
+'    Dim sPathXML As String
+'
+'
+'    Call GetBufferValue("bpes.CpnyId", sCpnyId)
+'    sCustId = sivMyApp.Controls("ccustid_0").value
+'    sShipperId = sivMyApp.Controls("cshipperid_0").value
+'
+'
+'    sPathPDF = sPathPDF + "\" + sFilePDFArch
+'    sPathXML = sPathXML + "\" + sFileXMLArch
+'
+'    sFilePDF = FileSystem.Dir(sPathPDF)
+'    sFileXML = FileSystem.Dir(sPathXML)
+'    If sFilePDF <> "" And sFileXML <> "" Then
+'        serr1 = SqlFetch1(CSR_xFESOAddress, "xsp_xFESOAddress_All" & SParm(sCustId) & SParm("DEFAULT"), bxFESOAddress, LenB(bxFESOAddress))
+'
+'        sSubject = Obtiene_DatoControl("FE_SUBJECT")
+'        sBody = Obtiene_DatoControl("FE_BODY")
+'        sProfile = Obtiene_DatoControl("FE_PROFILE")
+'
+'        If Trim(bxFESOAddress.EMail) <> "" Then
+'            serr3 = SqlFetch1(CSR_xTZErrorSQL, "xsp_xFEEnviaMail" & SParm(Trim(sCpnyId)) & SParm("OM") & SParm(sShipperId) & SParm(sCustId) & SParm(sProfile) & SParm(Trim(bxFESOAddress.EMail)) & SParm(sSubject) & SParm(sBody) & SParm(sPathPDF & ";" & sPathXML), bxTZErrorSQL, LenB(bxTZErrorSQL))
+'            If serr3 = 0 Then
+'                MessBox "Envio exitoso", MB_ICONINFORMATION, "Envio exitoso"
+'            End If
+'        End If
+'    Else
+'        MessBox "Error, archivo XML o PDF no encontrado", MB_ICONEXCLAMATION, "Archivo no encontrado"
+'    End If
+End Function
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: TermsDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "TermsDH"
+Option Explicit
+ 
+Type Terms
+    ApplyTo                         As String * 1
+    COD                             As Integer
+    CreditChk                       As Integer
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    Cycle                           As Integer
+    Descr                           As String * 30
+    DiscIntrv                       As Integer
+    DiscPct                         As Double
+    DiscType                        As String * 1
+    DueIntrv                        As Integer
+    DueType                         As String * 1
+    Frequency                       As String * 1
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    NbrInstall                      As Integer
+    NoteID                          As Long
+    Options                         As String * 1
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    TermsId                         As String * 2
+    TermsType                       As String * 1
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+End Type
+ 
+Public bTerms As Terms, nTerms As Terms
+Public csr_Terms As Integer, serr_Term As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: CustomerDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "CustomerDH"
+Option Explicit
+ 
+Type Customer
+    AccrRevAcct                     As String * 10
+    AccrRevSub                      As String * 24
+    AcctNbr                         As String * 30
+    Addr1                           As String * 60
+    Addr2                           As String * 60
+    AgentID                         As String * 10
+    ApplFinChrg                     As Integer
+    ARAcct                          As String * 10
+    ARSub                           As String * 24
+    Attn                            As String * 30
+    AutoApply                       As Integer
+    BankID                          As String * 10
+    BillAddr1                       As String * 60
+    BillAddr2                       As String * 60
+    BillAttn                        As String * 30
+    BillCity                        As String * 30
+    BillCountry                     As String * 3
+    BillFax                         As String * 30
+    BillName                        As String * 60
+    BillPhone                       As String * 30
+    BillSalut                       As String * 30
+    BillState                       As String * 3
+    BillThruProject                 As Integer
+    BillZip                         As String * 10
+    CardExpDate                     As Sdate
+    CardHldrName                    As String * 60
+    CardNbr                         As String * 20
+    CardType                        As String * 1
+    City                            As String * 30
+    ClassID                         As String * 6
+    ConsolInv                       As Integer
+    Country                         As String * 3
+    CrLmt                           As Double
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    CuryId                          As String * 4
+    CuryPrcLvlRtTp                  As String * 6
+    CuryRateType                    As String * 6
+    CustFillPriority                As Integer
+    CustID                          As String * 15
+    DfltShipToId                    As String * 10
+    DocPublishingFlag               As String * 1
+    DunMsg                          As Integer
+    EMailAddr                       As String * 80
+    Fax                             As String * 30
+    InvtSubst                       As Integer
+    LanguageID                      As String * 4
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    Name                            As String * 60
+    NoteID                          As Long
+    OneDraft                        As Integer
+    PerNbr                          As String * 6
+    Phone                           As String * 30
+    PmtMethod                       As String * 1
+    PrcLvlId                        As String * 10
+    PrePayAcct                      As String * 10
+    PrePaySub                       As String * 24
+    PriceClassID                    As String * 6
+    PrtMCStmt                       As Integer
+    PrtStmt                         As Integer
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    Salut                           As String * 30
+    SetupDate                       As Sdate
+    ShipCmplt                       As Integer
+    ShipPctAct                      As String * 1
+    ShipPctMax                      As Double
+    SICCode1                        As String * 4
+    SICCode2                        As String * 4
+    SingleInvoice                   As Integer
+    SlsAcct                         As String * 10
+    SlsperID                        As String * 10
+    SlsSub                          As String * 24
+    State                           As String * 3
+    Status                          As String * 1
+    StmtCycleId                     As String * 2
+    StmtType                        As String * 1
+    TaxDflt                         As String * 1
+    TaxExemptNbr                    As String * 15
+    TaxID(0 To 3)                   As String * 10
+    TaxLocId                        As String * 15
+    TaxRegNbr                       As String * 15
+    Terms                           As String * 2
+    Territory                       As String * 10
+    TradeDisc                       As Double
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+    Zip                             As String * 10
+End Type
+ 
+Public bCustomer As Customer, nCustomer As Customer
+Public csr_Customer As Integer, serr_Customer As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: SOShipLine_dh, ComponentType: 1 **********************************************************
+Attribute VB_Name = "SOShipLine_dh"
+Option Explicit
+
+Type SOShipLine
+        AlternateID As String * 30
+        AltIDType As String * 1
+        AvgCost As Double
+        BMICost As Double
+        BMICuryID As String * 4
+        BMIEffDate As Sdate
+        BMIExtPriceInvc As Double
+        BMIMultDiv As String * 1
+        BMIRate As Double
+        BMIRtTp As String * 6
+        BMISlsPrice As Double
+        ChainDisc As String * 15
+        CmmnPct As Double
+        CnvFact As Double
+        COGSAcct As String * 10
+        COGSSub As String * 24
+        CommCost As Double
+        Cost As Double
+        CpnyID As String * 10
+        Crtd_DateTime As Sdate
+        Crtd_Prog As String * 8
+        Crtd_User As String * 10
+        CuryCommCost As Double
+        CuryCost As Double
+        CuryListPrice As Double
+        CurySlsPrice As Double
+        CuryTaxAmt(0 To 3) As Double
+        CuryTotCommCost As Double
+        CuryTotCost As Double
+        CuryTotInvc As Double
+        CuryTotMerch As Double
+        CuryTxblAmt(0 To 3) As Double
+        Descr As String * 60
+        DescrLang As String * 30
+        DiscAcct As String * 10
+        DiscPct As Double
+        DiscSub As String * 24
+        Disp As String * 3
+        InspID As String * 2
+        InspNoteID As Long
+        InvAcct As String * 10
+        InvSub As String * 24
+        InvtID As String * 30
+        IRDemand As Integer
+        IRInvtID As String * 30
+        IRSiteID As String * 10
+        ItemGLClassID As String * 4
+        LineNbr As Integer
+        LineRef As String * 5
+        ListPrice As Double
+        LotSerCntr As Integer
+        LUpd_DateTime As Sdate
+        LUpd_Prog As String * 8
+        LUpd_User As String * 10
+        ManualCost As Integer
+        ManualPrice As Integer
+        NoteID As Long
+        OrdLineRef As String * 5
+        OrdNbr As String * 15
+        OrigBO As Double
+        OrigINBatNbr As String * 10
+        OrigInvcNbr As String * 15
+        OrigInvtID As String * 30
+        OrigShipperID As String * 15
+        OrigShipperLineRef As String * 5
+        ProjectID As String * 16
+        QtyBO As Double
+        QtyFuture As Double
+        QtyOrd As Double
+        QtyPick As Double
+        QtyPrevShip As Double
+        QtyShip As Double
+        RebateID As String * 10
+        RebatePer As String * 6
+        RebateRefNbr As String * 10
+        S4Future01 As String * 30
+        S4Future02 As String * 30
+        S4Future03 As Double
+        S4Future04 As Double
+        S4Future05 As Double
+        S4Future06 As Double
+        S4Future07 As Sdate
+        S4Future08 As Sdate
+        S4Future09 As Long
+        S4Future10 As Long
+        S4Future11 As String * 10
+        S4Future12 As String * 10
+        Sample As Integer
+        Service As Integer
+        ShipperId As String * 15
+        ShipWght As Double
+        SiteID As String * 10
+        SlsAcct As String * 10
+        SlsperID As String * 10
+        SlsPrice As Double
+        SlsPriceID As String * 15
+        SlsSub As String * 24
+        SplitLots As Integer
+        Status As String * 1
+        TaskID As String * 32
+        Taxable As Integer
+        TaxAmt(0 To 3) As Double
+        TaxCat As String * 10
+        TaxID(0 To 3) As String * 10
+        TaxIDDflt As String * 10
+        TotCommCost As Double
+        TotCost As Double
+        TotInvc As Double
+        TotMerch As Double
+        TxblAmt(0 To 3) As Double
+        UnitDesc As String * 6
+        UnitMultDiv As String * 1
+        User1 As String * 30
+        User10 As Sdate
+        User2 As String * 30
+        User3 As String * 30
+        User4 As String * 30
+        User5 As Double
+        User6 As Double
+        User7 As String * 10
+        User8 As String * 10
+        User9 As Sdate
+End Type
+
+Global bSOShipLine As SOShipLine, nSOShipLine As SOShipLine
+Global csr_SoShipLine As Integer, serr_SoShipLine As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: SIUserAppAuthDH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "SIUserAppAuthDH"
+Option Explicit
+ 
+Type SIUserAppAuth
+    AuthorityLevel                  As String * 1
+    BranchID                        As String * 10
+    Crtd_DateTime                   As Sdate
+    Crtd_Prog                       As String * 8
+    Crtd_User                       As String * 10
+    LUpd_DateTime                   As Sdate
+    LUpd_Prog                       As String * 8
+    LUpd_User                       As String * 10
+    NoteID                          As Long
+    RoleID                          As String * 10
+    S4Future01                      As String * 30
+    S4Future02                      As String * 30
+    S4Future03                      As Double
+    S4Future04                      As Double
+    S4Future05                      As Double
+    S4Future06                      As Double
+    S4Future07                      As Sdate
+    S4Future08                      As Sdate
+    S4Future09                      As Long
+    S4Future10                      As Long
+    S4Future11                      As String * 10
+    S4Future12                      As String * 10
+    SiteID                          As String * 10
+    User1                           As String * 30
+    User2                           As String * 30
+    User3                           As Double
+    User4                           As Double
+    User5                           As String * 10
+    User6                           As String * 10
+    User7                           As Sdate
+    User8                           As Sdate
+    UserID                          As String * 47
+    UserName                        As String * 30
+End Type
+ 
+Public bSIUserAppAuth As SIUserAppAuth, nSIUserAppAuth As SIUserAppAuth
+Public csr_SIUserAppAuth As Integer, serr_SIUserAppAuth As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: xCFDIXML_DH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "xCFDIXML_DH"
+Option Explicit
+ 
+Type xCFDIXML
+    Cancelled                       As String * 1
+    Crtd_DataTime                   As Sdate
+    Crtd_User                       As String * 30
+    End_DateTime                    As Sdate
+    ShipperId                       As String * 10
+    Start_DateTime                  As Sdate
+    Status                          As String * 1
+    UUID                            As String * 40
+    CpnyID                          As String * 10
+End Type
+ 
+Public bxCFDIXML As xCFDIXML, nxCFDIXML As xCFDIXML
+Public csr_xCFDIXML As Integer, serr_xCFDIXML As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: xSOAddress_DH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "xSOAddress_DH"
+Option Explicit
+Type xFESOAddress
+        Addenda                 As String * 60
+        ApellidoMaterno                 As String * 60
+        ApellidoPaterno                 As String * 60
+        Atencion                        As String * 255
+        Calle                   As String * 255
+        CiudadID                        As String * 10
+        ClassID                 As String * 6
+        CodigoPostal                    As String * 10
+        CodigoProveedor                 As String * 30
+        Colonia                 As String * 255
+        Crtd_DateTime                   As Sdate
+        Crtd_Prog                       As String * 8
+        Crtd_User                       As String * 47
+        CURP                    As String * 18
+        CustID                  As String * 15
+        EMail                   As String * 255
+        EstadoCivil                     As String * 30
+        EstadoID                        As String * 10
+        Genero                  As String * 30
+        LUpd_DateTime                   As Sdate
+        LUpd_Prog                       As String * 8
+        LUpd_User                       As String * 47
+        MetodoDePago                    As String * 200
+        MunicipioID                     As String * 10
+        Nombre                  As String * 90
+        NoteID                  As Long
+        NoExterior                      As String * 255
+        NoInterior                      As String * 128
+        NumeroDeCuenta                  As String * 200
+        Pais                    As String * 10
+        RazonSocial                     As String * 255
+        ShipToID                        As String * 10
+        Status                  As String * 1
+        RFC                     As String * 13
+        Terms                   As String * 2
+        Tipo                    As String * 10
+        Titulo                  As String * 30
+        User1                   As String * 10
+        User2                   As String * 10
+        User3                   As String * 60
+        User4                   As String * 60
+        User5                   As String * 255
+        User6                   As String * 255
+        User7                   As Double
+        User8                   As Double
+        User9                   As Sdate
+        User10                  As Sdate
+        User11                  As Long
+        User12                  As Long
+        xFuture01                       As String * 60
+        xFuture02                       As String * 60
+        xFuture03                       As Double
+        xFuture04                       As Double
+        xFuture05                       As Sdate
+        xFuture06                       As Sdate
+        xFuture07                       As Long
+        xFuture08                       As Long
+        xFuture09                       As String * 10
+        xFuture10                       As String * 10
+End Type
+Public bxFESOAddress As xFESOAddress, nxFESOAddress As xFESOAddress
+Public CSR_xFESOAddress As Integer
+
+Public serr_xFESOAddress As Integer
+
+Public Sub Init_xFESOAddress(ByRef x_Level As Integer, ByRef x_Cursor As Boolean)
+        Call VBA_SetAddr("bxFESOAddress", bxFESOAddress, nxFESOAddress, LenB(bxFESOAddress))
+        If x_Cursor = True Then
+                Call SqlCursorEx(CSR_xFESOAddress, x_Level, "CSR_xFESOAddress", "xFESOAddress", "xFESOAddress")
+        End If
+End Sub
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: xSoShipHeaderAdic_DH, ComponentType: 1 **********************************************************
+Attribute VB_Name = "xSoShipHeaderAdic_DH"
+Option Explicit
+Type xSoShipHeaderAdic
+    CpnyID As String * 10
+    MetodoDePago As String * 100
+    NumeroDeCuenta As String * 100
+    ShipperId As String * 15
+    User1 As String * 30
+    User2 As String * 30
+    User3 As Double
+    User4 As Double
+    User5 As String * 10
+    User6 As String * 10
+    User7 As Sdate
+    User8 As Sdate
+    zFuture01 As String * 30
+    zFuture02 As String * 30
+    zFuture03 As Double
+    zFuture04 As Double
+    zFuture05 As Sdate
+    zFuture06 As Sdate
+    zFuture07 As Integer
+    zFuture08 As Integer
+    zFuture09 As Integer
+    zFuture10 As Integer
+    zFuture11 As String * 10
+    zFuture12 As String * 10
+End Type
+
+Public bxSoShipHeaderAdic As xSoShipHeaderAdic, nxSoShipHeaderAdic As xSoShipHeaderAdic
+Public csr_xSoShipHeaderAdic As Integer, serr_xSoShipHeaderAdic As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: PmtType_dh, ComponentType: 1 **********************************************************
+Attribute VB_Name = "PmtType_dh"
+Option Explicit
+
+Type PmtType
+        CashAcct As String * 10
+        CashSub As String * 24
+        CpnyID As String * 10
+        Crtd_DateTime As Sdate
+        Crtd_Prog As String * 8
+        Crtd_User As String * 10
+        Descr As String * 30
+        LUpd_DateTime As Sdate
+        LUpd_Prog As String * 8
+        LUpd_User As String * 10
+        NoteID As Long
+        PmtTypeID As String * 4
+        S4Future01 As String * 30
+        S4Future02 As String * 30
+        S4Future03 As Double
+        S4Future04 As Double
+        S4Future05 As Double
+        S4Future06 As Double
+        S4Future07 As Sdate
+        S4Future08 As Sdate
+        S4Future09 As Long
+        S4Future10 As Long
+        S4Future11 As String * 10
+        S4Future12 As String * 10
+        User1 As String * 30
+        User10 As Sdate
+        User2 As String * 30
+        User3 As String * 30
+        User4 As String * 30
+        User5 As Double
+        User6 As Double
+        User7 As String * 10
+        User8 As String * 10
+        User9 As Sdate
+        ValidationType As String * 2
+End Type
+
+Global bPmtType As PmtType, nPmtType As PmtType
+Global serr_PmtType As Integer, csr_PmtType As Integer
+' End VBComponent **********************************************************
+
+
+
+' VBComponent: SOType_dh, ComponentType: 1 **********************************************************
+Attribute VB_Name = "SOType_dh"
+Option Explicit
+
+Type SOType
+        Active As Integer
+        ARAcct As String * 10
+        ARSub As String * 31
+        AssemblyOnSat As Integer
+        AssemblyOnSun As Integer
+        AutoReleaseReturns As Integer
+        Behavior As String * 4
+        CancelDays As Integer
+        COGSAcct As String * 10
+        COGSSub As String * 31
+        CpnyID As String * 10
+        Crtd_DateTime As Sdate
+        Crtd_Prog As String * 8
+        Crtd_User As String * 10
+        Descr As String * 30
+        DiscAcct As String * 10
+        DiscSub As String * 31
+        Disp As String * 3
+        EnterLotSer As Integer
+        FrtAcct As String * 10
+        FrtSub As String * 31
+        InvAcct As String * 10
+        InvcNbrAR As Integer
+        InvcNbrPrefix As String * 15
+        InvcNbrType As String * 4
+        InvSub As String * 31
+        LastInvcNbr As String * 10
+        LastOrdNbr As String * 10
+        LastShipperNbr As String * 10
+        LUpd_DateTime As Sdate
+        LUpd_Prog As String * 8
+        LUpd_User As String * 10
+        MiscAcct As String * 10
+        MiscSub As String * 31
+        NoAutoCreateShippers As Integer
+        NoteID As Long
+        OrdNbrPrefix As String * 15
+        OrdNbrType As String * 4
+        ProjectStatus As String * 1
+        RequireDetailAppr As Integer
+        RequireManRelease As Integer
+        RequireTechAppr As Integer
+        ReturnOrderTypeID As String * 4
+        S4Future01 As String * 30
+        S4Future02 As String * 30
+        S4Future03 As Double
+        S4Future04 As Double
+        S4Future05 As Double
+        S4Future06 As Double
+        S4Future07 As Sdate
+        S4Future08 As Sdate
+        S4Future09 As Long
+        S4Future10 As Long
+        S4Future11 As String * 10
+        S4Future12 As String * 10
+        ShipperPrefix As String * 15
+        ShipperType As String * 4
+        ShiptoType As String * 1
+        SlsAcct As String * 10
+        SlsSub As String * 31
+        SOTypeID As String * 4
+        StdOrdType As Integer
+        TemplateProject As String * 16
+        User1 As String * 30
+        User10 As Sdate
+        User2 As String * 30
+        User3 As String * 30
+        User4 As String * 30
+        User5 As Double
+        User6 As Double
+        User7 As String * 10
+        User8 As String * 10
+        User9 As Sdate
+        WholeOrdDiscAcct As String * 10
+        WholeOrdDiscSub As String * 31
+End Type
+
+Global bSOType As SOType, nSOType As SOType
+Public CSR_SOType As Integer
+' End VBComponent **********************************************************
+
+
+
+' Reference: Name=VBA, Guid={000204EF-0000-0000-C000-000000000046}, Major=4, Minor=2
+' Reference: Name=SWIMAPI, Guid={F4B33A61-96B4-11CF-B04B-0020AFDCBD63}, Major=1, Minor=1
+' Reference: Name=stdole, Guid={00020430-0000-0000-C000-000000000046}, Major=2, Minor=0
+' Reference: Name=SWIMAPIEx, Guid={C97F43B1-4A73-11D3-BF6C-006008C7915A}, Major=1, Minor=1
+' Reference: Name=SolVBWrappedControlsLib, Guid={A88846F2-6638-11D3-8154-00104B2E8513}, Major=1, Minor=0
+
+' End Macro Text
+
+' End Customization

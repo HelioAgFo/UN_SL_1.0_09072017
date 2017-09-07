@@ -1,0 +1,27 @@
+Private Sub xCustAdic_Click()
+    Dim sCustId As String
+    Dim sCustIdG As String
+    Dim sShipToIdG As String
+    sCustId = sivMyApp.Controls("ccustid")
+    serr_Customer = SqlFetch1(csr_Customer, "Select Customer.* From Customer INNER JOIN xSoAddress ON Customer.CustId = xSoAddress.CustId Where Customer.CustId = " + SParm(sCustId), bCustomer, LenB(bCustomer))
+    
+    Call ApplSetParmValue(PRMSECTION_VBRDT, "CustId", sCustId)
+    Call ApplSetParmValue(PRMSECTION_VBRDT, "ShipToId", "DEFAULT")
+    
+    If serr_Customer = NOTFOUND Then
+        Call ApplSetParmValue(PRMSECTION_VBRDT, "Existe", "0")
+    Else
+        Call ApplSetParmValue(PRMSECTION_VBRDT, "Existe", "1")
+    End If
+
+    serr1 = Launch("0826010", True, True, 1)
+    Dim sUserId As String
+    Call GetBufferValue("bpes.userid", sUserId)
+    If Trim(sUserId) = "SYSADMIN" Then
+'    Stop
+    End If
+
+    sCustIdG = ApplGetReturnParms()
+    sShipToIdG = ApplGetReturnParms()
+    sivMyApp.Cancel
+End Sub

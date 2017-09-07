@@ -1,0 +1,1 @@
+"ProyectosCRM_all", "", "", "Select * from xProyectosCRM where ProjectID like @parm1 order by ProjectID", "Proyectos CRM", "xProyectosCRM.ProjectID;No Proyecto;0;0", "xProyectosCRM.ProjectName;Desc Proyecto;0;0"
